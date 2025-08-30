@@ -7,6 +7,12 @@ Different examples using Qiskit
 
 The idea for these examples is not using Qiskit just for dealing with circuits but also, in combination with other libraries such as Numpy or SymPy
 
+## Hello World
+
+This is a very simple notebook which runs a 'hello world' circuit both in the simulator and in real hardware. 
+
+In order to run on real hardware you need your IBM Quantum account configured in your machine.
+
 ## Algorithms
 
 ### Deustsch
