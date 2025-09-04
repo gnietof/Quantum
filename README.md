@@ -13,7 +13,11 @@ This is a very simple notebook which runs a 'hello world' circuit both in the si
 
 In order to run on real hardware you need your IBM Quantum account configured in your machine.
 
-## Algorithms
+## Qiskit Exam (Cheat sheet)
+
+I am preparing a 'cheat sheet' for the Qiskit exam. The idea is covering in one place the questions I have found in sample exams so that I can study  and fix the concepts better.
+
+# Algorithms
 
 ### Deustsch
 
