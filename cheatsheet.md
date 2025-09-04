@@ -22,45 +22,14 @@ These are not valid ways:
 ## Gates
 
 | Name | Qiskit | Picture | Unitary | Comments |
-| :--: | ------ | ------- | ------- | -------- |
-| H |  |  |\begin{bmatrix}
-0 & 1  \\
- 1 & 0  \\
- \end{bmatrix}  |  |
-| X |  |  |$$\begin{bmatrix}
-0 & 1  \\
- 1 & 0  \\
- \end{bmatrix}$$  |  |
-| Y |  |  |\begin{bmatrix}
-0 & 1  \\
- 1 & 0  \\
- \end{bmatrix}  |  |
-| Z |  |  |  | $\begin{pmatrix}0&1\cr-1&0\end{pmatrix}$ |
+| :--: | ------ | ------- | :-----: | -------- |
+| H |   | ![Hadamard](./circuits/S_circuit.png) | $`\frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1  \\ 1 & -1  \end{pmatrix}`$  |  |
+| X |  |  <img width="40%" height="40%" alt="X Gate" src="./circuits/S_circuit.png"> | $`\begin{pmatrix} 0 & 1  \\ 1 & 0  \end{pmatrix}`$  |  |
+| Y |  |  | $`\begin{pmatrix} 0 & -i  \\ i & 0  \end{pmatrix}`$ |  |
+| Z |  |  | $`\begin{pmatrix} 1 & 0  \\ 0 & -1  \end{pmatrix}`$ |  |
 | T |  |  |  |  |
 | S |  |  |  |  |
-| CX/CNOT |  |  |  |  |
+| CX/CNOT |  |  |  | $`\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}`$ |
 
 
-| Gate | Unitary Matrix | Circuit |
-|------|----------------|---------|
-| X | `[0.+0.j 1.+0.j]<br>[1.+0.j 0.+0.j]` | ![](X_circuit.png) |
-| Y | `[0.+0.j 0.-1.j]<br>[0.+1.j 0.+0.j]` | ![](Y_circuit.png) |
-| Z | `[1.+0.j 0.+0.j]<br>[ 0.+0.j -1.+0.j]` | ![](Z_circuit.png) |
-| H | `[0.70710678+0.j 0.70710678+0.j]<br>[ 0.70710678+0.j -0.70710678+0.j]` | ![](H_circuit.png) |
-| S | `[1.+0.j 0.+0.j]<br>[0.+0.j 0.+1.j]` | ![](S_circuit.png) |
-| T | `[1.+0.j 0.+0.j]<br>[0.        +0.j         0.70710678+0.70710678j]` | ![](T_circuit.png) |
-| CX | `[1.+0.j 0.+0.j 0.+0.j 0.+0.j]<br>[0.+0.j 0.+0.j 0.+0.j 1.+0.j]<br>[0.+0.j 0.+0.j 1.+0.j 0.+0.j]<br>[0.+0.j 1.+0.j 0.+0.j 0.+0.j]` | ![](CX_circuit.png) |
-
-| Gate | Unitary Matrix | Circuit |
-|------|----------------|---------|
-| X | 
-:::{=latex}
-\left[\begin{bmatrix}0 & 1\\1 & 0\end{bmatrix}\right]
-::: 
-| ![](X_circuit.png) |
-| Y | $\left[\begin{bmatrix}0 & - 1.0 i\\1.0 i & 0\end{bmatrix}\right]$$ | ![](Y_circuit.png) |
-| Z | $\left[\begin{bmatrix}1 & 0\\0 & -1\end{bmatrix}\right]$$ | ![](Z_circuit.png) |
-| H | $\left[\begin{bmatrix}\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}\\\frac{\sqrt{2}}{2} & - \frac{\sqrt{2}}{2}\end{bmatrix}\right]$$ | ![](H_circuit.png) |
-| S | $\left[\begin{bmatrix}1 & 0\\0 & 1.0 i\end{bmatrix}\right]$$ | ![](S_circuit.png) |
-| T | $\left[\begin{bmatrix}1 & 0\\0 & 0.707106781186547 + 0.707106781186547 i\end{bmatrix}\right]$$ | ![](T_circuit.png) |
-| CX |$\left[\begin{bmatrix}1 & 0 & 0 & 0\\0 & 0 & 0 & 1\\0 & 0 & 1 & 0\\0 & 1 & 0 & 0\end{bmatrix}\right]$$ | ![](CX_circuit.png) |
+t]$$ | ![](CX_circuit.png) |
