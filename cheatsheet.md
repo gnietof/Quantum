@@ -1,23 +1,23 @@
 ## Barriers
 
 The valid ways to create barrier are (supposing we have a three qbit circuit):  
-•	qc.barrier(): barrier for all qbits  
-•	qc.barrier(0,1) / qc.barrier([0,1]): barrier in q0 and q1  
-•	qc.barrier(0,2) / qc.barrier([0,2]): barrier in q0 and q2  
-•	qc.barrier(range(3)): barrier between q0 and q2  
+-	qc.barrier(): barrier for all qbits  
+-	qc.barrier(0,1) / qc.barrier([0,1]): barrier in q0 and q1  
+-	qc.barrier(0,2) / qc.barrier([0,2]): barrier in q0 and q2  
+-	qc.barrier(range(3)): barrier between q0 and q2  
 
 These are not valid ways:
-•	qc.barrier_all(): non existing method  
+-	qc.barrier_all(): non existing method  
 
 ## Measures
 
 The valid ways to create measures are (supposing we have a three qbit circuit):  
-•	qc.measure_all(): meausres all qbits. Also adds a new set of classical bits (meas).  
-•	qc.measure_all(add_bits=False): same as prevpious one but does not add the classical bits and uses the existing ones. If the circuit has no classical bits defined (or less than required) an exception is being raised.   
-•	qc.measure([0,1,2],[0,1,2]) / qc.measure([0,2],[0,2]) / qc.measure(0,0): qbits and bits are mapped and they should be already defined in the circuit.  
+-	qc.measure_all(): meausres all qbits. Also adds a new set of classical bits (meas).  
+-	qc.measure_all(add_bits=False): same as prevpious one but does not add the classical bits and uses the existing ones. If the circuit has no classical bits defined (or less than required) an exception is being raised.   
+-	qc.measure([0,1,2],[0,1,2]) / qc.measure([0,2],[0,2]) / qc.measure(0,0): qbits and bits are mapped and they should be already defined in the circuit.  
 
 These are not valid ways:  
-•	qc.measure(): the mapping between qbits and classical bits is always required.
+-	qc.measure(): the mapping between qbits and classical bits is always required.
 
 ## Gates
 
@@ -29,7 +29,5 @@ These are not valid ways:
 | Z |  |  | $`\begin{pmatrix} 1 & 0  \\ 0 & -1  \end{pmatrix}`$ |  |
 | T |  |  |  |  |
 | S |  |  |  |  |
-| CX/CNOT |  | ![CX](/circuits/CX_circuit.png) | $`\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}`$ | |
+| CX/CNOT |  | ![CX](/circuits/CX_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix}`$ | |
 
-
-|  |
