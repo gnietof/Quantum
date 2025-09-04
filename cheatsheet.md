@@ -1,5 +1,4 @@
-<span style='color:red;'><h1>Work in Progress</h1></span>
-<h1 style='color:red'>Work in Progress</h1>
+<h1>Work in Progress</h1>
 
 ## Barriers
 
