@@ -31,15 +31,17 @@ These are not valid ways:
 | X | `qc.x(0)` |  ![X]( ./circuits/X_circuit.png ) | $`\begin{pmatrix} 0 & 1  \\ 1 & 0  \end{pmatrix}`$  |  |
 | Y | `qc.y(0)` |  ![Y](/circuits/Y_circuit.png) | $`\begin{pmatrix} 0 & -i  \\ i & 0  \end{pmatrix}`$ |  |
 | Z | `qc.z(0)` |  | $`\begin{pmatrix} 1 & 0  \\ 0 & -1  \end{pmatrix}`$ |  |
-| T | `qc.t(0)` |  |  |  |
-| S | `qc.s(0)` |  |  |  |
-| RZ | `qc.rz(theta,0)` |  | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & -1  \end{pmatrix}`$ |  |
+| T | `qc.t(0)` |  | $`\begin{pmatrix} 1 & 0  \\ 0 & e^{\frac{i\pi}{4}}  \end{pmatrix}`$ | $`S = T^2`$ |
+| S | `qc.s(0)` |  | $`\begin{pmatrix} 1 & 0  \\ 0 & i \end{pmatrix}`$ | $`S = T^2`$ |
+| RZ | `qc.rz(theta,0)` |  | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{pmatrix}`$ |  |
 ### 2 QBit
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
-| CX/CNOT |  | ![CX01](/circuits/CX01_circuit.png) <br> ![CX10](/circuits/CX10_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix}`$ <br> $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix}`$ | |
-| CX/CNOT |  |  | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix}`$ <br> $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix}`$ | |
-| CZ |  | ![CZ](/circuits/CZ_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & \text{-}1 \end{pmatrix} `$ | |
+| CX/CNOT | `qc.cx(0,1)` | ![CX01](/circuits/CX01_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix}`$  | |
+| CX/CNOT | `qc.cx(1,0)` | ![CX10](/circuits/CX10_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \end{pmatrix}`$ | |
+| CY | `qc.cy(0,1)` | ![CY01](/circuits/CY01_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -i \\ 0 & 0 & 1 & 0 \\ 0 & i & 0 & 0 \end{pmatrix}`$  | |
+| CY | `qc.cy(1,0)` | ![CY10](/circuits/CY10_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix}`$ | |
+| CZ | `qc.cy(0,1)` <br> `qc.cy(0,1)` | ![CZ01](/circuits/CZ01_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & \text{-}1 \end{pmatrix} `$ | |
 ### 3 QBit
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
