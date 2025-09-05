@@ -27,13 +27,13 @@ These are not valid ways:
 
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
-| H | `qc.h(0)` | ![Hadamard]( ./circuits/S_circuit.png ) | $`\frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1  \\ 1 & -1  \end{pmatrix}`$  |  |
+| H/Hadamard | `qc.h(0)` | ![Hadamard]( ./circuits/H_circuit.png ) | $`\frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1  \\ 1 & -1  \end{pmatrix}`$  |  |
 | X | `qc.x(0)` |  ![X]( ./circuits/X_circuit.png ) | $`\begin{pmatrix} 0 & 1  \\ 1 & 0  \end{pmatrix}`$  |  |
 | Y | `qc.y(0)` |  ![Y](/circuits/Y_circuit.png) | $`\begin{pmatrix} 0 & -i  \\ i & 0  \end{pmatrix}`$ |  |
-| Z | `qc.z(0)` |  | $`\begin{pmatrix} 1 & 0  \\ 0 & -1  \end{pmatrix}`$ |  |
-| T | `qc.t(0)` |  | $`\begin{pmatrix} 1 & 0  \\ 0 & e^{\frac{i\pi}{4}}  \end{pmatrix}`$ | $`S = T^2`$ |
-| S | `qc.s(0)` |  | $`\begin{pmatrix} 1 & 0  \\ 0 & i \end{pmatrix}`$ | $`S = T^2`$ |
-| RZ | `qc.rz(theta,0)` |  | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{pmatrix}`$ |  |
+| Z | `qc.z(0)` |  ![Z](/circuits/Z_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & -1  \end{pmatrix}`$ |  |
+| T | `qc.t(0)` |  ![T](/circuits/T_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & e^{\frac{i\pi}{4}}  \end{pmatrix}`$ | $`S = T^2`$ |
+| S | `qc.s(0)` |  ![S](/circuits/S_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & i \end{pmatrix}`$ | $`S = T^2`$ |
+| RZ | `qc.rz(theta,0)` |  ![RZ](/circuits/RZ_circuit.png) | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{pmatrix}`$ |  |
 ### 2 QBit
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
