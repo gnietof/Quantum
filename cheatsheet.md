@@ -19,10 +19,32 @@ The valid ways to create measures are (supposing we have a three qbit circuit):
 These are not valid ways:  
 -	qc.measure(): the mapping between qbits and classical bits is always required.
 
-## Controlled
+## Gates
+
+Gates can be added in different ways to a QuantumCircuit. Using the 'classical' style based on QuantumCircuit's own methods.  
+```python
+qc = QuantumCircuit(2)
+qc.cx(0,1)
+```
+
+Or defining a gate and appending it to the circuit. This is useful with custom gates or adding 'dynamic' circuits. Pay attention to the way the qbits are provided.
+```python
+# Create a CX gate
+cx = CXGate()
+# Add the gate
+qc = QuantumCircuit(2)
+qc.append(cx,[0,1])
+```
+
+#### ⚠️Important!
+>  Keep in mind that it is also possible to use Python notation when indicating the qbits. So, for example, in a three  qbit circuit:<br>
+qc.cx(0,-1) $\equiv$ qc.cx(0,2)  
+qc.cx(-1,-2) $\equiv$ qc.cx(2,1)  
+
+### Controlled
 In Qiskit any gate can be controlled by adding a couple of lines of code. For example, we may create a controlled RX:
 
-```
+```python
 from qiskit.circuit.library import RXGate
 import numpy as np
 
@@ -40,7 +62,7 @@ And the output circuit is:
 
 It is also possible to add more than one control qbit:
 
-```
+```python
 from qiskit.circuit.library import RXGate
 import numpy as np 
 
@@ -58,8 +80,6 @@ qc.draw('mpl')
 ```
 And the output circuit in this case is:  
 ![CCRX](/circuits/CCRX012_circuit.png)
-
-## Gates
 
 ### 1 QBit
 
@@ -80,7 +100,7 @@ And the output circuit in this case is:
 ### 2 QBit
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
-| SWAP | `qc.swap(0,1)` | ![SWAP01](/circuits/SWAP01_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}`$  | |
+| SWAP | `qc.swap(0,1)` | ![SW01](/circuits/SW01_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}`$  | |
 #### Controlled
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
