@@ -33,6 +33,12 @@ These are not valid ways:
 | Z | `qc.z(0)` |  ![Z](/circuits/Z_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & -1  \end{pmatrix}`$ |  |
 | T | `qc.t(0)` |  ![T](/circuits/T_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & e^{\frac{i\pi}{4}}  \end{pmatrix}`$ | $`S = T^2`$ |
 | S | `qc.s(0)` |  ![S](/circuits/S_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & i \end{pmatrix}`$ | $`S = T^2`$ |
+
+#### Rotations
+| Name | Qiskit | Picture | Unitary | Comments |
+| :--: | ------ | ------- | :-----: | -------- |
+| RX | `qc.rx(theta,0)` |  ![RX](/circuits/RX_circuit.png) | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{pmatrix}`$ |  |
+| RY | `qc.ry(theta,0)` |  ![RY](/circuits/RY_circuit.png) | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{pmatrix}`$ |  |
 | RZ | `qc.rz(theta,0)` |  ![RZ](/circuits/RZ_circuit.png) | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{pmatrix}`$ |  |
 ### 2 QBit
 | Name | Qiskit | Picture | Unitary | Comments |
