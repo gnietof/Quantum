@@ -20,8 +20,44 @@ These are not valid ways:
 -	qc.measure(): the mapping between qbits and classical bits is always required.
 
 ## Controlled
-In Qiskit any gate can be controlled by adding a couple of lines of code. For example, 
+In Qiskit any gate can be controlled by adding a couple of lines of code. For example, we may create a controlled RX:
 
+```
+from qiskit.circuit.library import RXGate
+import numpy as np
+
+# Create the RX gate
+rx = RXGate(np.pi/2)
+# Add control 
+crx = rx.control()
+
+# Append to circuit using [control,target] qbits
+qc = QuantumCircuit(2)
+qc.append(crx,[0,1])
+```
+And the output circuit is:  
+![CRX](/circuits/CRX01_circuit.png)
+
+It is also possible to add more than one control qbit:
+
+```
+from qiskit.circuit.library import RXGate
+import numpy as np 
+
+# Create the RX gate
+rx = RXGate(np.pi/2)
+
+# Add control 
+crx = rx.control(num_ctrl_qubits=2)
+
+# Append to circuit using [control,target] qbits
+qc = QuantumCircuit(3)
+qc.append(crx,[0,1,2])
+#qc.append(rx,[1])
+qc.draw('mpl')
+```
+And the output circuit in this case is:  
+![CCRX](/circuits/CCRX012_circuit.png)
 
 ## Gates
 
@@ -42,6 +78,9 @@ In Qiskit any gate can be controlled by adding a couple of lines of code. For ex
 | RY | `qc.ry(theta,0)` |  ![RY](/circuits/RY_circuit.png) | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{pmatrix}`$ |  |
 | RZ | `qc.rz(theta,0)` |  ![RZ](/circuits/RZ_circuit.png) | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{pmatrix}`$ |  |
 ### 2 QBit
+| Name | Qiskit | Picture | Unitary | Comments |
+| :--: | ------ | ------- | :-----: | -------- |
+| SWAP | `qc.swap(0,1)` | ![SWAP01](/circuits/SWAP01_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}`$  | |
 #### Controlled
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
