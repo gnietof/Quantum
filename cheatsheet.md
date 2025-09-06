@@ -1,7 +1,6 @@
 <h1>Work in Progress</h1>
 
 ## Barriers
-
 The valid ways to create barrier are (supposing we have a three qbit circuit):  
 -	qc.barrier(): barrier for all qbits  
 -	qc.barrier(0,1) / qc.barrier([0,1]): barrier in q0 and q1  
@@ -12,7 +11,6 @@ These are not valid ways:
 -	qc.barrier_all(): non existing method  
 
 ## Measures
-
 The valid ways to create measures are (supposing we have a three qbit circuit):  
 -	qc.measure_all(): meausres all qbits. Also adds a new set of classical bits (meas).  
 -	qc.measure_all(add_bits=False): same as prevpious one but does not add the classical bits and uses the existing ones. If the circuit has no classical bits defined (or less than required) an exception is being raised.   
@@ -20,6 +18,10 @@ The valid ways to create measures are (supposing we have a three qbit circuit):
 
 These are not valid ways:  
 -	qc.measure(): the mapping between qbits and classical bits is always required.
+
+## Controlled
+In Qiskit any gate can be controlled by adding a couple of lines of code. For example, 
+
 
 ## Gates
 
@@ -33,7 +35,6 @@ These are not valid ways:
 | Z | `qc.z(0)` |  ![Z](/circuits/Z_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & -1  \end{pmatrix}`$ |  |
 | T | `qc.t(0)` |  ![T](/circuits/T_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & e^{\frac{i\pi}{4}}  \end{pmatrix}`$ | $`S = T^2`$ |
 | S | `qc.s(0)` |  ![S](/circuits/S_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & i \end{pmatrix}`$ | $`S = T^2`$ |
-
 #### Rotations
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
@@ -41,13 +42,14 @@ These are not valid ways:
 | RY | `qc.ry(theta,0)` |  ![RY](/circuits/RY_circuit.png) | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{pmatrix}`$ |  |
 | RZ | `qc.rz(theta,0)` |  ![RZ](/circuits/RZ_circuit.png) | $`\begin{pmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{pmatrix}`$ |  |
 ### 2 QBit
+#### Controlled
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
 | CX/CNOT | `qc.cx(0,1)` | ![CX01](/circuits/CX01_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \end{pmatrix}`$  | |
 | CX/CNOT | `qc.cx(1,0)` | ![CX10](/circuits/CX10_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \end{pmatrix}`$ | |
 | CY | `qc.cy(0,1)` | ![CY01](/circuits/CY01_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -i \\ 0 & 0 & 1 & 0 \\ 0 & i & 0 & 0 \end{pmatrix}`$  | |
 | CY | `qc.cy(1,0)` | ![CY10](/circuits/CY10_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix}`$ | |
-| CZ | `qc.cy(0,1)` <br> `qc.cy(0,1)` | ![CZ01](/circuits/CZ01_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & \text{-}1 \end{pmatrix} `$ | |
+| CZ | `qc.cz(0,1)` <br> `qc.cz(0,1)` | ![CZ01](/circuits/CZ01_circuit.png) | $`\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & \text{-}1 \end{pmatrix} `$ | |
 ### 3 QBit
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
