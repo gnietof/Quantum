@@ -1,7 +1,7 @@
 <h1>Work in Progress</h1>
 
 ## Barriers
-The valid ways to create barrier are (supposing we have a three qbit circuit):  
+The valid ways to create barrier are (considering we have a three qbit circuit):  
 -	qc.barrier(): barrier for all qbits  
 -	qc.barrier(0,1) / qc.barrier([0,1]): barrier in q0 and q1  
 -	qc.barrier(0,2) / qc.barrier([0,2]): barrier in q0 and q2  
@@ -39,7 +39,19 @@ qc.append(cx,[0,1])
 #### ⚠️Important!
 >  Keep in mind that it is also possible to use Python notation when indicating the qbits. So, for example, in a three  qbit circuit:<br>
 qc.cx(0,-1) $\equiv$ qc.cx(0,2)  
-qc.cx(-1,-2) $\equiv$ qc.cx(2,1)  
+qc.cx(-1,-2) $\equiv$ qc.cx(2,1)
+
+Multiple gates of the same type can also be added using lists or ranges. 
+
+```python
+# These are all equivalent to:
+# qc.x(0)
+# qc.x(1)
+
+qc.x([0,1]) 
+qc.x(range(2))
+qc.x([-1,-2])
+```
 
 ### Controlled
 In Qiskit any gate can be controlled by adding a couple of lines of code. For example, we may create a controlled RX:
@@ -91,6 +103,7 @@ And the output circuit in this case is:
 | Z | `qc.z(0)` |  ![Z](/circuits/Z_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & -1  \end{pmatrix}`$ |  |
 | T | `qc.t(0)` |  ![T](/circuits/T_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & e^{\frac{i\pi}{4}}  \end{pmatrix}`$ | $`S = T^2`$ |
 | S | `qc.s(0)` |  ![S](/circuits/S_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & i \end{pmatrix}`$ | $`S = T^2`$ |
+| S$\dagger$ | `qc.s(0)` |  ![SDG](/circuits/SDG_circuit.png) | $`\begin{pmatrix} 1 & 0  \\ 0 & i \end{pmatrix}`$ | $`S = T^2`$ |
 #### Rotations
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
