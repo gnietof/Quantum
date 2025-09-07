@@ -1,4 +1,65 @@
-<h1>Work in Progress</h1>
+# Work in Progress
+
+## Concepts
+
+### States
+$`\ket{+} = \frac{\ket{0}+\ket{1}}{\sqrt{2}}`$  
+$`H\otimes\ket{0} = \ket{+}`$  
+```python
+qc = QuantumCircuit()
+qc.h(0)
+```
+$`\ket{-} = \frac{\ket{0}-\ket{1}}{\sqrt{2}}`$  
+$`H\otimes\ket{1} = \ket{-}`$
+```python
+qc = QuantumCircuit()
+qc.x(0)
+qc.h(0)
+```
+#### Bell States
+There are four 'bell states'. Although in one test exams refers to the 'perfect' Bell state there is no such 'perfect Bell state'
+$`\ket{\phi^+} = \frac{\ket{00}+\ket{11}}{\sqrt{2}}`$  
+$`\ket{\phi^-} = \frac{\ket{00}-\ket{11}}{\sqrt{2}}`$  
+$`\ket{\psi^+} = \frac{\ket{01}+\ket{10}}{\sqrt{2}}`$  
+$`\ket{\psi^-} = \frac{\ket{01}-+\ket{10}}{\sqrt{2}}`$  
+
+In order to generat these states with Qiskit you need a Hadamard (for superposition) and one CX (for entanglement). Then you need a combination of X and Z gates to obtain each of the four possible states.
+
+$`\ket{\phi^+}`$  
+```python
+qc = QuantumCircuit()
+qc.h(0)
+qc.cx(0,1)
+```
+$`\ket{\phi^-} = \frac{\ket{00}-\ket{11}}{\sqrt{2}}`$  
+```python
+qc = QuantumCircuit()
+qc.h(0)
+qc.cx(0,1)
+qc.z(1)
+```
+$`\ket{\psi^+} = \frac{\ket{01}+\ket{10}}{\sqrt{2}}`$  
+```python
+qc = QuantumCircuit()
+qc.h(0)
+qc.x(1)
+qc.cx(0,1)
+```
+$`\ket{\psi^-} = \frac{\ket{01}-+\ket{10}}{\sqrt{2}}`$  
+```python
+qc = QuantumCircuit()
+qc.h(0)
+qc.x(1)
+qc.cx(0,1)
+qc.z(1)
+```
+#### GHZ States
+$`\ket{GHZ} = \frac{\ket{000}+\ket{111}}{\sqrt{2}}`$  
+```python
+qc = QuantumCircuit(3)
+qc.h(0)
+qc.cx([0,0],[1,2])
+```
 
 ## Barriers
 The valid ways to create barrier are (considering we have a three qbit circuit):  
@@ -97,44 +158,49 @@ And the output circuit in this case is:
 
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
-| H/Hadamard | `qc.h(0)` | ![Hadamard]( ./circuits/H_circuit.png ) | $`\frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1  \\ 1 & -1  \end{bmatrix}`$  |  |
-| X | `qc.x(0)` |  ![X]( ./circuits/X_circuit.png ) | $`\begin{bmatrix} 0 & 1  \\ 1 & 0  \end{bmatrix}`$  | X-axis $`\pi `$ rotation |
-| Y | `qc.y(0)` |  ![Y](/circuits/Y_circuit.png) | $`\begin{bmatrix} 0 & -i  \\ i & 0  \end{bmatrix}`$ | Y-axis $`\pi `$ rotation |
-| Z | `qc.z(0)` |  ![Z](/circuits/Z_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & -1  \end{bmatrix}`$ | Z-axis $`\pi `$ rotation |
-| T | `qc.t(0)` |  ![T](/circuits/T_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & e^{\frac{i\pi}{4}}  \end{bmatrix} `$ | $`S = T^2`$ <br> Z-axis $`\frac{\pi}{4}`$ rotation |
-| T | `qc.t(0)` |  ![T](/circuits/T_circuit.png) | $`= \begin{bmatrix} 1 & 0  \\ 0 & \frac{\sqrt{2}}{2}+\frac{\sqrt{2}i}{2}  \end{bmatrix}`$ | $`S = T^2`$ |
-| S | `qc.s(0)` |  ![S](/circuits/S_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & i \end{bmatrix}`$ | $`Z = S^2`$ <br> Z-axis $`\frac{\pi}{2} `$ rotation |
-| S† | `qc.sdg(0)` |  ![SDG](/circuits/SDG_circuit.png) | $`\begin{bmatrix}1 & 0\\0 & -i\end{bmatrix}`$ | $`S = T^2`$ <br> Z-axis $`\frac{-\pi}{2} `$ rotation |
+| H/Hadamard | `qc.h(qbit0)` | ![Hadamard]( ./circuits/H_circuit.png ) | $`\frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1  \\ 1 & -1  \end{bmatrix}`$  |  |
+| X | `qc.x(qbit0)` |  ![X]( ./circuits/X_circuit.png ) | $`\begin{bmatrix} 0 & 1  \\ 1 & 0  \end{bmatrix}`$  | X-axis $`\pi `$ rotation |
+| Y | `qc.y(qbit0)` |  ![Y](/circuits/Y_circuit.png) | $`\begin{bmatrix} 0 & -i  \\ i & 0  \end{bmatrix}`$ | Y-axis $`\pi `$ rotation |
+| Z | `qc.z(qbit0)` |  ![Z](/circuits/Z_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & -1  \end{bmatrix}`$ | Z-axis $`\pi `$ rotation |
+| T | `qc.t(qbit0)` |  ![T](/circuits/T_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & e^{\frac{i\pi}{4}}  \end{bmatrix} `$ | $`S = T^2`$ <br> Z-axis $`\frac{\pi}{4}`$ rotation |
+| T | `qc.t(qbit0)` |  ![T](/circuits/T_circuit.png) | $`= \begin{bmatrix} 1 & 0  \\ 0 & \frac{\sqrt{2}}{2}+\frac{\sqrt{2}i}{2}  \end{bmatrix}`$ | $`S = T^2`$ |
+| S | `qc.s(qbit0)` |  ![S](/circuits/S_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & i \end{bmatrix}`$ | $`Z = S^2`$ <br> Z-axis $`\frac{\pi}{2} `$ rotation |
+| S† | `qc.sdg(qbit0)` |  ![SDG](/circuits/SDG_circuit.png) | $`\begin{bmatrix}1 & 0\\0 & -i\end{bmatrix}`$ | $`S = T^2`$ <br> Z-axis $`\frac{-\pi}{2} `$ rotation |
+| P | `qc.p(phi,qbit0)` |  ![P](/circuits/P_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & e^{i\phi}  \end{bmatrix} `$ | $`S = T^2`$ <br> Z-axis $`\frac{\pi}{4}`$ rotation |
 #### Rotations
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
-| RX | `qc.rx(theta,0)` |  ![RX](/circuits/RX_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
-| RY | `qc.ry(theta,0)` |  ![RY](/circuits/RY_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
-| RZ | `qc.rz(theta,0)` |  ![RZ](/circuits/RZ_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
+| RX | `qc.rx(theta,qbit0)` |  ![RX](/circuits/RX_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -i sin(\frac{\theta}{2})  \\ -i sin(\frac{\theta}{2}) & cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
+| RY | `qc.ry(theta,qbit0)` |  ![RY](/circuits/RY_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
+| RZ | `qc.rz(theta,qbit0)` |  ![RZ](/circuits/RZ_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
+#### Deprecated in Qiskit 2.x (still present in some test exams)
+| Name | Qiskit | Picture | Unitary | Comments |
+| :--: | ------ | ------- | :-----: | -------- |
+| U | `qc.rx(theta,phi,lambda,qbit0)` |  ![U](/circuits/RX_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -e^{i\lambda}sin(\frac{\theta}{2})  \\ e^{i\phi}sin(\frac{\theta}{2}) & e^{i(\phi+\lambda)}cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
 
-Gates X,Y,Z,S,T and S† are just special cases of RX,RY,RZ  
+Gates X,Y,Z,S,T and S† are just special cases of RX,RY,RZ (up to a global phase) 
 | Name | Rotation |
 | ---- | -------- | 
-| X | RX({\pi} |
-| Y | RY({\pi} |
-| Z | RZ({\pi} |
-| S | RZ({\2pi} |
-| S | RZ({\pi} |
-| T | RZ({\pi/2} |
+| X | RX({$`\pi`$}) |
+| Y | RY({$`\pi`$}) |
+| Z | RZ({$`\pi`$}) |
+| S | RZ({$`2\pi`$}) |
+| S | RZ({$`\pi`$}) |
+| T | RZ({$`\frac{\pi}{2}`$}) |
 
 
 ### 2 QBit
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
-| SWAP | `qc.swap(0,1)` | ![SW01](/circuits/SW01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}`$  | |
+| SWAP | `qc.swap(qbit0,qbit1)` | ![SW01](/circuits/SW01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}`$  | |
 #### Controlled
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
-| CX/CNOT | `qc.cx(0,1)` | ![CX01](/circuits/CX01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \end{bmatrix}`$  | |
-| CX/CNOT | `qc.cx(1,0)` | ![CX10](/circuits/CX10_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \end{bmatrix}`$ | |
-| CY | `qc.cy(0,1)` | ![CY01](/circuits/CY01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -i \\ 0 & 0 & 1 & 0 \\ 0 & i & 0 & 0 \end{bmatrix}`$  | |
-| CY | `qc.cy(1,0)` | ![CY10](/circuits/CY10_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{bmatrix}`$ | |
-| CZ | `qc.cz(0,1)` <br> `qc.cz(0,1)` | ![CZ01](/circuits/CZ01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & \text{-}1 \end{bmatrix} `$ | |
+| CX/CNOT | `qc.cx(qbit0,qbit1)` | ![CX01](/circuits/CX01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \end{bmatrix}`$  | |
+| CX/CNOT | `qc.cx(qbit1,qbit0)` | ![CX10](/circuits/CX10_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \end{bmatrix}`$ | |
+| CY | `qc.cy(qbit0,qbit1)` | ![CY01](/circuits/CY01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -i \\ 0 & 0 & 1 & 0 \\ 0 & i & 0 & 0 \end{bmatrix}`$  | |
+| CY | `qc.cy(qbit1,qbit0)` | ![CY10](/circuits/CY10_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{bmatrix}`$ | |
+| CZ | `qc.cz(qbit0,qbit1)` <br> `qc.cz(qbit0,qbit1)` | ![CZ01](/circuits/CZ01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & \text{-}1 \end{bmatrix} `$ | |
 ### 3 QBit
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
