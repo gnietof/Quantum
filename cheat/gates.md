@@ -61,15 +61,11 @@ import numpy as np
 
 # Create the RX gate
 rx = RXGate(np.pi/2)
-
 # Add control 
 crx = rx.control(num_ctrl_qubits=2)
-
 # Append to circuit using [control,target] qbits
 qc = QuantumCircuit(3)
 qc.append(crx,[0,1,2])
-#qc.append(rx,[1])
-qc.draw('mpl')
 ```
 And the output circuit in this case is:  
 ![CCRX](./circuits/CCRX012_circuit.png)
