@@ -85,15 +85,15 @@ And the output circuit in this case is:
 | T | `qc.t(qbit0)` |  ![T](./circuits/T_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & e^{\frac{i\pi}{4}}  \end{bmatrix} `$ | $`S = T^2`$ <br> Z-axis $`\frac{\pi}{4}`$ rotation |
 | T | `qc.t(qbit0)` |  ![T](./circuits/T_circuit.png) | $`= \begin{bmatrix} 1 & 0  \\ 0 & \frac{\sqrt{2}}{2}+\frac{\sqrt{2}i}{2}  \end{bmatrix}`$ | $`S = T^2`$ |
 | S | `qc.s(qbit0)` |  ![S](./circuits/S_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & i \end{bmatrix}`$ | $`Z = S^2`$ <br> Z-axis $`\frac{\pi}{2} `$ rotation |
-| S† | `qc.sdg(qbit0)` |  ![SDG](./circuits/SDG_circuit.png) | $`\begin{bmatrix}1 & 0\\0 & -i\end{bmatrix}`$ | $`S = T^2`$ <br> Z-axis $`\frac{-\pi}{2} `$ rotation |
-| P | `qc.p(phi,qbit0)` |  ![P](./circuits/P_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & e^{i\phi}  \end{bmatrix} `$ | $`S = T^2`$ <br> Z-axis $`\frac{\pi}{4}`$ rotation |
+| S† | `qc.sdg(qbit0)` |  ![SDG](./circuits/SDG_circuit.png) | $`\begin{bmatrix}1 & 0\\0 & -i\end{bmatrix}`$ | Z-axis $`\frac{-\pi}{2} `$ rotation |
+| P | `qc.p(phi,qbit0)` |  ![P](./circuits/P_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & e^{i\phi}  \end{bmatrix} `$ | |
 #### Rotations
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
 | RX | `qc.rx(theta,qbit0)` |  ![RX](./circuits/RX_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -i sin(\frac{\theta}{2})  \\ -i sin(\frac{\theta}{2}) & cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
 | RY | `qc.ry(theta,qbit0)` |  ![RY](./circuits/RY_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
 | RZ | `qc.rz(theta,qbit0)` |  ![RZ](./circuits/RZ_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
-#### Deprecated in Qiskit 2.x (still present in some test exams)
+#### Deprecated in Qiskit 2.x (still referenced in some test exams)
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
 | U | `qc.rx(theta,phi,lambda,qbit0)` |  ![U](./circuits/RX_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -e^{i\lambda}sin(\frac{\theta}{2})  \\ e^{i\phi}sin(\frac{\theta}{2}) & e^{i(\phi+\lambda)}cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
