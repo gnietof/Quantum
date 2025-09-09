@@ -92,7 +92,7 @@ And the output circuit in this case is:
 #### Deprecated in Qiskit 2.x (still referenced in some test exams)
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
-| U | `qc.rx(theta,phi,lambda,qbit0)` |  ![U](./circuits/RX_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -e^{i\lambda}sin(\frac{\theta}{2})  \\ e^{i\phi}sin(\frac{\theta}{2}) & e^{i(\phi+\lambda)}cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
+| U | `qc.u(theta,phi,lambda,qbit0)` |  ![U](./circuits/U_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -e^{i\lambda}sin(\frac{\theta}{2})  \\ e^{i\phi}sin(\frac{\theta}{2}) & e^{i(\phi+\lambda)}cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
 
 Gates X,Y,Z,S,T and S† are just special cases of RX,RY,RZ (up to a global phase) 
 | Name | Rotation |
