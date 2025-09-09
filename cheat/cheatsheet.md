@@ -8,3 +8,6 @@ Information about main types of gates: unitary matrices, qiskit instructions...
 
 [Tips](./tips.md)
 Quick concepts covered in exam questions.
+
+[Backend](./backend.md)
+Examples of different ways to retrieve information about real Quantum backend systems. 
