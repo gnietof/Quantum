@@ -15,11 +15,7 @@ In order to run on real hardware you need your IBM Quantum account configured in
 
 ## Visualizations
 
-Qiskit includes several visualizations other than histograms which I wanted to try. 
-
-### City
-
-This one shows a 3D histogram which makes the output look like a city ... or something similar.
+Qiskit includes several visualizations other than histograms which I wanted to try (City / Hinton / Pauli QSphere)
 
 ## Qiskit Exam (Cheat sheet)
 
