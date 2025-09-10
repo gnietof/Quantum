@@ -11,7 +11,7 @@ service = QiskitRuntimeService()
 fig = plot_gate_map(service.backends()[0], figsize=(20,10))
 fig.savefig(f'./circuits/{backend.name}_map.png')
 ```
-Below you can see the qbit map for Torino and Brisbae IBM Quantum computers.
+Below you can see the qbit map for Torino and Brisbane IBM Quantum computers.
 ![Torino](./circuits/ibm_torino_map.png)
 
 ![Brisbane](./circuits/ibm_brisbane_map.png)
@@ -37,4 +37,4 @@ And the error map for Brisbane IBM Quantum computer is:
 
 ![Brisbane](./circuits/ibm_brisbane_error.png)
 
-In eaach of these images, the geometric figure is the result of displaying the couplings between the different qbits but also the error leves for each qbit are displayed.
+In each of these images, the geometric figure is the result of displaying the couplings between the different qbits but also the error leves for each qbit are displayed.
