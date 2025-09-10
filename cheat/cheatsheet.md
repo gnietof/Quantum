@@ -11,3 +11,7 @@ Quick concepts covered in exam questions.
 
 [Backend](./backend.md)
 Examples of different ways to retrieve information about real Quantum backend systems. 
+
+[Error](./error.md)
+Modeling error and displaying differences with ideal case. 
+
