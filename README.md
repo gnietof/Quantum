@@ -13,6 +13,14 @@ This is a very simple notebook which runs a 'hello world' circuit both in the si
 
 In order to run on real hardware you need your IBM Quantum account configured in your machine.
 
+## Visualizations
+
+Qiskit includes several visualizations other than histograms which I wanted to try. 
+
+### City
+
+This one shows a 3D histogram which makes the output look like a city ... or something similar.
+
 ## Qiskit Exam (Cheat sheet)
 
 I am preparing a 'cheat sheet' for the Qiskit exam. The idea is covering in one place the questions I have found in sample exams so that I can study  and fix the concepts better.
