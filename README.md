@@ -18,6 +18,10 @@ In order to run on real hardware you need your IBM Quantum account configured in
 Qiskit includes several visualizations other than histograms which I wanted to try (City / Hinton / Pauli QSphere).
 I have also added a different way of displaying circuits called DAG.
 
+## (Fake) Backends
+
+While preparing the Qiskit 2.x certification, I discovered the 'fake backends' feature. This feature allows 'configuring' a Quantum computer. It is really interesting to see how transpilers generate different circuits based on the capabilites of the hardware. Specially when dealing with coupling and basis gates.
+
 ## Qiskit Exam (Cheat sheet)
 
 I am preparing a 'cheat sheet' for the Qiskit exam. The idea is covering in one place the questions I have found in sample exams so that I can study  and fix the concepts better.
