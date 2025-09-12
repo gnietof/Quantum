@@ -15,7 +15,8 @@ In order to run on real hardware you need your IBM Quantum account configured in
 
 ## Visualizations
 
-Qiskit includes several visualizations other than histograms which I wanted to try (City / Hinton / Pauli QSphere)
+Qiskit includes several visualizations other than histograms which I wanted to try (City / Hinton / Pauli QSphere).
+I have also added a different way of displaying circuits called DAG.
 
 ## Qiskit Exam (Cheat sheet)
 
