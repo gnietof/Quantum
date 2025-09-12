@@ -56,5 +56,12 @@ plot_state_qsphere(qc)
 The QSphere visualization would be:  
 ![QSphere](./images/QSphere0.png)  
 
+# DAG (Directed Acyclic Graph)
+
+DAG does not provide a way to display the expected output of a circuit but a way to display the circuit itself showing the dependencies in the circuit.
+The diagram for our 'standard' circuit is:  
+![DAG](./images/Dag0.png)  
+
+
 
 
