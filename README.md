@@ -1,5 +1,5 @@
-These are some of the notebooks I have been creating while learning about Quantum and playing with Qiskit.
-There might be errors though as I am learning.
+These are some of the notebooks and other types of content I have been creating while learning about Quantum and playing with Qiskit.
+The content is still not properly classified. And there might be errors though as I am learning. Well, you are always learning, aren't you?
 
 # Qiskit
 
