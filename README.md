@@ -26,6 +26,10 @@ While preparing the Qiskit 2.x certification, I discovered the 'fake backends' f
 
 I am preparing a 'cheat sheet' for the Qiskit exam. The idea is covering in one place the questions I have found in sample exams so that I can study  and fix the concepts better.
 
+# Java
+
+Experiments on interfacing Java with the Quantum backends.
+
 # Algorithms
 
 ### Deustsch
