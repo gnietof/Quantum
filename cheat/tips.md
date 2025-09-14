@@ -95,7 +95,7 @@ Depending on the simulator used, there will be different information provided in
 
 #### QPU
 Execution in QPU in Qiskit 2.x has changed as the backend.run() method is no longer available. The use of Estimators and Samplers is the new way of accessing a QPU.  
-**Note:** Using the real hardware requires a token being configured.  
+**Note:** Using the real hardware requires having a token configured.  
 
 ##### Sampler
 ```python
