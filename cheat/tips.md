@@ -5,12 +5,18 @@
 ## Random information
 
 ### Versions
-The Qiskit version can be found using the __version__ instance:
+The Qiskit 2.x version can be found using the __version__ instance:
 ```python
 from qiskit import __version__
 __version__
 ```
-But this is also valid for other modules such as qiskit_aer or qiskit_ibm_runtime.
+Qiskit 1.x is no longer a monolithic SDK. So this is also valid for other modules such as qiskit_aer or qiskit_ibm_runtime.
+In **Qiskit 1.x** the version coul be found by using:
+```python
+import qiskit
+print(qiskit.__qiskit_version__)
+```
+And returned a JSON with the versions for each of the modules. But that is no longer the case. Any other exam answer is wrong.
 
 ## Circuits
 
