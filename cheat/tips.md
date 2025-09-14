@@ -65,7 +65,8 @@ The valid ways to create measures are (supposing we have a three qbit circuit):
 -	qc.measure_all(): measures all qbits. Also adds a new set of classical bits (meas).  
 -	qc.measure_all(add_bits=False): same as previous one but does not add the classical bits and uses the existing ones. If the circuit has no classical bits defined (or less than required) an exception is being raised.   
 -	qc.measure([0,1,2],[0,1,2]) / qc.measure([0,2],[0,2]) / qc.measure(0,0): qbits and bits are mapped and they should be already defined in the circuit.  
-
+- qc.measure_active(): only the qbits being used are measured.
+  
 These are not valid ways:  
 -	qc.measure(): the mapping between qbits and classical bits is always required.
 
