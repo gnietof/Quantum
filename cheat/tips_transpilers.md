@@ -36,6 +36,9 @@ increased depth from the layout and routing stages. These methods are so effecti
 After all the optimizations, a final check is done so that the circuit is only composed of gates includid in the basis gates in the target backend.
 
 - **scheduling**  
+This last stage is only run if it is explicitly called for and does not run by default. It is typically used once the circuit has been translated to the target basis, mapped to the device, and optimized. 
+At a high level, the scheduling pass can be thought of as explicitly inserting delay instructions to account for the
+idle time between gate executions and to inspect how long the circuit will be running on the backend.
 
 ## Error mitigation and suppression
 There are several error mitigation techniques. There is a sample question which mentions which is the technique which can be enabled using the resilience options.
