@@ -73,6 +73,26 @@ These are not valid ways:
 ### Drawing
 The qc.draw() method accepts 'text', 'mpl' (which stands for Matplotlib library), 'latex' and 'latex_source'.
 
+### Decompose
+The method qc.decompose() transforms a circuit into basic one and tqo-qubit gates. For example for a 'simple' Toffoli gate (CCX):
+```python
+from qiskit import QuantumCircuit
+
+qc = QuantumCircuit(3)
+qc.ccx(0,1,2)
+qc.draw('mpl')
+```
+![Toffoli](../images/Toffoli.png)  
+
+After decomposition we get:
+```python
+qcd = qc.decompose()
+qcd.draw('mpl')
+```
+![Toffoli](../images/Toffoli2.png)  
+
+A single Toffoli gate has been decomposed in a 9 one-qubit and 6 two-qubit gates in a circuit having now a depth of 11.
+
 ### Execution
 
 #### Simulation
