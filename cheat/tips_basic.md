@@ -70,6 +70,9 @@ The valid ways to create measures are (supposing we have a three qbit circuit):
 These are not valid ways:  
 -	qc.measure(): the mapping between qbits and classical bits is always required.
 
+### Drawing
+The qc.draw() method accepts 'text', 'mpl' (which stands for Matplotlib library), 'latex' and 'latex_source'.
+
 ### Execution
 
 #### Simulation
