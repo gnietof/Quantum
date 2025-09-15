@@ -141,3 +141,66 @@ qct = transpile(qc,backend)
 job = sampler.run([(qct,{})])
 result = job.result()
 ```
+
+## Fidelity
+
+### State Fidelity
+State fidelity compares outputs for an operator for a **specific state** and is measured as: 
+
+$F(\psi,\phi) = \left|\braket{\psi|\phi}\right|^2$
+
+Staste fidelity values are between 0 and 1 (1 means states are identical).
+
+🔑 **Note:** Two operators that differ only by a global phase are physically indistinguishable. That means they produce the same final states (up to a global phase), and global phase has no effect on measurement outcomes. So the fidelity would be 1.
+
+### Process Fidelity
+Compare ouputs for two operators but, in this case, independent of the input state.
+
+### Average Fidelity
+Average fidelity compares a gate/channel to its ideal version, **averaged over all possible** states. The formula is much more complex. 
+
+### Qiksit
+All three measures can be found using Qiskit. The following code evaluates the three magnitudes by comparing two X gates (one of them with a global phase) and one X gate with a H gate.
+
+```python
+from qiskit.quantum_info import Operator, Statevector
+from qiskit.circuit.library import XGate,HGate
+from qiskit.quantum_info import state_fidelity,average_gate_fidelity,process_fidelity
+import numpy as np
+
+op_a = Operator(XGate())
+op_b = np.exp(1j * 0.5) * Operator(XGate())
+op_c = Operator(HGate())
+
+def fidelities(a,b):
+    pf = process_fidelity(a,b)
+    agf = average_gate_fidelity(a,b)
+
+    psi = Statevector.from_label('0')
+    sv_a = psi.evolve(a)
+    sv_b = psi.evolve(b)
+    sf = state_fidelity(sv_a,sv_b)
+
+    print(f'State fidelity: {sf}')
+    print(f'Average gate fidelity: {agf}')
+    print(f'Process fidelity: {pf}\n\n')
+
+fidelities(op_a,op_b)
+fidelities(op_a,op_c)
+```
+
+The output shows that fidelity is 1 when there is just a global phase difference. And less than one when gates are not identical.
+
+```
+State fidelity: 1.0  
+Average gate fidelity: 1.0  
+Process fidelity: 1.0  
+
+
+State fidelity: 0.4999999999999999  
+Average gate fidelity: 0.6666666666666666  
+Process fidelity: 0.4999999999999999  
+```
+
+
+
