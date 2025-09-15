@@ -26,7 +26,7 @@ While preparing the Qiskit 2.x certification, I discovered the 'fake backends' f
 It is really interesting to see how transpilers generate different circuits based on the capabilites of the hardware. Specially when dealing with coupling and basis gates.
 
 ### Noisy
-In this second example, we will be creating a fake backend with low or high noise level in its qbits. The we will see how the transpiler takes that into account when processing the circuit.
+In this second example, we will be creating a fake backend with low or high noise level in its qubits. The we will see how the transpiler takes that into account when processing the circuit.
 
 ## Qiskit Exam (Cheat sheet)
 
@@ -49,7 +49,7 @@ The number of shots might be increase but the results are always 100% one state 
 
 ### Deustsch 0
 
-This is my implementation of the Deutsch algorithm with a slight modification. Instead of qbit1 having state $\ket{1}$, it is being left at its initial $\ket{0}$ state.
+This is my implementation of the Deutsch algorithm with a slight modification. Instead of qubit1 having state $\ket{1}$, it is being left at its initial $\ket{0}$ state.
 
 In this case, the output with **multiple** executions of the circuit provides a 100% probability of **0** at the output if the function is balanced or 50% probability of **0** and **1** otherwise.
 
