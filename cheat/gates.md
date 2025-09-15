@@ -82,7 +82,7 @@ And the output circuit in this case is:
 | T | `qc.t(qubit0)` |  ![T](./circuits/T_circuit.png) | $`= \begin{bmatrix} 1 & 0  \\ 0 & \frac{\sqrt{2}}{2}+\frac{\sqrt{2}i}{2}  \end{bmatrix}`$ | $`S = T^2`$ |
 | S | `qc.s(qubit0)` |  ![S](./circuits/S_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & i \end{bmatrix}`$ | $`Z = S^2`$ <br> Z-axis $`\frac{\pi}{2} `$ rotation |
 | S† | `qc.sdg(qubit0)` |  ![SDG](./circuits/SDG_circuit.png) | $`\begin{bmatrix}1 & 0\\0 & -i\end{bmatrix}`$ | Z-axis $`\frac{-\pi}{2} `$ rotation |
-| P | `qc.p(phi,qubit0)` |  ![P](./circuits/P_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & e^{i\phi}  \end{bmatrix} `$ | |
+| P | `qc.p(phi,qubit0)` |  ![P](./circuits/P_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & e^{i\phi}  \end{bmatrix} `$ | Z-axis $`\phi`$ rotation |
 #### Rotations
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
