@@ -18,21 +18,19 @@ as the circuit.
         - SabreLayout: This pass selects a layout by starting from an initial random layout and repeatedly running the
 SabreSwap algorithm.
 
-- **routing**
+- **routing**  
 The layout process selects which 'physical' qubits wull be used while the routinh process adds the required SWAP gates to implement the two-qubit bit gates between qubits that are not directly connected.
 The SabreSwap algorithm is used for this purpose.
 
-- **translation**
-This process translates (or unrolls) the gates specified in a circuit to the native basis gates of a specified backend.
-
+- **translation**  
+This process translates (or unrolls) the gates specified in a circuit to the native basis gates of a specified backend.  
 Some operations are especially important: 
-- SWAP: If not included natively requires three CNOT/CX gates.
-- Toffoli: Requires at least fifteen gates (nine one-qubit gates and six two-qubit gates; see [Decompose](tips_basic.md#Decompose)).
+    - SWAP: If not included natively requires three CNOT/CX gates.
+    - Toffoli: Requires at least fifteen gates (nine one-qubit gates and six two-qubit gates; see [Decompose](tips_basic.md#Decompose)).
  
-- **optimization**
+- **optimization**  
 This stage centers around decomposing quantum circuits into the basis gate set of the target device, and must fight against the
-increased depth from the layout and routing stages. These methods are so effective that the resulting circuit might even have a lower depth than the inputs!
-
+increased depth from the layout and routing stages. These methods are so effective that the resulting circuit might even have a lower depth than the inputs!  
 After all the optimizations, a final check is done so that the circuit is only composed of gates includid in the basis gates in the target backend.
 
 - **scheduling**  
