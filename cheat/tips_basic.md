@@ -51,8 +51,8 @@ These are not valid ways to get the inverse of a circuit:
 - q.get_invert()
 
 ### Barriers
-The valid ways to create barrier are (considering we have a three qbit circuit):  
--	qc.barrier(): barrier for all qbits  
+The valid ways to create barrier are (considering we have a three qubit circuit):  
+-	qc.barrier(): barrier for all qubits  
 -	qc.barrier(0,1) / qc.barrier([0,1]): barrier in q0 and q1  
 -	qc.barrier(0,2) / qc.barrier([0,2]): barrier in q0 and q2  
 -	qc.barrier(range(3)): barrier between q0 and q2  
@@ -61,14 +61,21 @@ These are not valid ways:
 -	qc.barrier_all(): non existing method  
 
 ### Measures
-The valid ways to create measures are (supposing we have a three qbit circuit):  
--	qc.measure_all(): measures all qbits. Also adds a new set of classical bits (meas).  
+The valid ways to create measures are (supposing we have a three qubit circuit):  
+-	qc.measure_all(): measures all qubits. Also adds a new set of classical bits (meas).  
 -	qc.measure_all(add_bits=False): same as previous one but does not add the classical bits and uses the existing ones. If the circuit has no classical bits defined (or less than required) an exception is being raised.   
--	qc.measure([0,1,2],[0,1,2]) / qc.measure([0,2],[0,2]) / qc.measure(0,0): qbits and bits are mapped and they should be already defined in the circuit.  
-- qc.measure_active(): only the qbits being used are measured.
+-	qc.measure([0,1,2],[0,1,2]) / qc.measure([0,2],[0,2]) / qc.measure(0,0): qubits and bits are mapped and they should be already defined in the circuit.  
+- qc.measure_active(): only the qubits being used are measured.
   
 These are not valid ways:  
--	qc.measure(): the mapping between qbits and classical bits is always required.
+-	qc.measure(): the mapping between qubits and classical bits is always required.
+
+### Properties
+There is a set of methods to get information about the circuit:
+- qc.depth(): The depth of the circuit. That is how many “layers” of quantum gates, executed in parallel, it takes to complete the computation defined by the circuit.
+- qc.size(): The number of gates required to implement the circuit .
+- qc.count_ops(): Returns a dictionary which the number of each of the operations used in the circuit.
+- qc.width(): The number of qubits and classical bits required to implement the circuit. The number is provided as a total including **both** types of circuits and **unused circuits are included**.
 
 ### Drawing
 The qc.draw() method accepts 'text', 'mpl' (which stands for Matplotlib library), 'latex' and 'latex_source'.
@@ -83,14 +90,12 @@ qc.ccx(0,1,2)
 qc.draw('mpl')
 ```
 ![Toffoli](../images/Toffoli.png)  
-
 After decomposition we get:
 ```python
 qcd = qc.decompose()
 qcd.draw('mpl')
 ```
 ![Toffoli](../images/Toffoli2.png)  
-
 A single Toffoli gate has been decomposed in a 9 one-qubit and 6 two-qubit gates in a circuit having now a depth of 11.
 
 ### Execution
