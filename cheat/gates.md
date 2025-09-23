@@ -87,7 +87,7 @@ And the output circuit in this case is:
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
 | RX | `qc.rx(theta,qubit0)` |  ![RX](./circuits/RX_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -i sin(\frac{\theta}{2})  \\ -i sin(\frac{\theta}{2}) & cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
-| RY | `qc.ry(theta,qubit0)` |  ![RY](./circuits/RY_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
+| RY | `qc.ry(theta,qubit0)` |  ![RY](./circuits/RY_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -sin(\frac{\theta}{2})  \\ sin(\frac{\theta}{2}) & cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
 | RZ | `qc.rz(theta,qubit0)` |  ![RZ](./circuits/RZ_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
 #### Deprecated in Qiskit 2.x (still referenced in some test exams)
 | Name | Qiskit | Picture | Unitary | Comments |
