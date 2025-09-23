@@ -15,3 +15,8 @@ Examples of different ways to retrieve information about real Quantum backend sy
 [Error](./error.md)
 Modelling error and displaying differences with ideal case. 
 
+[Tricky](./tricky.md)
+These are questions which I have found in different exam compilations and I have found to be tricky. 
+
+
+
