@@ -29,21 +29,21 @@ $`\begin{bmatrix} cos(\frac{\theta}{2}) & -sin(\frac{\theta}{2})  \\ sin(\frac{\
 So, when applied to $\ket{0}$:
 
 $R_y(\theta)\ket{0} = cos(\frac{\theta}{2})\ket{0}+sin(\frac{\theta}{2})\ket{1}$  
-$P(0)=cos(\frac{\theta}{2})^2$  
-$P(1)=sin(\frac{\theta}{2})^2$    
+$P(0)=cos^2(\frac{\theta}{2})$  
+$P(1)=sin^2(\frac{\theta}{2})$    
 
 And, when applied to $\ket{1}$  
 
 $R_y(\theta)\ket{1} = -sin(\frac{\theta}{2})\ket{0}+cos(\frac{\theta}{2})\ket{1}$  
-$P(0)=sin(\frac{\theta}{2})^2$   
-$P(1)=cos(\frac{\theta}{2})^2$  
+$P(0)=sin^2(\frac{\theta}{2})$   
+$P(1)=cos^2(\frac{\theta}{2})$  
 
 For example, if the gate is $R_{y}(\frac{3*\pi}{4})$ then, when applied to **$\ket{0}$**, the probabilities are:
 
 $\theta=\frac{3*\pi}{4} \rightarrow cos(\frac{\theta}{2}) = cos(\frac{3*\pi}{8}) \approx 0.382; sin(\frac{\theta}{2}) = sin(\frac{3*\pi}{8}) \approx 0.923; $
 
-$\ket{0} \Rightarrow P(0)=cos(\frac{\theta}{2})^2 \approx 0.146; P(1)=sin(\frac{\theta}{2})^2 \approx 0.854$  
-$\ket{1} \Rightarrow P(0)=sin(\frac{\theta}{2})^2 \approx 0.854; P(1)=cos(\frac{\theta}{2})^2 \approx 0.146$  
+$\ket{0} \Rightarrow P(0)=cos^2(\frac{\theta}{2}) \approx 0.146; P(1)=sin^2(\frac{\theta}{2}) \approx 0.854$  
+$\ket{1} \Rightarrow P(0)=sin^2(\frac{\theta}{2}) \approx 0.854; P(1)=cos^2(\frac{\theta}{2}) \approx 0.146$  
 
 - **Rx** changes the value of $\theta$. The unitary matrix is:
   
@@ -52,24 +52,24 @@ $`\begin{bmatrix} cos(\frac{\theta}{2}) & -isin(\frac{\theta}{2})  \\ -isin(\fra
 So, when applied to $\ket{0}$:
 
 $R_y(\theta)\ket{0} = cos(\frac{\theta}{2})\ket{0}-isin(\frac{\theta}{2})\ket{1}$  
-$P(0)=cos(\frac{\theta}{2})^2$  
-$P(1)=sin(\frac{\theta}{2})^2$    
+$P(0)=cos^2(\frac{\theta}{2})$  
+$P(1)=sin^2(\frac{\theta}{2})$    
 
 And, when applied to $\ket{1}$  
 
 $R_y(\theta)\ket{1} = -isin(\frac{\theta}{2})\ket{0}+cos(\frac{\theta}{2})\ket{1}$  
-$P(0)=sin(\frac{\theta}{2})^2$   
-$P(1)=cos(\frac{\theta}{2})^2$  
+$P(0)=sin^2(\frac{\theta}{2})$   
+$P(1)=cos^2(\frac{\theta}{2})$  
 
 For example, if the gate is $R_{y}(\frac{3*\pi}{4})$ then, when applied to **$\ket{0}$**, the probabilities are:
 
 $\theta=\frac{3*\pi}{4} \rightarrow cos(\frac{\theta}{2}) = cos(\frac{3*\pi}{8}) \approx 0.382; sin(\frac{\theta}{2}) = sin(\frac{3*\pi}{8}) \approx 0.923; $
 
-$\ket{0} \Rightarrow P(0)=cos(\frac{\theta}{2})^2 \approx 0.146; P(1)=sin(\frac{\theta}{2})^2 \approx 0.854$  
-$\ket{1} \Rightarrow P(0)=sin(\frac{\theta}{2})^2 \approx 0.854; P(1)=cos(\frac{\theta}{2})^2 \approx 0.146$  
+$\ket{0} \Rightarrow P(0)=cos^2(\frac{\theta}{2}) \approx 0.146; P(1)=sin^2(\frac{\theta}{2}) \approx 0.854$  
+$\ket{1} \Rightarrow P(0)=sin^2(\frac{\theta}{2}) \approx 0.854; P(1)=cos^2(\frac{\theta}{2}) \approx 0.146$  
 
 **Note1**: When applying the gates $R_x$ and $R_y$ to $\ket{0}$ and $\ket{1}$, the probabilities P(0) and P(1) are the same.  
-**Note2**: $\frac{3*\pi}{8} = 66.7º$ luego si $60º<\frac{3*\pi}{8}<90º$ entonces $\frac{1}{2}>cos(\frac{3*\pi}{8})>0$ y $\frac{\sqrt{3}}{2}<sin(\frac{3*\pi}{8})<1$.  
+**Note2**: $\frac{3*\pi}{8} = 66.7º$ so, if $60º<\frac{3*\pi}{8}<90º$, then $\frac{1}{2}>cos(\frac{3*\pi}{8})>0$ and $\frac{\sqrt{3}}{2}<sin(\frac{3*\pi}{8})<1$.  
 
 ## Methods
 Questions related with unexisting methods.  
@@ -90,7 +90,7 @@ When answering a question, keep in mind that spheres in the bloch_multivector sh
 
 !['entangled bloch'](../images/bloch_10.png)  
 
-### Entanglement 
+#### Entanglement 
 
 When two (or more) qubits are entangled, it is not possible to display their status in a bloch sphere and so the sphheres are displayed with no vector.
 
