@@ -78,12 +78,22 @@ $$\ket{1} \Rightarrow P(0)=\sin^2\left( \frac{\theta}{2} \right) \approx 0.854; 
 Questions related with unexisting methods.  
 This is specially tricky when dealing with questions which were having Qiskit 1.x (or Qiskit 0.x) in mind.
 
+### Registers
 - What will occur when the following code is executed?
 ```python
 c = ClassicalRegister(2)
 c.draw()
 ```
 Neither ClassicalRegister nor QuantumRegister have a draw method. So, an error is returned.
+### Statevectors
+
+- Which of the following statevectors represent sv in the given below code
+fragment?
+```python
+sv = Statevector.from_int(3,2**3)
+```
+That notation was a bit tricky for me until I found the logic. The second parameter provides the dimensions. In this case 2**3 = 8 means we have 3 qubits. The first one is the state. In this case 3 = $\ket{011}$ so just the fourth element (0 based) is a one.
+And the answer is [0,0,0,1,0,0,0,0].
 
 ## Visualizations
 
