@@ -111,7 +111,7 @@ When selecting the bloch sphere for the **statevector** of a **single** qubit, k
 
 **Note:** Bloch spheres for statevectors can be displayed using either plot_bloch_multivector or the method draw('bloch') in the class Statevector.
 
-When answering a question, keep in mind that spheres in the bloch_multivector show the qubits in reverse order compared to qubit notation. So, the following diagram shows state $\ket{10}$ and therefore the correct state vector would be **[0,0,1,0]** (and not [0,1,0,0] or any other).
+When answering a question, keep in mind that spheres in the bloch_multivector show the qubits in reverse order compared to qubit notation. So, the following diagram shows state $\ket{10}$ and therefore the correct state vector would be **$\ket{10}$** or **[0,0,1,0]** (and not [0,1,0,0] or any other).
 
 !['blochs'](../images/blochs_10.png)  
 
