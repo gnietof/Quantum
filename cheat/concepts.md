@@ -74,6 +74,7 @@ qc.cx([0,0],[1,2])
 !['ghz'](../images/ghz.png)  
 
 **Do not be fooled ** with this one which is similar ... but not the same. This one uses a Toffoli gate and the output state is different:  
+
 $`\psi = \frac{\ket{000}+\ket{001}}{\sqrt{2}}`$  
 ```python
 qc = QuantumCircuit(3)
