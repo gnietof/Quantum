@@ -87,13 +87,13 @@ Neither ClassicalRegister nor QuantumRegister have a draw method. So, an error i
 
 ## Visualizations
 
-###Statevector
+### Statevector
 When selecting the bloch sphere for the **statevector** of a **single** qubit, keep in mind that a **global phase** does not affect the display and only two coordinates are required. 
 
-!['blochs_00'](../images/blochs_00.png)  
-!['blochs_11'](../images/blochs_11.png)  
-!['blochs_01'](../images/blochs_01.png)  
-!['blochs_10'](../images/blochs_10.png)  
+!['bloch_00'](../images/bloch_00.png)  
+!['bloch_11'](../images/bloch_11.png)  
+!['bloch_01'](../images/bloch_01.png)  
+!['bloch_10'](../images/bloch_10.png)  
 
 ### Bloc Sphere
 
