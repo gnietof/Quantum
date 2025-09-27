@@ -99,15 +99,20 @@ When selecting the bloch sphere for the **statevector** of a **single** qubit, k
 
 ### Bloc Sphere
 
+**Note:** Bloch spheres for statevectors can be displayed using either plot_bloch_multivector or the method draw('bloch') in the class Statevector.
+
 When answering a question, keep in mind that spheres in the bloch_multivector show the qubits in reverse order compared to qubit notation. So, the following diagram shows state $\ket{10}$ and therefore the correct state vector would be **[0,0,1,0]** (and not [0,1,0,0] or any other).
 
 !['blochs'](../images/blochs_10.png)  
 
 #### Entanglement 
 
-When two (or more) qubits are entangled, it is not possible to display their status in a bloch sphere and so the sphheres are displayed with no vector.
+When two (or more) qubits are entangled, it is not possible to display their status in a bloch sphere and so the spheres are displayed with no vector.
 
-!['entangled bloch'](../images/entangled.png)  
+| Statevectors | Bloch |
+|:------------:|:-----:|
+| $\frac{\sqrt\{2}}{2}\ket{00}+\frac{\sqrt\{2}}{2}\ket{11}$ | !['entangled bloch'](../images/entangled2.png) |
+| $\frac{\sqrt\{2}}{2}\ket{000}+\frac{\sqrt\{2}}{2}\ket{111}$ |!['entangled bloch'](../images/entangled3.png) |
 
 
 
