@@ -85,9 +85,38 @@ $$\ket{1} \Rightarrow P(0)=\sin^2\left( \frac{\theta}{2} \right) \approx 0.854; 
 **Note1**: When applying the gates $R_x$ and $R_y$ to $\ket{0}$ and $\ket{1}$, the probabilities P(0) and P(1) are the same.  
 **Note2**: $\frac{3*\pi}{8} = 66.7º$ so, if $60º<\frac{3*\pi}{8}<90º$, then $\frac{1}{2}>\cos(\frac{3*\pi}{8})>0$ and $\frac{\sqrt{3}}{2}<\sin(\frac{3*\pi}{8})<1$.  
 
-## Methods
-Questions related with unexisting methods.  
+## Methods / Properties
+Questions related with unexisting or rarely used methods/properties.  
 This is specially tricky when dealing with questions which were having Qiskit 1.x (or Qiskit 0.x) in mind.
+
+### Circuits
+
+- **filename**: Sends the image directly to a file without having to use savefig.
+- **scale**: Scale of image to draw.
+- **style**: There are different options:
+    - The name of one of the accepted formats: "iqp" (default), "iqp-dark", "clifford", "textbook" or "bw".
+    - A JSON value with a list of key:value properties which allow to change the looks:
+      | Property | Description |
+      |----------|-------------|
+      | backgroundcolor | Background color of the circuit |
+      | linecolor | Color of the qubit lines |
+      | creglinecolor | Color of the classical bit lines |
+      | creglinestyle | Style for the classical bit lines ('-', '--', '-.', ':', 'None', ' ', '', 'solid', 'dashed', 'dashdot', 'dotted') |
+      | barrierfacecolor | Color of the barrier |
+      | textcolor | Color of the text (except for the gates) |
+      | gatetextcolor | Color for the text in the gates |
+      | fontsize | Text size for qubits and gates |
+      | subfontsize | Text size for details (phases in gates) |
+      | displaytext | Another JSON which allows providing an alternate text for each of the gates ('h','x',...) |
+    - ~A file which includes a definition of all the styles.~
+- **initial_state**: Wether the $\ket{0}$ at the start of a circuit should be included or not (default).
+- **reverse_bits**: Reverses the order of the qubits in the circuit displayed.
+- **plot_barriers**: Wether the barriers in the circuit have to be displayed (default) or not.
+- **measure_arrows** (2.2+): Wether the arrows between qubits and classical bits will be drawn (default) or the name of the bit will be placed close to the qubit.
+- **fold**: The number of gates to be displayed before breaking the circuit into a new line. The default is 25. If zero is provided the circuit is not broken.
+- **wire_order**: Allows selecting the order of the wires in the circuit.
+- **cregbundle**: Wether we want all the classical bits in one line (default) or not.
+- **idle_wires**: Display idle wires (default) or not.
 
 ### Registers
 - What will occur when the following code is executed?
@@ -96,7 +125,10 @@ c = ClassicalRegister(2)
 c.draw()
 ```
 Neither ClassicalRegister nor QuantumRegister have a draw method. So, an error is returned.
-### Statevectors
+
+
+
+## Statevectors
 
 - Which of the following statevectors represent sv in the given below code
 fragment?
