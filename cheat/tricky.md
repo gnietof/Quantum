@@ -17,6 +17,8 @@ Neither ClassicalRegister nor QuantumRegister have a draw method. So, an error i
 ### Bloc Sphere
 When two qubits are entangled, it is not possible to display their status in a bloch sphere and so the spheheres are displayed with no vector.
 
-!['entangled bloch']('../images/entangled.png')
+!['entangled bloch']('../images/entangled.png')  
+
+
 
 
