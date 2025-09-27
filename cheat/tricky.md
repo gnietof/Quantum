@@ -14,62 +14,65 @@ Keep in mind that ...
   
 So, when applied to $\ket{0}$:
 
-$P(0)=1$
-$P(1)=0$    
+$$P(0)=1$$
+$$P(1)=0$$    
 
 And, when applied to $\ket{1}$  
 
-$P(1)=1$  
-$P(0)=0$    
+$$P(1)=1$$  
+$$P(0)=0$$    
 
 - **Ry** changes the value of $\theta$. The unitary matrix is:
   
-$`\begin{bmatrix} cos\left( \frac{\theta}{2} \right) & -sin\left( \frac{\theta}{2} \right)  \\ sin\left( \frac{\theta}{2} \right) & cos\left( \frac{\theta}{2} \right)  \end{bmatrix}`$
+$$\left[\begin{array}{cc}\cos\left(\frac{\theta}{2}\right) & -\sin\left(\frac{\theta}{2}\right) \\
+\sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)\end{array}\right]$$
+
 
 So, when applied to $\ket{0}$:
 
-$R_y(\theta)\ket{0} = cos\left( \frac{\theta}{2} \right)\ket{0}+sin\left( \frac{\theta}{2} \right)\ket{1}$  
-$P(0)=cos^2\left( \frac{\theta}{2} \right)$  
-$P(1)=sin^2\left( \frac{\theta}{2} \right)$    
+$$R_y(\theta)\ket{0} = \cos\left( \frac{\theta}{2} \right)\ket{0}+\sin\left( \frac{\theta}{2} \right)\ket{1}$$  
+$$P(0)=\cos^2\left( \frac{\theta}{2} \right)$$  
+$$P(1)=\sin^2\left( \frac{\theta}{2} \right)$$    
 
 And, when applied to $\ket{1}$  
 
-$R_y(\theta)\ket{1} = -sin\left( \frac{\theta}{2} \right)\ket{0}+cos\left( \frac{\theta}{2} \right)\ket{1}$  
-$P(0)=sin^2\left( \frac{\theta}{2} \right)$   
-$P(1)=cos^2\left( \frac{\theta}{2} \right)$  
+$$R_y(\theta)\ket{1} = -\sin\left( \frac{\theta}{2} \right)\ket{0}+\cos\left( \frac{\theta}{2} \right)\ket{1}$$  
+$$P(0)=\sin^2\left( \frac{\theta}{2} \right)$$   
+$$P(1)=\cos^2\left( \frac{\theta}{2} \right)$$  
 
-For example, if the gate is $R_{y}(\frac{3*\pi}{4})$ then, when applied to **$\ket{0}$**, the probabilities are:
+For example, if the gate is $R_{y}(\frac{3*\pi}{4})$ the probabilities are:
 
-$\theta=\frac{3*\pi}{4} \rightarrow cos\left( \frac{\theta}{2} \right) = cos(\frac{3*\pi}{8}) \approx 0.382; sin\left( \frac{\theta}{2} \right) = sin(\frac{3*\pi}{8}) \approx 0.923; $
+$$\theta=\frac{3*\pi}{4} \rightarrow \cos\left( \frac{\theta}{2} \right) = \cos(\frac{3*\pi}{8}) \approx 0.382; \sin\left( \frac{\theta}{2} \right) = \sin(\frac{3*\pi}{8}) \approx 0.923; $$
 
-$\ket{0} \Rightarrow P(0)=cos^2\left( \frac{\theta}{2} \right) \approx 0.146; P(1)=sin^2\left( \frac{\theta}{2} \right) \approx 0.854$  
-$\ket{1} \Rightarrow P(0)=sin^2\left( \frac{\theta}{2} \right) \approx 0.854; P(1)=cos^2\left( \frac{\theta}{2} \right) \approx 0.146$  
+$$\ket{0} \Rightarrow P(0)=\cos^2\left( \frac{\theta}{2} \right) \approx 0.146; P(1)=\sin^2\left( \frac{\theta}{2} \right) \approx 0.854$$  
+$$\ket{1} \Rightarrow P(0)=\sin^2\left( \frac{\theta}{2} \right) \approx 0.854; P(1)=\cos^2\left( \frac{\theta}{2} \right) \approx 0.146$$  
 
 - **Rx** changes the value of $\theta$. The unitary matrix is:
   
-$`\begin{bmatrix} cos\left( \frac{\theta}{2} \right) & -isin\left( \frac{\theta}{2} \right)  \\ -isin\left( \frac{\theta}{2} \right) & cos\left( \frac{\theta}{2} \right)  \end{bmatrix}`$
+$$\left[\begin{array}{cc}\cos\left(\frac{\theta}{2}\right) & -i\sin\left(\frac{\theta}{2}\right) \\
+-i\sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)\end{array}\right]$$
 
 So, when applied to $\ket{0}$:
 
-$R_y(\theta)\ket{0} = cos\left( \frac{\theta}{2} \right)\ket{0}-isin\left( \frac{\theta}{2} \right)\ket{1}$  
-$P(0)=cos^2\left( \frac{\theta}{2} \right)$  
-$P(1)=sin^2\left( \frac{\theta}{2} \right)$    
+$$R_y(\theta)\ket{0} = \cos\left( \frac{\theta}{2} \right)\ket{0}-i\sin\left( \frac{\theta}{2} \right)\ket{1}$$  
+$$P(0)=\cos^2\left( \frac{\theta}{2} \right)$$  
+$$P(1)=\sin^2\left( \frac{\theta}{2} \right)$$    
 
 And, when applied to $\ket{1}$  
 
-$R_y(\theta)\ket{1} = -isin\left( \frac{\theta}{2} \right)\ket{0}+cos\left( \frac{\theta}{2} \right)\ket{1}$  
-$P(0)=sin^2\left( \frac{\theta}{2} \right)$   
-$P(1)=cos^2\left( \frac{\theta}{2} \right)$  
+$$R_y(\theta)\ket{1} = -i\sin\left( \frac{\theta}{2} \right)\ket{0}+\cos\left( \frac{\theta}{2} \right)\ket{1}$$  
+$$P(0)=\sin^2\left( \frac{\theta}{2} \right)$$   
+$$P(1)=\cos^2\left( \frac{\theta}{2} \right)$$  
 
-For example, if the gate is $R_{y}(\frac{3*\pi}{4})$ then, when applied to **$\ket{0}$**, the probabilities are:
+For example, if the gate is $R_{x}(\frac{3*\pi}{4})$ then the probabilities are:
 
-$\theta=\frac{3*\pi}{4} \rightarrow cos\left( \frac{\theta}{2} \right) = cos(\frac{3*\pi}{8}) \approx 0.382; sin\left( \frac{\theta}{2} \right) = sin(\frac{3*\pi}{8}) \approx 0.923; $
+$$\theta=\frac{3*\pi}{4} \rightarrow \cos\left( \frac{\theta}{2} \right) = \cos(\frac{3*\pi}{8}) \approx 0.382; \sin\left( \frac{\theta}{2} \right) = \sin(\frac{3*\pi}{8}) \approx 0.923; $$
 
-$\ket{0} \Rightarrow P(0)=cos^2\left( \frac{\theta}{2} \right) \approx 0.146; P(1)=sin^2\left( \frac{\theta}{2} \right) \approx 0.854$  
-$\ket{1} \Rightarrow P(0)=sin^2\left( \frac{\theta}{2} \right) \approx 0.854; P(1)=cos^2\left( \frac{\theta}{2} \right) \approx 0.146$  
+$$\ket{0} \Rightarrow P(0)=\cos^2\left( \frac{\theta}{2} \right) \approx 0.146; P(1)=\sin^2\left( \frac{\theta}{2} \right) \approx 0.854$$  
+$$\ket{1} \Rightarrow P(0)=\sin^2\left( \frac{\theta}{2} \right) \approx 0.854; P(1)=\cos^2\left( \frac{\theta}{2} \right) \approx 0.146$$  
 
 **Note1**: When applying the gates $R_x$ and $R_y$ to $\ket{0}$ and $\ket{1}$, the probabilities P(0) and P(1) are the same.  
-**Note2**: $\frac{3*\pi}{8} = 66.7º$ so, if $60º<\frac{3*\pi}{8}<90º$, then $\frac{1}{2}>cos(\frac{3*\pi}{8})>0$ and $\frac{\sqrt{3}}{2}<sin(\frac{3*\pi}{8})<1$.  
+**Note2**: $\frac{3*\pi}{8} = 66.7º$ so, if $60º<\frac{3*\pi}{8}<90º$, then $\frac{1}{2}>\cos(\frac{3*\pi}{8})>0$ and $\frac{\sqrt{3}}{2}<\sin(\frac{3*\pi}{8})<1$.  
 
 ## Methods
 Questions related with unexisting methods.  
