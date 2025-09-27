@@ -16,7 +16,7 @@ Neither ClassicalRegister nor QuantumRegister have a draw method. So, an error i
 
 ### Bloc Sphere
 
-When answering a question, keep in mind that bits in the bloch sphere show the bits in reverse order compared to qubit notation. So, the following diagram shows state $\ket{10}$ and therefore the correct state vector would be [0,0,1,0] (and not [0,1,0,0] or any other).
+When answering a question, keep in mind that spheres in the bloch_multivector show the qubits in reverse order compared to qubit notation. So, the following diagram shows state $\ket{10}$ and therefore the correct state vector would be **[0,0,1,0]** (and not [0,1,0,0] or any other).
 
 !['entangled bloch'](../images/bloch_10.png)  
 
