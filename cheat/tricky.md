@@ -87,11 +87,19 @@ Neither ClassicalRegister nor QuantumRegister have a draw method. So, an error i
 
 ## Visualizations
 
+### Statevector
+When selecting the bloch sphere for the **statevector** of a **single** qubit, keep in mind that a **global phase** does not affect the display and only two coordinates are required. 
+
+!['bloch_00'](../images/bloch_00.png)  
+!['bloch_11'](../images/bloch_11.png)  
+!['bloch_01'](../images/bloch_01.png)  
+!['bloch_10'](../images/bloch_10.png)  
+
 ### Bloc Sphere
 
 When answering a question, keep in mind that spheres in the bloch_multivector show the qubits in reverse order compared to qubit notation. So, the following diagram shows state $\ket{10}$ and therefore the correct state vector would be **[0,0,1,0]** (and not [0,1,0,0] or any other).
 
-!['entangled bloch'](../images/bloch_10.png)  
+!['blochs'](../images/blochs_10.png)  
 
 #### Entanglement 
 
