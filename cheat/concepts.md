@@ -31,6 +31,7 @@ qc = QuantumCircuit()
 qc.h(0)
 qc.cx(0,1)
 ```
+!['bell1'](../images/bell1.png)  
 $`\ket{\phi^-} = \frac{\ket{00}-\ket{11}}{\sqrt{2}}`$  
 ```python
 qc = QuantumCircuit()
@@ -38,6 +39,7 @@ qc.h(0)
 qc.cx(0,1)
 qc.z(1)
 ```
+!['bell2'](../images/bell2.png)  
 $`\ket{\psi^+} = \frac{\ket{01}+\ket{10}}{\sqrt{2}}`$  
 ```python
 qc = QuantumCircuit()
@@ -45,6 +47,7 @@ qc.h(0)
 qc.x(1)
 qc.cx(0,1)
 ```
+!['bell3'](../images/bell3.png)  
 $`\ket{\psi^-} = \frac{\ket{01}-+\ket{10}}{\sqrt{2}}`$  
 ```python
 qc = QuantumCircuit()
@@ -53,6 +56,7 @@ qc.x(1)
 qc.cx(0,1)
 qc.z(1)
 ```
+!['bell4'](../images/bell4.png)  
 ### GHZ States
 $`\ket{GHZ} = \frac{\ket{000}+\ket{111}}{\sqrt{2}}`$  
 ```python
