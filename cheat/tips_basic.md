@@ -2,6 +2,11 @@
 
 # Basic
 
+First of all. I have found that many questions which seem complex can be really simple or even reduced to a single valid answer by just having a look at the options.
+
+**Pending find a good example**
+
+
 ## Random information
 
 ### Versions
