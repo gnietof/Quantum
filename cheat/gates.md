@@ -116,7 +116,7 @@ Gates X,Y,Z,S,T and S† are just special cases of RX,RY,RZ (up to a global phas
 | CX/CNOT | `qc.cx(qubit1,qubit0)` | ![CX10](./circuits/CX10_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \end{bmatrix}`$ | |
 | CY | `qc.cy(qubit0,qubit1)` | ![CY01](./circuits/CY01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -i \\ 0 & 0 & 1 & 0 \\ 0 & i & 0 & 0 \end{bmatrix}`$  | |
 | CY | `qc.cy(qubit1,qubit0)` | ![CY10](./circuits/CY10_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{bmatrix}`$ | |
-| CZ | `qc.cz(qubit0,qubit1)` <br> `qc.cz(qubit0,qubit1)` | ![CZ01](./circuits/CZ01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & \text{-}1 \end{bmatrix} `$ | |
+| CZ | `qc.cz(qubit0,qubit1)` <br> `qc.cz(qubit1,qubit0)` | ![CZ01](./circuits/CZ01_circuit.png) | $`\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & \text{-}1 \end{bmatrix} `$ | |
 ### 3 qubit
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
