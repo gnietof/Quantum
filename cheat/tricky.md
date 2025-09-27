@@ -1,6 +1,17 @@
 # Tricky
 A compilation of questions which I have found to be tricky.
 
+# Random
+
+- Which are the eigenstates of the X axis?  
+The eigenstates of the different axis are:
+    - Z axis: $\ket{0}$ and $\ket{1}$
+    - X axis: $\ket{+}$ and $\ket{-}$
+    - Y axis: $\ket{+i}$ and $\ket{-i}$
+ 
+- Which is the default (or computational) basis for Quantum operations?
+The Z axis.
+
 # Gates
 
 ## Rx / Ry / Rz rotations
