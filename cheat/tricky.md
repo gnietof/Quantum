@@ -90,10 +90,12 @@ Neither ClassicalRegister nor QuantumRegister have a draw method. So, an error i
 ### Statevector
 When selecting the bloch sphere for the **statevector** of a **single** qubit, keep in mind that a **global phase** does not affect the display and only two coordinates are required. 
 
-!['bloch_00'](../images/bloch_00.png)  
-!['bloch_11'](../images/bloch_11.png)  
-!['bloch_01'](../images/bloch_01.png)  
-!['bloch_10'](../images/bloch_10.png)  
+| Statevectors | Bloch |
+|:------------:|:-----:|
+| $\left[\frac{\sqrt\{2}}{2},\frac{\sqrt\{2}}{2}\right] \left[-\frac{\sqrt\{2}}{2},-\frac{\sqrt\{2}}{2}\right]$<br>$\frac{\sqrt\{2}}{2}\ket{0}+\frac{\sqrt\{2}}{2}\ket{1}$<br>$-\frac{\sqrt\{2}}{2}\ket{0}-\frac{\sqrt\{2}}{2}\ket{1}$|!['bloch_001'](../images/bloch_001.png) |
+| $\left[\frac{\sqrt\{2}}{2},-\frac{\sqrt\{2}}{2}\right] \left[-\frac{\sqrt\{2}}{2},\frac{\sqrt\{2}}{2}\right]$<br>$\frac{\sqrt\{2}}{2}\ket{0}-\frac{\sqrt\{2}}{2}\ket{1}$<br>$-\frac{\sqrt\{2}}{2}\ket{0}+\frac{\sqrt\{2}}{2}\ket{1}$|!['bloch_101'](../images/bloch_101.png) |
+| $\left[\frac{\sqrt\{2}}{2},\frac{\sqrt\{2}i}{2}\right] \left[-\frac{\sqrt\{2}}{2},-\frac{\sqrt\{2}i}{2}\right]$<br>$\frac{\sqrt\{2}}{2}\ket{0}+\frac{\sqrt\{2}i}{2}\ket{1}$<br>$-\frac{\sqrt\{2}}{2}\ket{0}-\frac{\sqrt\{2}i}{2}\ket{1}$|!['bloch_000'](../images/bloch_000.png) |
+| $\left[\frac{\sqrt\{2}}{2},-\frac{\sqrt\{2}i}{2}\right] \left[-\frac{\sqrt\{2}}{2},\frac{\sqrt\{2}i}{2}\right]$<br>$\frac{\sqrt\{2}}{2}\ket{0}-\frac{\sqrt\{2}i}{2}\ket{1}$<br>$-\frac{\sqrt\{2}}{2}\ket{0}+\frac{\sqrt\{2}i}{2}\ket{1}$|!['bloch_100'](../images/bloch_100.png) |
 
 ### Bloc Sphere
 
