@@ -97,12 +97,12 @@ And the output circuit in this case is:
 Gates X,Y,Z,S,T and S† are just special cases of RX,RY,RZ (up to a global phase) 
 | Name | Rotation |
 | ---- | -------- | 
-| X | RX({$`\pi`$}) |
-| Y | RY({$`\pi`$}) |
-| Z | RZ({$`\pi`$}) |
-| S | RZ({$`2\pi`$}) |
-| S | RZ({$`\pi`$}) |
-| T | RZ({$`\frac{\pi}{2}`$}) |
+| X | RX($\pi$) |
+| Y | RY($\pi$) |
+| Z | RZ($\pi$) |
+| S | RZ($2\pi$) |
+| S | RZ($\pi$) |
+| T | RZ($\frac{\pi}{2}$) |
 
 
 ### 2 qubit
