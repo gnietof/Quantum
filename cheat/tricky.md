@@ -11,7 +11,7 @@ The eigenstates of the different axis are:
     - X axis: $\ket{+}$ and $\ket{-}$
     - Y axis: $\ket{+i}$ and $\ket{-i}$
  
-- Which is the default (or computational) basis for Quantum operations?
+- Which is the default (or computational) basis for Quantum operations?  
 The Z axis.
 
 - What does "quantum volume" measure?
@@ -126,6 +126,9 @@ This is specially tricky when dealing with questions which were having Qiskit 1.
 
 ### Circuits
 
+#### QuantumCircuit
+The QuantumCirtcuit constructor accepts multiple parameters:
+
 - **filename**: Sends the image directly to a file without having to use savefig.
 - **scale**: Scale of image to draw.
 - **style**: There are different options:
@@ -160,8 +163,6 @@ c = ClassicalRegister(2)
 c.draw()
 ```
 Neither ClassicalRegister nor QuantumRegister have a draw method. So, an error is returned.
-
-
 
 ## Statevectors
 
