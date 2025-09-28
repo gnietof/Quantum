@@ -17,11 +17,13 @@ The Z axis.
 - Which statement generates a random state vector?
 The statement which generates a random state vector is qiskit.quantum_info.random_statevector.
 There are also several statements for declaring other objects:
+
 | Statement | Description | Returns |
 |-----------|-------------|---------|
 | random_statevector | A state vector | Statevector | 
 | random_unitary | A unitary operator | Operator | 
 | random_density_matrix | A density matrix | DensityMatrix | 
+| random_pauli | A pauli string | Pauli | 
 | random_clifford | A N-qubit unitary operator from the Clifford group | Clifford | 
 
 # Gates
