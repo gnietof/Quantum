@@ -1,36 +1,3 @@
-## Clifford combinations
-
-The list of single qubit Cliffords the gates is small: $I, X, Y, Z, H, S$ and $S^\dagger$.
-Each of these is its own inverse up to a global phase (they are Hermitian unitaries) except for S.
-
-$X^2 = I; Y^2 = -I; Z^2 = I; H^2 = I$ but $S^2 = Z$ and $S \cdot S^\dagger = I$
-
-The combination of Pauli gates is also a Pauli Gate. When combining X,Y,Z gates these rules of thumb are useful. 
-If $`A,P \in \{ X,Y,Z \}`$ then:
-
-1. Two Pauli gates:
-
-$$
-AB = -BA
-$$
-
-That means, for example, that $XZ = -ZX, XY=-YX$.
-
-2. Three Pauli gates:  
-
-$$
-\begin{cases}
-APA = A, & \text{if } A=P \\
-APA = -A, & \text{if } A \neq P
-\end{cases}
-$$
-    
-This works because:
-
-$APA = A(PA) = A(-AP) = -A^2P = -P$
-
-That means, for example, that $XXX = X, XYX=-Y, XZX = -Z$.
-
 # Clifford 
 
 Clifford circuits are a special class of quantum circuits built entirely from Clifford gates, which are gates that map Pauli operators to other Pauli operators under conjugation: H, S, X, Y, Z, CNOT.
@@ -73,6 +40,71 @@ Clifford(array([[False, False, False,  True,  True,  True, False],
        [False,  True,  True, False,  True,  True,  True],
        [ True, False,  True,  True,  True, False,  True]]))
 ```
+
+## Clifford combinations
+
+The list of single qubit Cliffords the gates is small: $I, X, Y, Z, H, S$ and $S^\dagger$.
+Each of these is its own inverse up to a global phase (they are Hermitian unitaries) except for S.
+
+$X^2 = I; Y^2 = -I; Z^2 = I; H^2 = I$ but $S^2 = Z$ and $S \cdot S^\dagger = I$
+
+The combination of Pauli gates is also a Pauli Gate. 
+
+### X,Y,Z
+
+When combining $X,Y,Z$ gates these rules of thumb are useful. 
+If $`A,B \in \{ X,Y,Z \}`$ then:
+
+1. Two Pauli gates:
+
+$$
+AB = -BA
+$$
+
+That means, for example, that $XZ = -ZX, XY=-YX$.
+
+2. Three Pauli gates:  
+
+$$
+\begin{cases}
+ABA = A, & \text{if } A=B \\
+ABA = -A, & \text{if } A \neq B
+\end{cases}
+$$
+    
+This works because:
+
+$ABA = A(PA) = A(-AB) = -A^2B = -B$
+
+That means, for example, that $XXX = X, XYX=-Y, XZX = -Z$. 
+
+### H
+
+For combinations including the $H$ gate:
+
+$$
+\begin{array}{l}
+HXH = Z \\
+HZH = X \\
+HYH = -Y
+\end{array}
+$$
+
+### S
+
+For combinations including the $S/S^\dagger$ gates:
+
+$$
+\begin{array}{l}
+SXS^\dagger = Y \\
+SYS^\dagger = -X \\ 
+SZS^\dagger = Z \\ 
+\\
+S^\dagger XS = -Y \\ 
+S^\dagger YS = X \\ 
+S^\dagger ZS = Z \\ 
+\end{array}
+$$
 
 
 
