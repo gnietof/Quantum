@@ -1,3 +1,36 @@
+## Clifford combinations
+
+The list of single qubit Cliffords the gates is small: $I, X, Y, Z, H, S$ and $S^\dagger$.
+Each of these is its own inverse up to a global phase (they are Hermitian unitaries) except for S.
+
+$X^2 = I; Y^2 = -I; Z^2 = I; H^2 = I$ but $S^2 = Z$ and $S \cdot S^\dagger = I$
+
+The combination of Pauli gates is also a Pauli Gate. When combining X,Y,Z gates these rules of thumb are useful. 
+If $`A,P \in \{ X,Y,Z \}`$ then:
+
+1. Two Pauli gates:
+
+$$
+AB = -BA
+$$
+
+That means, for example, that $XZ = -ZX, XY=-YX$.
+
+2. Three Pauli gates:  
+
+$$
+\begin{cases}
+APA = A, & \text{if } A=P \\
+APA = -A, & \text{if } A \neq P
+\end{cases}
+$$
+    
+This works because:
+
+$APA = A(PA) = A(-AP) = -A^2P = -P$
+
+That means, for example, that $XXX = X, XYX=-Y, XZX = -Z$.
+
 # Clifford 
 
 Clifford circuits are a special class of quantum circuits built entirely from Clifford gates, which are gates that map Pauli operators to other Pauli operators under conjugation: H, S, X, Y, Z, CNOT.
@@ -40,3 +73,7 @@ Clifford(array([[False, False, False,  True,  True,  True, False],
        [False,  True,  True, False,  True,  True,  True],
        [ True, False,  True,  True,  True, False,  True]]))
 ```
+
+
+
+
