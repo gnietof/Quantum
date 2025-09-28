@@ -39,6 +39,8 @@ There are also several statements for declaring other objects:
 
 ## Clifford
 
+- Which one of the provided identities are correct?
+
 The combination of Clifford gates is better described in ![Clifford Combinations](../cheat/tips_clifford.md#clifford-combinations). Just for answering those questions related with Clifford gates identities:
 
 | X Gate | Y Gate | Z Gate | H Gate | S Gate |
