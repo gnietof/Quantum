@@ -3,7 +3,7 @@ A compilation of questions which I have found to be tricky.
 
 # Random
 - What does QASM stand for?
-Quantum ASsembly Language
+Quantum Assembly Language
 
 - Which are the eigenstates of the X axis?  
 The eigenstates of the different axis are:
@@ -13,6 +13,15 @@ The eigenstates of the different axis are:
  
 - Which is the default (or computational) basis for Quantum operations?
 The Z axis.
+
+- What does "quantum volume" measure?
+
+The overall performance and error rates of quantum hardware. Not only the number of qubits but also:  
+    - Number of qubits: usable qubits, not just the total.  
+    - Gate fidelity: how accurate the operations are.  
+    - Connectivity: how easily qubits can interact.  
+    - Circuit depth: how many sequential operations can be done before noise overwhelms the result.  
+    - Compilation efficiency: how well the hardware executes random circuits.  
 
 - Which statement generates a random state vector?
 The statement which generates a random state vector is qiskit.quantum_info.random_statevector.
