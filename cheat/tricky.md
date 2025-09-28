@@ -37,6 +37,16 @@ There are also several statements for declaring other objects:
 
 # Gates
 
+## Clifford
+
+The combination of Clifford gates is better described in ![Clifford Combinations](../cheat/tips_clifford.md#clifford-combinations). Just for answering those questions related with Clifford gates identities:
+
+| X Gate | Y Gate | Z Gate | H Gate | S Gate |
+|--------|--------|--------|--------|--------|
+| XXX = X | YXY = -X | ZXZ = -X | HXH = Z |  SXS† = Y /  S†XS = -Y |
+| XYX = -Y | YYY = Y | ZYZ = -Y | HYH = -Y | SYS† = −X / S†YS = X |
+| XZX = -Z | YZY = -Z | ZZZ = Z | HZH = X | SZS† = Z / S†ZS = Z |  
+
 ## Rx / Ry / Rz rotations
 
 When finding the probabilities to find $\ket{0}$ or $\ket{1}$ after applying one of those gates:  
