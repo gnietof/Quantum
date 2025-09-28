@@ -2,6 +2,8 @@
 A compilation of questions which I have found to be tricky.
 
 # Random
+- What does QASM stand for?
+Quantum ASsembly Language
 
 - Which are the eigenstates of the X axis?  
 The eigenstates of the different axis are:
@@ -11,6 +13,16 @@ The eigenstates of the different axis are:
  
 - Which is the default (or computational) basis for Quantum operations?
 The Z axis.
+
+- Which statement generates a random state vector?
+The statement which generates a random state vector is qiskit.quantum_info.random_statevector.
+There are also several statements for declaring other objects:
+| Statement | Description | Returns |
+|-----------|-------------|---------|
+| random_statevector | A state vector | Statevector | 
+| random_unitary | A unitary operator | Operator | 
+| random_density_matrix | A density matrix | DensityMatrix | 
+| random_clifford | A N-qubit unitary operator from the Clifford group | Clifford | 
 
 # Gates
 
