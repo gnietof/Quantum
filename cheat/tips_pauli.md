@@ -44,8 +44,27 @@ In Qiskit a Pauli gate can be declared in two ways.
 
    **Note:** While this might seem a convention, it is true that XZ = Y (up to a global phase)
 
-   For example, Pauli(np.array([0,1]),np.array([0,0]),0) returns the two gate Pauli 'IX'.
+   For example, Pauli(np.array([0,1]),np.array([0,0]),1) returns the two gate Pauli '-iIX'. 
    
 3. Pauli(obj)  
-   In this case obj is a Pauli string, i.e. 'XYZ' or '-iYZI'. 
-   
+   In this case obj is a Pauli string, i.e. Pauli('XYZ') or Pauli('-iYZI'). 
+
+## Evaluation  
+If provided we a Pauli string, the resulting matrix has to be calculated using tensor products. That means that the dimension of the array is $2^n$ the size of the string.  
+
+$$
+IX = \left[\begin{array}{cc}1 & 0 \\ 
+0 & 1\end{array}\right] 
+\otimes 
+\left[\begin{array}{cc}0 & 1 \\ 
+1 & 0\end{array}\right] 
+= \left[\begin{array}{cc}1 \dot {\left[\begin{array}{cc}0 & 1 \\ 
+1 & 0 \end{array}\right]} & 0 \\ 
+0 & 1 \dot {\left[\begin{array}{cc}0 & 1 \\ 
+1 & 0\end{array}\right]} \end{array}\right]
+= \left[\begin{array}{cc}1 & 0 & 0 & 0\\ 
+0 & 0 & 0 & 1\\
+0 & 0 & 0 & 1\\
+0 & 0 & 0 & 1\end{array}\right] 
+$$
+
