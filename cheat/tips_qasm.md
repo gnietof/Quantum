@@ -1,4 +1,5 @@
 # QASM
+Let's start with an easy one: QASM stands for Quantum Assembler (although it is not as low level as real assembler like the one in 6502/6510 or Z80).
 
 ## Serialization
 The are two options for serializing a Qiskit code into QASM 2.0:
@@ -40,3 +41,8 @@ For QASM 3.0, same functions in a **different package** (not just qasm2 → qasm
 
 - qiskit_qasm3_import.load*s*(qc): This one deserializes from a string.
 - qiskit_qasm3_import.load(qc,f): This one deserializes the circuit from a file.
+
+## Differences between QASM 2.0 and QASM 3.0
+Someone said that if you are preparing for the Qiskit 2.x certification, some knowledge of QASM is required and questions covered differences between the two versions of that *language*.
+
+So I have prepared a table with the main differences.
