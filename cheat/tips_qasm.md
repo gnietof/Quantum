@@ -17,7 +17,7 @@ with open('basic.qasm','w') as f:
 
 For QASM 3.0, same functions in a different package:
 
-- qiskit.qasm3.dump*s*(qc): This one serializes in a string.
+- qiskit.qasm3.dump*s*(qc): This one serializes into a string.
 - qiskit.qasm3.dump(qc,f): This one serializes the circuit into a file.
 
 ## Deserialization
