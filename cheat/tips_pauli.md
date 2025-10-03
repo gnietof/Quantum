@@ -78,7 +78,7 @@ $$ H = Z_1 X_3 + Y_2 Z_1 + Z_3 Y_1 $$
 Then we can define that Hamiltonian in Qiskit:
 
 ```python
-op = SparsePauliOp.from_sparse_list([("ZX", [3, 1], 1), ("YZ", [2, 1], 1), ("ZY", [3, 1], 1)], num_qubits=4)
+op = SparsePauliOp.from_sparse_list([("ZX", [1, 3], 1), ("YZ", [2, 1], 1), ("ZY", [3, 1], 1)], num_qubits=4)
 ```
 Which then is shown in list form using the to_list() method as:  
 ```
@@ -102,7 +102,7 @@ The coeficient is just a **global** multiplier for the whole list of gates.
 Finally the number of qubits indicates how many qubits in size should be the resulting SparsePauliOp. If we just define 3 qubits but the number of qubits is six, then three I gates will be added for padding. 
 This is important because, when running on real hardware, the size of the string must match the number of qubits in the backend.
 
-This two pieces of code just differ in the number of qubits:
+These two strings just differ in the number of qubits:
 ```python
 op = SparsePauliOp.from_sparse_list([("XY",[1,0],2)],num_qubits=2)
 op.to_sparse_list()
