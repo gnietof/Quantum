@@ -92,7 +92,7 @@ For example:
 - The gates in the list can be in any order as long as we adjust the positions accordingly.
 - If one gate is not needed we can skip it. 
 - If it is required more than once, then we need to include it in the list multiple times.
-- The positions should be all different as repeating a number means we try to place a unique gate in the string in the same position.
+- The positions should be all different as repeating a number means we try to place multiple gates in the string in the same position.
 - The I gate can be ignored. Any position which is not included will be replaced with an I gate.
 
 **Note:** Keep in mind that the numbering is from right left to left.
