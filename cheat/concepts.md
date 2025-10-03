@@ -22,7 +22,7 @@ There are four 'bell states'. Although in one test exams refers to the 'perfect'
 $$\ket{\phi^+} = \frac{\ket{00}+\ket{11}}{\sqrt{2}}$$  
 $$\ket{\phi^-} = \frac{\ket{00}-\ket{11}}{\sqrt{2}}$$  
 $$\ket{\psi^+} = \frac{\ket{01}+\ket{10}}{\sqrt{2}}$$  
-$$\ket{\psi^-} = \frac{\ket{01}-+\ket{10}}{\sqrt{2}}$$  
+$$\ket{\psi^-} = \frac{\ket{01}-\ket{10}}{\sqrt{2}}$$  
 
 In order to generat these states with Qiskit you need a Hadamard (for superposition) and one CX (for entanglement). Then you need a combination of X and Z gates to obtain each of the four possible states.
 
@@ -58,7 +58,7 @@ qc.cx(0,1)
 !['bell3'](../images/bell3.png)  
 
 #### $\ket{\psi^-}$  
-$$\ket{\psi^-} = \frac{\ket{01}-+\ket{10}}{\sqrt{2}}$$  
+$$\ket{\psi^-} = \frac{\ket{01}-\ket{10}}{\sqrt{2}}$$  
 ```python
 qc = QuantumCircuit()
 qc.h(0)
