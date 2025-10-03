@@ -50,7 +50,7 @@ In Qiskit a Pauli gate can be declared in two ways.
    In this case obj is a Pauli string, i.e. Pauli('XYZ') or Pauli('-iYZI'). 
 
 ## Evaluation  
-If provided we a Pauli string, the resulting matrix has to be calculated using tensor products. That means that the dimension of the array is $2^n$ the size of the string.  
+If provided with a Pauli string, the resulting matrix has to be calculated using tensor products. That means that the dimension of the array is $2^n$ the size of the string.  
 
 $$
 IX = \left[\begin{array}{cc}1 & 0 \\ 
@@ -62,9 +62,61 @@ IX = \left[\begin{array}{cc}1 & 0 \\
 1 & 0 \end{array}\right]} & 0 \\ 
 0 & 1 \dot {\left[\begin{array}{cc}0 & 1 \\ 
 1 & 0\end{array}\right]} \end{array}\right]
-= \left[\begin{array}{cc}1 & 0 & 0 & 0\\ 
+= \left[\begin{array}{cc}0 & 1 & 0 & 0\\ 
+1 & 0 & 0 & 0\\
 0 & 0 & 0 & 1\\
-0 & 0 & 0 & 1\\
-0 & 0 & 0 & 1\end{array}\right] 
+0 & 0 & 1 & 0\end{array}\right] 
 $$
+
+# SparsePauliOp
+While the Pauli class represents a single Pauli string, the SparsePauliOp represents a linear combination of Pauli strings. There are different ways to initialize a SparsePauliOp but the most flexible one is using the method **from_sparse_list**.
+
+SparsePauliOp are used to model Hamiltonians. The **from_sparse_list** method is a bit ... criptic until you get the key. Let's say we have this Hamiltonian:
+
+$$ H = Z_1 X_3 + Y_2 Z_1 + Z_3 Y_1 $$ 
+
+Then we can define that Hamiltonian in Qiskit:
+
+```python
+op = SparsePauliOp.from_sparse_list([("ZX", [3, 1], 1), ("YZ", [2, 1], 1), ("ZY", [3, 1], 1)], num_qubits=4)
+```
+Which then is shown in list form using the to_list() method as:  
+```
+[('XIZI', (1+0j)), ('IYZI', (1+0j)), ('ZIYI', (1+0j))]
+```
+So, each element in a Pauli list has a string of gates, the array of positions and the coefficient. Let's leave the coeficient as 1 for now. We may use different strings and adjusting the list of positions, the resulting operator will be the same.
+For example:  
+
+!['SparsePauli'](../images/SparsePauli01.png)
+
+- The gates in the list can be in any order as long as we adjust the positions accordingly.
+- If one gate is not needed we can skip it. 
+- If it is required more than once, then we need to include it in the list multiple times.
+- The positions should be all different as repeating a number means we try to place a unique gate in the string in the same position.
+- The I gate can be ignored. Any position which is not included will be replaced with an I gate.
+
+**Note:** Keep in mind that the numbering is from right left to left.
+
+The coeficient is just a **global** multiplier for the whole list of gates. 
+
+Finally the number of qubits indicates how many qubits in size should be the resulting SparsePauliOp. If we just define 3 qubits but the number of qubits is six, then three I gates will be added for padding. 
+This is important because, when running on real hardware, the size of the string must match the number of qubits in the backend.
+
+This two pieces of code just differ in the number of qubits:
+```python
+op = SparsePauliOp.from_sparse_list([("XY",[1,0],2)],num_qubits=2)
+op.to_sparse_list()
+```
+```
+[('XY', (2+0j))]
+```
+```python
+op = SparsePauliOp.from_sparse_list([("XY",[1,0],2)],num_qubits=6)
+op.to_sparse_list()
+```
+```
+[('IIIIXY', (2+0j))]
+```
+
+
 
