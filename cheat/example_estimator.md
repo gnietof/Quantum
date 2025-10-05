@@ -54,11 +54,11 @@ $$=\left(\left[\begin{array}{cc}1 & 0 & 0 & 0\\
 \left[\begin{array}{cc}0 & 0 & 0 & 0\\ 
 0 & 0 & 0 & 1\\ 
 0 & 0 & 0 & 0\\ 
-0 & 1 & 0 & 0\end{array}\right]\right) + 
-\left(\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 1 & 0 & 0\\ 
+0 & 1 & 0 & 0\end{array}\right]\right)
+\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 1 & 0 & 0\\ 
 1 & -1 & 0 & 0\\ 
 0 & 0 & 1 & 1\\ 
-0 & 0 & 1 & -1\end{array}\right]\right) = $$
+0 & 0 & 1 & -1\end{array}\right] = $$
 
 $$=\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 0 & 0 & 0\\ 
 0 & 0 & 0 & 1\\ 
@@ -67,9 +67,7 @@ $$=\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 0 & 0 & 0\\
 \left[\begin{array}{cc}1 & 1 & 0 & 0\\ 
 1 & -1 & 0 & 0\\ 
 0 & 0 & 1 & 1\\ 
-0 & 0 & 1 & -1\end{array}\right] = $$ 
-
-$$=\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 1 & 0 & 0\\ 
+0 & 0 & 1 & -1\end{array}\right] = \frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 1 & 0 & 0\\ 
 0 & 0 & 1 & -1\\ 
 0 & 0 & 1 & 1\\ 
 1 & -1 & 0 & 0\end{array}\right] $$ 
