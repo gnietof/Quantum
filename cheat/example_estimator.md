@@ -30,7 +30,8 @@ $$\ket{\psi} = U\ket{0}$$
 In our example:  
 
 $$U = (I \otimes \ket{0} + X \otimes \ket{1})(I \otimes H) = $$
-$$ \left(\left[\begin{array}{cc}1 & 0 \\ 
+
+$$ = \left(\left[\begin{array}{cc}1 & 0 \\ 
 0 & 1\end{array}\right] 
 \otimes 
 \left[\begin{array}{cc}1 & 0 \\ 
@@ -46,21 +47,74 @@ $$ \left(\left[\begin{array}{cc}1 & 0 \\
 1 & -1\end{array}\right]
 \right) =$$
 
-$$\left(\left[\begin{array}{cc}1 & 0 & 0 & 0\\ 
-0 & 1 & 0 & 0\\ 
+$$=\left(\left[\begin{array}{cc}1 & 0 & 0 & 0\\ 
 0 & 0 & 0 & 0\\ 
-0 & 0 & 0 & 0\end{array}\right]+
+0 & 0 & 1 & 0\\ 
+0 & 0 & 0 & 0\end{array}\right] +
 \left[\begin{array}{cc}0 & 0 & 0 & 0\\ 
-0 & 0 & 0 & 0\\ 
 0 & 0 & 0 & 1\\ 
-0 & 0 & 1 & 0\end{array}\right]\right(
-$$  
-
-$$\left(\left[\begin{array}{cc}2 & 0 & 0 & 0\\ 
-0 & 1 & 0 & 0\\ 
 0 & 0 & 0 & 0\\ 
-0 & 0 & 0 & 0\end{array}\right]\right)$$
+0 & 1 & 0 & 0\end{array}\right]\right) + 
+\left(\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 1 & 0 & 0\\ 
+1 & -1 & 0 & 0\\ 
+0 & 0 & 1 & 1\\ 
+0 & 0 & 1 & -1\end{array}\right]\right) = $$
+
+$$=\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 0 & 0 & 0\\ 
+0 & 0 & 0 & 1\\ 
+0 & 0 & 1 & 0\\ 
+0 & 1 & 0 & 0\end{array}\right] 
+\left[\begin{array}{cc}1 & 1 & 0 & 0\\ 
+1 & -1 & 0 & 0\\ 
+0 & 0 & 1 & 1\\ 
+0 & 0 & 1 & -1\end{array}\right] = $$ 
+
+$$=\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 1 & 0 & 0\\ 
+0 & 0 & 1 & -1\\ 
+0 & 0 & 1 & 1\\ 
+1 & -1 & 0 & 0\end{array}\right] $$ 
+
+If we apply the circuit operator to our initial state vector:
+
+$$\psi = U\ket{0} = \frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 1 & 0 & 0\\ 
+0 & 0 & 1 & -1\\ 
+0 & 0 & 1 & 1\\ 
+1 & -1 & 0 & 0\end{array}\right] 
+\left[\begin{array}{cc}1\\ 
+0\\ 
+0\\ 
+0\end{array}\right] = \frac{1}{\sqrt{2}}\left[\begin{array}{cc}1\\ 
+0\\ 
+0\\ 
+1\end{array}\right] = \frac{1}{\sqrt{2}}(\ket{00}+\ket{11})$$ 
+
+Now we calculate our observation:
+
+$$ XX = \left[\begin{array}{cc}0 & 1 \\ 
+1 & 0\end{array}\right] 
+\otimes 
+\left[\begin{array}{cc}0 & 1 \\ 
+1 & 0\end{array}\right] = 
+\left[\begin{array}{cc}0 & 0 & 0 & 1\\ 
+0 & 0 & 1 & 0\\ 
+0 & 1 & 0 & 0\\ 
+1 & 0 & 0 & 0\end{array}\right] 
+$$
+
+And finally we estimate the expectation of our observable:
+
+$$\braket{O}=\braket{\psi|O|\psi} = \frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 0 & 0 & 1\end{array}\right]
+\left[\begin{array}{cc}0 & 0 & 0 & 1\\ 
+0 & 0 & 1 & 0\\ 
+0 & 1 & 0 & 0\\ 
+1 & 0 & 0 & 0\end{array}\right]
+\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1\\ 
+0\\ 
+0\\ 
+1\end{array}\right] = \frac{1}{2}\left[\begin{array}{cc}1 & 0 & 0 & 1\end{array}\right] \left[\begin{array}{cc}1\\ 
+0\\ 
+0\\ 
+1\end{array}\right] = 1
+$$
 
 
-$$U = \frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 1 \\ 
-1 & 1\end{array}\right]$$
