@@ -27,8 +27,19 @@ The input in the Estimator is an array of PUBs (Primitive Unified Bloc) each of 
 ```
 The output is a PubResult which includes the computed expectation values per pair and their standar errors.
 
-## Example
+### Example
 In this ![Estimator example](./example_estimator.md) we can see all the calculations using algebra, qiskit operations and an estimator.
 
 ## Sampler
-A Sampler samples the output regiser from quantum circuit execution.
+A Sampler samples the output register from the execution of one or more quantum circuits.
+
+The input in the Sampler is an array of PUBs (Primitive Unified Bloc) each of them having the format:
+```
+(<circuit>,[<parameters>],[<shots>])
+```
+
+## PUBs
+When a ```run``` is invoked a group of parameters must be provided. The most important one is the list of tuples; one for each circuit being executed. Each of this tuples is a PUB.
+
+### Broadcasting rules
+
