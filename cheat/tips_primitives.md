@@ -13,15 +13,22 @@ The two most common tasks are sampling quantum states and calculating expectatio
 
 ## Estimator
 An Estimator computes expectation values of observables with respect to states prepared by quantum circuits.
+The expectation value of an observable $O$ in state $\\ket{\\psi}$ is:  
 
-The input is an array of PUBs each of them having the format:
+$$\\braket{O}=\\braket{\\psi|O|\\psi}$$
+
+Where $\\ket{\\psi}$ is the result of applying our circuit to the initial state vector $\\ket{0}$:\n",
+    
+$$\\ket{\\psi} = U\\ket{0}$$
+
+The input in the Estimator is an array of PUBs (Primitive Unified Bloc) each of them having the format:
 ```
 (<circuit>,<observables>,[<parameters>],[<precision>])
 ```
 The output is a PubResult which includes the computed expectation values per pair and their standar errors.
 
 ## Example
-In this ![Estiamtor example](../example_estimator.md) we can see all the calculations using algebra, qiskit operations and an estimator.
+In this ![Estimator example](./example_estimator.md) we can see all the calculations using algebra, qiskit operations and an estimator.
 
 ## Sampler
 A Sampler samples the output regiser from quantum circuit execution.
