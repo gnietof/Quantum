@@ -17,11 +17,14 @@ qc.x(0)
 qc.h(0)
 ```
 #### Bell States
-There are four 'bell states'. Although in one test exams refers to the 'perfect' Bell state there is no such 'perfect Bell state'
+There are four 'bell states'. 
+
 $`\ket{\phi^+} = \frac{\ket{00}+\ket{11}}{\sqrt{2}}`$  
 $`\ket{\phi^-} = \frac{\ket{00}-\ket{11}}{\sqrt{2}}`$  
 $`\ket{\psi^+} = \frac{\ket{01}+\ket{10}}{\sqrt{2}}`$  
 $`\ket{\psi^-} = \frac{\ket{01}-+\ket{10}}{\sqrt{2}}`$  
+
+**Note**: Although in one test exam refers to the most 'perfect' Bell state there is no such 'perfect Bell state'. My assumption is that the most perfect is when both coeficients are closer to $`\frac{1}{\sqrt{2}}`$.
 
 In order to generat these states with Qiskit you need a Hadamard (for superposition) and one CX (for entanglement). Then you need a combination of X and Z gates to obtain each of the four possible states.
 
@@ -45,7 +48,7 @@ qc.h(0)
 qc.x(1)
 qc.cx(0,1)
 ```
-$`\ket{\psi^-} = \frac{\ket{01}-+\ket{10}}{\sqrt{2}}`$  
+$`\ket{\psi^-} = \frac{\ket{01}-\ket{10}}{\sqrt{2}}`$  
 ```python
 qc = QuantumCircuit()
 qc.h(0)
