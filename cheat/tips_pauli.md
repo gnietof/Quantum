@@ -25,7 +25,7 @@ Z =
 0 & -1\end{array}\right]
 $$
 
-Keeping $q \in \mathbb{Z^4}$ means that the phase term will only have four possible values: 1, -i, -1, i.
+Keeping $q \in \mathbb{Z^4}$ means that q $\in$ {0,1,2,3} and so the phase term will only have four possible values: 1, -i, -1, i.
 
 ## Qiskit
 
