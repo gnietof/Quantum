@@ -1,7 +1,7 @@
 # Pauli
 Pauli gates are $I, X, Y, Z$. Clifford = Pauli + $S,H$.
 
-The combination of Pauli gate returns another Pauli gate (up to a global phase)
+The combination of Pauli gates returns another Pauli gate (up to a global phase)
 
 $P = (-i)^q P_{n-1}\otimes...\otimes P_0$
 
