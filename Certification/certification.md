@@ -2,12 +2,19 @@
 
 ## Perform Quantum Operations (16% $`\equiv`$ 11 questions)
 ### Define Pauli Operators
+- [Pauli](./pauli.md)
 ### Apply quantum operations
-
+- [Circuit library](./circuit_library.md)
+- [QuantumCircuit](./quantumcircuit.md)
 ## Visualize Quantum circuits, measurements and states (11% $`\equiv`$ 8 questions)
 ### Visualize quantum circuits
+- [Visualize circuits](./visualize_circuits.md)
 ### Visualize quantum measurements
+- [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md)
+- [Visualization](./visualization.md)
+- [Plot gate map](./plot_gate_map.md)
 ### Visualize quantum states
+- [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md)
 
 ## Create quantum circuits (18% $`\equiv`$ 12 questions)
 ### Construct dynamic circuits
