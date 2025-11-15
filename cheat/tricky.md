@@ -96,7 +96,7 @@ $$\ket{1} \Rightarrow P(0)=\sin^2\left( \frac{\theta}{2} \right) \approx 0.854; 
 - **Rx** changes the value of $\theta$. The unitary matrix is:
   
 $$\left[\begin{array}{cc}\cos\left(\frac{\theta}{2}\right) & -i\sin\left(\frac{\theta}{2}\right) \\
--i\sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right]\end{array}\right]$$
+-i\sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)\end{array}\right]$$
 
 So, when applied to $\ket{0}$:
 
