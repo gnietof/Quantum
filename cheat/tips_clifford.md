@@ -2,9 +2,9 @@
 
 Clifford circuits are a special class of quantum circuits built entirely from Clifford gates, which are gates that map Pauli operators to other Pauli operators under conjugation: H, S, X, Y, Z, CNOT.
 
-An N-qubit unitary operator from the Clifford group is stored as a length 2N × (2N+1) boolean tableau using the convention:
-    - Rows 0 to N-1 are the destabilizer group generators
-    - Rows N to 2N-1 are the stabilizer group generators.
+An N-qubit unitary operator from the Clifford group is stored as a length 2N × (2N+1) boolean tableau using the convention:  
+- Rows 0 to N-1 are the destabilizer group generators  
+- Rows N to 2N-1 are the stabilizer group generators
 
 An example of a Clifford random circuit generated with the random_clifford statement:
 
@@ -43,7 +43,7 @@ Clifford(array([[False, False, False,  True,  True,  True, False],
 
 ## Clifford combinations
 
-The list of single qubit Cliffords the gates is small: $I, X, Y, Z, H, S$ and $S^\dagger$.
+The list of single qubit Cliffords gates is small: $I, X, Y, Z, H, S$ and $S^\dagger$.
 Each of these is its own inverse up to a global phase (they are Hermitian unitaries) except for S.
 
 $X^2 = I; Y^2 = -I; Z^2 = I; H^2 = I$ but $S^2 = Z$ and $S \cdot S^\dagger = I$
@@ -74,7 +74,7 @@ $$
     
 This works because:
 
-$ABA = A(PA) = A(-AB) = -A^2B = -B$
+$ABA = A(BA) = A(-AB) = -A^2B = -B$
 
 That means, for example, that $XXX = X, XYX=-Y, XZX = -Z$. 
 
