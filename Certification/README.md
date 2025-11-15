@@ -38,8 +38,10 @@
 ### Retrieve previous experiment results (session/Qiskit Runtime)
 ### Monitor jobs
 
-## Operate witn OpenQASM (6%  $`\equiv`$ 4 questions)
-### Structure types in OpenQASM 3 programs
-### Interpret OpenQASM semantics
-### Interoperate different versions of OpenQASM with Qiskit
-### Interact with the Qiskit IBM Runtime REST API
+## 8. Operate witn OpenQASM (6%  $`\equiv`$ 4 questions)
+### 8.1. Structure types in OpenQASM 3 programs
+- [QASM3 semantics](./qasm3_structures.md)
+### 8.2. Interpret OpenQASM semantics
+- [QASM3 semantics](./qasm3_semantics.md)
+### 8.3. Interoperate different versions of OpenQASM with Qiskit
+### 8.4. Interact with the Qiskit IBM Runtime REST API
