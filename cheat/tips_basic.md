@@ -15,7 +15,13 @@ The Qiskit 2.x version can be found using the __version__ instance:
 from qiskit import __version__
 __version__
 ```
-Qiskit 1.x is no longer a monolithic SDK. So this is also valid for other modules such as qiskit_aer or qiskit_ibm_runtime.
+Qiskit 2.x is no longer a monolithic SDK. So this is also valid for other modules such as qiskit_aer or qiskit_ibm_runtime. For example, the runtime version can be found using:
+
+```python
+from qiskit_ibm_runtime import __version__
+__version__
+```
+
 In **Qiskit 1.x** the version coul be found by using:
 ```python
 import qiskit
