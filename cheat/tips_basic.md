@@ -24,8 +24,8 @@ __version__
 
 In **Qiskit 1.x** the version coul be found by using:
 ```python
-import qiskit
-print(qiskit.__qiskit_version__)
+from qiskit import __qiskit_version__
+__qiskit_version__
 ```
 And returned a JSON with the versions for each of the modules. But that is no longer the case. Any other exam answer is wrong.
 
