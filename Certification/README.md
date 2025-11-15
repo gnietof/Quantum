@@ -40,8 +40,10 @@
 
 ## 8. Operate witn OpenQASM (6%  $`\equiv`$ 4 questions)
 ### 8.1. Structure types in OpenQASM 3 programs
-- [QASM3 semantics](./qasm3_structures.md)
+- [QASM3 structures](./qasm3_structures.md)
 ### 8.2. Interpret OpenQASM semantics
 - [QASM3 semantics](./qasm3_semantics.md)
 ### 8.3. Interoperate different versions of OpenQASM with Qiskit
+- [QASM3 versions](./qasm3_versions.md)
 ### 8.4. Interact with the Qiskit IBM Runtime REST API
+- [QASM3 runtime](./qasm3_runtime.md)
