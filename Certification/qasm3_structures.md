@@ -1,4 +1,4 @@
-# QASM structures
+# QASM3 structures
 This is a long document. I will cover here only the points which I think are important for the certification.
 
 ## Identifiers
