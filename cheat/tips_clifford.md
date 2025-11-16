@@ -68,7 +68,7 @@ That means, for example, that $XZ = -ZX, XY=-YX$.
 $$
 \begin{cases}
 ABA = A, & \text{if } A=B \\
-ABA = -A, & \text{if } A \neq B
+ABA = -B, & \text{if } A \neq B
 \end{cases}
 $$
     
