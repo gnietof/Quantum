@@ -28,15 +28,41 @@ This is a long document. I will cover here only the points which I think are imp
 ### Angles
 ### Complex numbers
 ### Boolean types
-
+- Bolean type takes values **true** or **false**.
+- Measurements can be converted from **bit** to boolean using **bool()**.
+```qasm
+bit bt = 0;
+bool bl = bool(bit);
+```
 ## Compile time constants
 ### Built-in constants
+- There are six identifiers automatically defined. Two for each of the constants $\pi$ ($\pi$ or pi), $\tau = 2\pi$ ($\tau$ or tau) and Euler's number e ($\mathcal{E}$ or euler).
 
 ### Built-in constant expression functions
+- As for this reference, the important point is that there are a set of **compile-time funtions** which take **const** inputs and have a **const** output.
 
 ## Literals
+- Five type of literals in QASM3: integer, float, boolean, bit string and timing.
+- Integers can be written in decimal or hexadecimal, octal and binary adding a leading 0x/0X, 0o or 0b/0B prefix.
+- Underscores might be used for readability.
 
 ## Arrays
+- Arrays are declared using two arguments the first being the type and the second the size.
+- Multidimensional arrays are allowed with a maximum of 7 dimensions.
+- Arrays must be declared global and not inside a function.
+- Negative indexes are allowed (same as Python)
+- Valid types are bit, int, uint, float, complex, and angle, bool and duration but not stretch.
+```qasm
+array[int[32], 2] oneDim = {0, 1};
+array[float[32], 3, 2] multiDim = {{1.1, 1.2}, {2.1, 2.2}, {3.1, 3.2}};
+
+oneDim[0]=1
+multiDim[1,2]=3
+
+multiDim[0] = oneDim # myArray is copied in first element; sizes must match
+oneDim = multiDim[0,0]
+```
+- The standard way of declaring quantum registers and bit registers are equivalent to the array syntax version.
 
 ## Types related to timing
 
