@@ -16,27 +16,36 @@
 ### 2.3. Visualize quantum states
 - [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md)
 
-## Create quantum circuits (18% $`\equiv`$ 12 questions)
-### Construct dynamic circuits
-### Construct parameterized circuits
-### Transpile and optimize circuits
-### Construct basic quantum circuits
+## 3. Create quantum circuits (18% $`\equiv`$ 12 questions)
+### 3.1. Construct dynamic circuits
+- [Feedforward and control flow](./classical_feedforward_and_control_flow.md)
+### 3.2. Construct parameterized circuits
+- [Circuit Parameter](./circuit_parameter.md)
+- [Circuit QuantumCircuit](./circuit_quantumcircuit.md)
+- [Circuit Parameter Expression](./circuit_expression.md)
+### 3.3. Transpile and optimize circuits
+- [Transpiler Stages](./transpiler_stages.md)
+- [Transpiler with Passs Managers](./transpiler_with_pass_managers.md)
+- [Transpiler passes](./transpiler_passes.md)
+### 3.4. Construct basic quantum circuits
+- [Circuit](./circuit.md)
+- [Circuit QuantumCircuit](./circuit_quantumcircuit.md)
 
-## Run quantum circuits (15% $`\equiv`$ 10 questions)
-### Demonstrate an understanding of execution modes such as: session with dedicated, priority, and batch mode
-### Demonstrate understanding of how to run quantum circuits with real hardware using Qiskit Runtime primitives and applying broadcasting rules
+## 4. Run quantum circuits (15% $`\equiv`$ 10 questions)
+### 4.1. Demonstrate an understanding of execution modes such as: session with dedicated, priority, and batch mode
+### 4.2. Demonstrate understanding of how to run quantum circuits with real hardware using Qiskit Runtime primitives and applying broadcasting rules
 
-## Use the sampler primitive (12% $`\equiv`$ 8 questions)
-### Set sampler primitive options such as dynamical decoupling
-### Understand the theoretical background behind the sampler primitive
+## 5. Use the sampler primitive (12% $`\equiv`$ 8 questions)
+### 5.1. Set sampler primitive options such as dynamical decoupling
+### 5.2. Understand the theoretical background behind the sampler primitive
  
-## Use the estimator primitive (12% $`\equiv`$ 8 questions)
-### Set estimator primitive options (such as resilience levels)
-### Understand the theoretical background behind the estimator primitive                   
+## 6. Use the estimator primitive (12% $`\equiv`$ 8 questions)
+### 6.1 Set estimator primitive options (such as resilience levels)
+### 6.2. Understand the theoretical background behind the estimator primitive                   
 
-## Retrieve and analyze the results of quantum circuits (10% $`\equiv`$ 7 questions)
-### Retrieve previous experiment results (session/Qiskit Runtime)
-### Monitor jobs
+## 7. Retrieve and analyze the results of quantum circuits (10% $`\equiv`$ 7 questions)
+### 7.1. Retrieve previous experiment results (session/Qiskit Runtime)
+### 7.2. Monitor jobs
 
 ## 8. Operate witn OpenQASM (6%  $`\equiv`$ 4 questions)
 ### 8.1. Structure types in OpenQASM 3 programs
