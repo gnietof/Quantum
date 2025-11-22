@@ -37,8 +37,9 @@
 
 ## 5. Use the sampler primitive (12% $`\equiv`$ 8 questions)
 ### 5.1. Set sampler primitive options such as dynamical decoupling
+- [Get started with primitives](./get_started_with_primitives.md) (same as 5.2's) 🚧 *Docs in progress*
 ### 5.2. Understand the theoretical background behind the sampler primitive
- 
+- [Get started with primitives](./get_started_with_primitives.md) (same as 5.1's) 🚧 *Docs in progress*
 ## 6. Use the estimator primitive (12% $`\equiv`$ 8 questions)
 ### 6.1 Set estimator primitive options (such as resilience levels)
 ### 6.2. Understand the theoretical background behind the estimator primitive                   
