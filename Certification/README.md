@@ -58,7 +58,7 @@ h# Qiskit 2.x Certification
 ## 7. Retrieve and analyze the results of quantum circuits (10% $`\equiv`$ 7 questions)
 ### 7.1. Retrieve previous experiment results (session/Qiskit Runtime)
 - [SamplerPubResult](./sampler_pub_result.md)🚧 *Doc in progress*
-- [retrieve and save jobs](./save_jobs.md)🚧 *Doc in progress*
+- [Retrieve and save jobs](./save_jobs.md)🚧 *Doc in progress*
 - [Runtime job](./runtime_job.md)🚧 *Doc in progress*
 - [Base Primitive](./base_primitive.md)🚧 *Doc in progress*
  
