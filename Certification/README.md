@@ -37,13 +37,24 @@
 
 ## 5. Use the sampler primitive (12% $`\equiv`$ 8 questions)
 ### 5.1. Set sampler primitive options such as dynamical decoupling
-- [Get started with primitives](./get_started_with_primitives.md) (same as 5.2's) 🚧 *Docs in progress*
+- [Get started with primitives](./get_started_with_primitives.md) (same as 5.2's)
+- [Sampler options](./sampler_options.md) 🚧 *Docs in progress*
+- [Twirling options](./twirling_options.md) (same as 6.1's)🚧 *Docs in progress*
+- [Error mitigation and supression techniques](./error_mitigation.md) (same as 6.2's)🚧 *Docs in progress*
 ### 5.2. Understand the theoretical background behind the sampler primitive
-- [Get started with primitives](./get_started_with_primitives.md) (same as 5.1's) 🚧 *Docs in progress*
+- [Get started with primitives](./get_started_with_primitives.md) (same as 5.1's) 
+- [Sampler v2](./sampler_v2.md) 🚧 *Docs in progress*
+- [Primitives v2](./primitives_v2.md) (related to 6.2's)🚧 *Docs in progress*
+
 ## 6. Use the estimator primitive (12% $`\equiv`$ 8 questions)
 ### 6.1 Set estimator primitive options (such as resilience levels)
+- [Estimator options](./estimator_options.md) 🚧 *Docs in progress*
+- [Twirling options](./twirling_options.md) (same as 5.1's)🚧 *Docs in progress*
+- [Resilience options v2](./resilience_options_v2.md)🚧 *Docs in progress*
+- [ZNE options](./zne_options.md) 🚧 *Docs in progress*
 ### 6.2. Understand the theoretical background behind the estimator primitive                   
-
+- [Primitives](./primitives.md) (related to 5.2's) 🚧 *Docs in progress*
+- [Error mitigation and supression techniques](./error_mitigation.md) (same as 5.1's) 🚧 *Docs in progress*
 ## 7. Retrieve and analyze the results of quantum circuits (10% $`\equiv`$ 7 questions)
 ### 7.1. Retrieve previous experiment results (session/Qiskit Runtime)
 ### 7.2. Monitor jobs
