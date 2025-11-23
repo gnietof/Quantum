@@ -4,7 +4,7 @@
 I have created another document where the maths behind an Estimator are explained [here](../cheat/example_estimator.ipynb). In the end, an Estimator is just applying a circuit to a initial vector and then finding $\braket{O}=\braket{\psi|O|\psi}$, where $O$ is the observable and $\ket{\psi}$ is the output of the circuit.
 
 1. Create a circuit.
-```qasm
+```python
 from qiskit import QuantumCircuit
 
 qc = QuantumCircuit(2)
@@ -15,7 +15,7 @@ qc.draw('mpl')
 <img width="197" height="121" alt="image" src="https://github.com/user-attachments/assets/03838a9b-6f84-46ad-8dfe-f6bac8a32404" />
 
 2. Create and observable.
-```qasm
+```python
 from qiskit.quantum_info import SparsePauliOp
 import numpy as np
 
@@ -25,7 +25,7 @@ print(observable)
 
 3. Transpile the circuit and observable to only use the instructions supported by the QPU.
 Here we have a simple way of transpiling our circuit.
-```qasm
+```python
 from qiskit import transpile
 
 qct = transpile(qc,backend)
@@ -34,7 +34,7 @@ qct.draw('mpl')
 <img width="564" height="171" alt="image" src="https://github.com/user-attachments/assets/eb9efd51-43e7-44e3-b433-2a588cace69f" />
 
 We might use the pass manager instead. 
-```qasm
+```python
 from qiskit.transpiler import generate_preset_pass_manager
  
 pm = generate_preset_pass_manager(optimization_level=1, backend=backend)
@@ -47,20 +47,20 @@ qct.draw('mpl')
 
 4. **Important** Align the observable with the layout of the transpiled circuit.
 Applying the layout resizes our observable to the number of qubits in the QPU and also align the physical qubits with the ones used by our transpiled circuit.
-```qasm
+```python
 layout = qct.layout
 observable = observable.apply_layout(layout)
 ```
 
 5. Initialize the estimator runtime.
-```qasm
+```python
 from qiskit_ibm_runtime import EstimatorV2
 
 estimator = EstimatorV2(backend)
 ```
 
 6. Invoke the estimator and get results.
-```qasm
+```python
 job = estimator.run([(qct, observable)])
 result = job.result()
 print(f"Result: {result}")
@@ -73,7 +73,7 @@ In this case we are using just one observable and no parameters. But we might pr
 A Sampler just executes the circuit a number of times and returns the measurements from each run. No observables are required. However, the circuit must include measurements; otherwise the sampler would return no output.
 
 1. Create the circuit.
-```qasm
+```python
 from qiskit import QuantumCircuit
 
 qc = QuantumCircuit(2)
@@ -85,7 +85,7 @@ qc.draw('mpl')
 <img width="445" height="184" alt="image" src="https://github.com/user-attachments/assets/a41f328f-2c3f-4927-98ae-edd1cd78cd88" />
 
 2. Transpile the circuit.
-```qasm
+```python
 from qiskit.transpiler import generate_preset_pass_manager
  
 pm = generate_preset_pass_manager(optimization_level=1, backend=backend)
@@ -95,26 +95,26 @@ qct.draw('mpl')
 <img width="725" height="220" alt="image" src="https://github.com/user-attachments/assets/814d3515-8037-4c93-9de4-21eeace0b869" />
 
 3. Initialize the sampler runtime.
-```qasm
+```python
 from qiskit_ibm_runtime import SamplerV2
 
 sampler = SamplerV2(backend)
 ```
 
 4. Invoke the sampler and get results.
-```qasm
+```python
 job = sampler.run([(qct)])
 result = job.result()
 ```
 
 4.1. Bitstring
 We might recover each of the output bitstrings (bit pairs in this case). But this provides little value.
-```qasm
+```python
 result[0].data.meas.get_bitstrings()[:10]
 ```
 4.1. Plot
 We can easily plot the results which provides more information. In this case we get the expected Bell state distribution with some noise.
-```qasm
+```python
 from qiskit.visualization import plot_histogram
 
 plot_histogram(result[0].data.meas.get_counts())
@@ -125,7 +125,7 @@ plot_histogram(result[0].data.meas.get_counts())
 Because 'QPU executions' are 'expensive', I usually save the output of the execution in a file so that I can retrieve the results without having to execute the Sampler/Estimator each time.
 
 - Saving
-```qasm
+```python
 import pickle
 
 with open('sampler_fez.pkl','wb') as f:
@@ -133,7 +133,7 @@ with open('sampler_fez.pkl','wb') as f:
 ```
 
 - Loading
-```qasm
+```python
 import pickle
 
 with open('sampler_fez.pkl','rb') as f:
