@@ -3,7 +3,7 @@ h# Qiskit 2.x Certification
 ## 1. Perform Quantum Operations (16% $`\equiv`$ 11 questions)
 ### 1.1. Define Pauli Operators
 - [Pauli](./pauli.md) 🚧 *Doc in progress*
-### 1.2. Apply quantum operations
+### 1.2. Apply quantum operations :
 - [Circuit library](./circuit_library.md) 🚧 *Doc in progress*
 - [QuantumCircuit](./quantumcircuit.md) 🚧 *Doc in progress*
 ## 2. Visualize Quantum circuits, measurements and states (11% $`\equiv`$ 8 questions)
@@ -24,7 +24,7 @@ h# Qiskit 2.x Certification
 - [Circuit QuantumCircuit](./circuit_quantumcircuit.md) (same as 3.4's) 🚧 *Doc in progress*
 - [Circuit Parameter Expression](./circuit_expression.md) 🚧 *Doc in progress*
 ### 3.3. Transpile and optimize circuits
-- [Transpiler Stages](./transpiler_stages.md) 🚧 *Doc in progress*
+- [Transpiler Stages](./transpiler_stages.md) 📝*Needs more detail*
 - [Transpiler with Passs Managers](./transpiler_with_pass_managers.md) 🚧 *Doc in progress*
 - [Transpiler passes](./transpiler_passes.md) 🚧 *Doc in progress*
 ### 3.4. Construct basic quantum circuits
