@@ -51,8 +51,39 @@ qc.draw('mpl')
 <img width="519" height="202" alt="image" src="https://github.com/user-attachments/assets/047c5fc6-8433-43e3-820b-ece8bb313d19" />
 
 ### Bonus - QuantumCircuit.if_else
-The same circuit can be generated using the ```QuantumCircuit.if_else()```method. I have not found any good examples and the docuentation just covers it briefly.
+The same circuit can be generated using the ```QuantumCircuit.if_else()```method. I have not found any good examples and the docuentation just covers it briefly. So I am including my findings here.
 
+```python
+from qiskit import QuantumCircuit
+
+qc = QuantumCircuit(2,1)
+qc.h(0)
+qc.measure(0,0)
+
+# IF block
+if_block = QuantumCircuit(1, 1)
+if_block.x(0)
+# ELSE block
+else_block = QuantumCircuit(1, 1)
+else_block.h(0)
+
+qc.if_else(
+    (0, 0),               # condition
+    if_block,             # if branch
+    else_block,           # else branch
+    [1],                  # qubits used 
+    [0]                    # classical bits used 
+)
+
+qc.measure(0,0)
+qc.draw('mpl')
+```
+<img width="547" height="203" alt="image" src="https://github.com/user-attachments/assets/89c0e6f6-9868-4a06-8387-dd487aced678" />
+
+⚠️ I have found a problem when adding more classical registers to the quantum circuit. The following change fails when trying to draw the circuit whether we use the circuit or not.
+```python
+qc = QuantumCircuit(2,**2**)
+```
 
 
 ## Classical expressions
