@@ -72,7 +72,7 @@ qc.if_else(
     if_block,             # if branch
     else_block,           # else branch
     [1],                  # qubits used 
-    [0]                    # classical bits used 
+    [0]                   # classical bits used 
 )
 
 qc.measure(0,0)
