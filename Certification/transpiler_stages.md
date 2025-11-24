@@ -17,7 +17,7 @@ as the circuit.
 SabreSwap algorithm.
 
 - **routing**  
-The layout process selects which 'physical' qubits wull be used while the routinh process adds the required SWAP gates to implement the two-qubit bit gates between qubits that are not directly connected.
+The layout process selects which 'physical' qubits will be used while the routing process adds the required SWAP gates to implement the two-qubit bit gates between qubits that are not directly connected.
 The SabreSwap algorithm is used for this purpose.
 
 - **translation**  
