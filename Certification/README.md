@@ -20,7 +20,7 @@ h# Qiskit 2.x Certification
 ### 3.1. Construct dynamic circuits
 - [Feedforward and control flow](./classical_feedforward_and_control_flow.md) (same as 2.2's) 🚧 *Doc in progress*
 ### 3.2. Construct parameterized circuits
-- [Circuit Parameter](./circuit_parameter.md) 🚧 *Doc in progress*
+- [Circuit Parameter](./circuit_parameter.md) ✅
 - [Circuit QuantumCircuit](./circuit_quantumcircuit.md) (same as 3.4's) 🚧 *Doc in progress*
 - [Circuit Parameter Expression](./circuit_expression.md) 🚧 *Doc in progress*
 ### 3.3. Transpile and optimize circuits
