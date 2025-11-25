@@ -10,7 +10,7 @@
 - Is generally less expensive than sessions.
 
 ## Session
-- All the functionality from batch mode (but requiring increased usage; see [Workload usage](#workload) for more details on how usage is calcuated).
+- All the functionality from batch mode (but requiring increased usage; see [Workload usage](##workload) for more details on how usage is calcuated).
 - Dedicated and exclusive access to the QPU during the session active window.
 - Useful for workloads that don’t have all inputs ready at the outset, for iterative workloads that require classical post-processing before the next one can run, and for experiments that need to run as tightly together as possible.
 
