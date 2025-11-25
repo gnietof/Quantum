@@ -31,6 +31,8 @@ with Batch(backend=backend) as batch:
 ```python
 batch.close()
 ```
+## Check batch status
+- Batch status can be queries by using the ```Batch.status()``` method.
 
 ## Determine batch details
 - Batch details can be determined by using the ```Batch.details()``` method.
