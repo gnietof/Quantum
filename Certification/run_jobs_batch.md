@@ -6,6 +6,8 @@
 ### Batch class
 - The batch instance must be provided to the Sampler/Estimator and it has to be closed.
 ```python
+from qiskit_ibm_runtime import SamplerV2, Batch
+
 batch = Batch(backend= backend)
 sampler1 = SamplerV2(mode=batch) 
 sampler2 = SamplerV2(mode=batch) 
@@ -16,6 +18,8 @@ batch.close()
 ### Context mamager
 - In this case closing the batch is not required and it is not required to pass the batch to the Sampler/Estimator.
 ```python
+from qiskit_ibm_runtime import SamplerV2, Batch
+
 with Batch(backend=backend) as batch:
     sampler1 = SamplerV2() 
     sampler2 = SamplerV2() 
