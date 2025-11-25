@@ -10,7 +10,7 @@ h# Qiskit 2.x Certification
 ### 2.1. Visualize quantum circuits
 - [Visualize circuits](./visualize_circuits.md) ✅
 ### 2.2. Visualize quantum measurements
-- [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md) (same as 3.1's) 🚧 *Doc in progress*
+- [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md) ✅
 - [Visualization](./visualization.md) 🚧 *Doc in progress*
 - [Plot gate map](./plot_gate_map.md) 🚧 *Doc in progress*
 ### 2.3. Visualize quantum states
