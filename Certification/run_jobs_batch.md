@@ -33,7 +33,7 @@ batch.close()
 ```
 
 ## Determine batch details
-- Batch details can be determined by using the ``Batch.details()``` method.
+- Batch details can be determined by using the ```Batch.details()``` method.
 
 ## Reconfigure jobs for parallel processing
 - The documentation is not clear here and the example is buggy.
