@@ -44,7 +44,7 @@
 ## 4. Run quantum circuits (15% $`\equiv`$ 10 questions)
 ### 4.1. Demonstrate an understanding of execution modes such as: session with dedicated, priority, and batch mode
 - [Execute on hardware](./execute_on_hardweare.md) (same as 4.2's) 🚧 *Doc in progress*
-- [Execution modes](./execution_modes.md) 🚧 *Doc in progress*
+- [Execution modes](./execution_modes.md) ✅⭐🟢
 - [Choose execution modes](./choose_executio_mode.md) 🚧 *Doc in progress*
 - [Run jobs in batch](./run_jobs_batch.md) ✅⭐⭐🟢
 ### 4.2. Demonstrate understanding of how to run quantum circuits with real hardware using Qiskit Runtime primitives and applying broadcasting rules
