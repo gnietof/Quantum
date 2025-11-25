@@ -27,7 +27,10 @@ with Batch(backend=backend) as batch:
     job2 = sampler2.run([qct2])
 ```
 ## Close the batch
-- Closing the batch is not required if using a context but it has to be close otherwise.
+- Closing the batch is not required if using a context but it has to be closed otherwise.
+```python
+batch.close()
+```
 
 ## Determine batch details
 - Batch details can be determined by using the ``Batch.details()``` method.
