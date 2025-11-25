@@ -36,12 +36,12 @@ h# Qiskit 2.x Certification
 - [Execute on hardware](./execute_on_hardweare.md) (same as 4.2's) 🚧 *Doc in progress*
 - [Execution modes](./execution_modes.md) 🚧 *Doc in progress*
 - [Choose execution modes](./choose_executio_mode.md) 🚧 *Doc in progress*
-- [Run jobs in batch](./run_jobs_batch.md) ✅
+- [Run jobs in batch](./run_jobs_batch.md) ✅⭐⭐
 ### 4.2. Demonstrate understanding of how to run quantum circuits with real hardware using Qiskit Runtime primitives and applying broadcasting rules
 - [Execute on hardware](./execute_on_hardweare.md) (same as 4.1's) 🚧 *Doc in progress*
 - [Primitives](./primitives.md) 🚧 *Doc in progress*
 - [Primitive inputs and outputs](./primitive_input_output.md) 🚧 *Doc in progress*
-- [Run jobs in session](./run_jobs_session.md) ✅
+- [Run jobs in session](./run_jobs_session.md) ✅⭐⭐
 
 ## 5. Use the sampler primitive (12% $`\equiv`$ 8 questions)
 ### 5.1. Set sampler primitive options such as dynamical decoupling
@@ -50,7 +50,7 @@ h# Qiskit 2.x Certification
 - [Twirling options](./twirling_options.md) (same as 6.1's)🚧 *Doc in progress*
 - [Error mitigation and supression techniques](./error_mitigation.md) (same as 6.2's) ✅
 ### 5.2. Understand the theoretical background behind the sampler primitive
-- [Get started with primitives](./get_started_with_primitives.md) (same as 5.1's) ✅
+- [Get started with primitives](./get_started_with_primitives.md) (same as 5.1's) ✅⭐⭐⭐
 - [Sampler v2](./sampler_v2.md) 🚧 *Doc in progress*
 - [Primitives v2](./primitives_v2.md) (related to 6.2's)🚧 *Doc in progress*
 
@@ -61,19 +61,19 @@ h# Qiskit 2.x Certification
 - [Resilience options v2](./resilience_options_v2.md)🚧 *Doc in progress*
 - [ZNE options](./zne_options.md) 🚧 *Doc in progress*
 ### 6.2. Understand the theoretical background behind the estimator primitive                   
-- [Primitives](./primitives.md) (related to 5.2's) 🚧 *Doc in progress*
+- [Primitives](./primitives.md) (related to 5.2's) 🚧 *Doc in progress*⭐⭐⭐
 - [Error mitigation and supression techniques](./error_mitigation.md) (same as 5.1's) ✅
 ## 7. Retrieve and analyze the results of quantum circuits (10% $`\equiv`$ 7 questions)
 ### 7.1. Retrieve previous experiment results (session/Qiskit Runtime)
 - [SamplerPubResult](./sampler_pub_result.md)🚧 *Doc in progress*
-- [Retrieve and save jobs](./save_jobs.md) ✅
+- [Retrieve and save jobs](./save_jobs.md) ✅⭐
 - [Runtime job](./runtime_job.md)🚧 *Doc in progress*
 - [Base Primitive](./base_primitive.md)🚧 *Doc in progress*
  
 ### 7.2. Monitor jobs
 - [Providers](./providers.md)🚧 *Doc in progress*
-- [Job Status](./job_status.md)🚧 *Doc in progress*
-- [Session](./session.md)🚧 *Doc in progress*
+- [Job Status](./job_status.md) ✅⭐
+- [Session](./session.md) ✅⭐
 
 ## 8. Operate witn OpenQASM (6%  $`\equiv`$ 4 questions)
 ### 8.1. Structure types in OpenQASM 3 programs
