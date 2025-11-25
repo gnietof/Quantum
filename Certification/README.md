@@ -36,12 +36,12 @@ h# Qiskit 2.x Certification
 - [Execute on hardware](./execute_on_hardweare.md) (same as 4.2's) 🚧 *Doc in progress*
 - [Execution modes](./execution_modes.md) 🚧 *Doc in progress*
 - [Choose execution modes](./choose_executio_mode.md) 🚧 *Doc in progress*
-- [Run jobs in batch](./run_jobs_batch.md) 🚧 *Doc in progress*
+- [Run jobs in batch](./run_jobs_batch.md) ✅
 ### 4.2. Demonstrate understanding of how to run quantum circuits with real hardware using Qiskit Runtime primitives and applying broadcasting rules
 - [Execute on hardware](./execute_on_hardweare.md) (same as 4.1's) 🚧 *Doc in progress*
 - [Primitives](./primitives.md) 🚧 *Doc in progress*
 - [Primitive inputs and outputs](./primitive_input_output.md) 🚧 *Doc in progress*
-- [Run jobs in session](./run_jobs_session.md) 🚧 *Doc in progress*
+- [Run jobs in session](./run_jobs_session.md) ✅
 
 ## 5. Use the sampler primitive (12% $`\equiv`$ 8 questions)
 ### 5.1. Set sampler primitive options such as dynamical decoupling
