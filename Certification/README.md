@@ -14,11 +14,11 @@ h# Qiskit 2.x Certification
 - [Visualization](./visualization.md) 🚧 *Doc in progress*
 - [Plot gate map](./plot_gate_map.md) 🚧 *Doc in progress*
 ### 2.3. Visualize quantum states
-- [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md) 🚧 *Doc in progress*
+- [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md) ✅
 
 ## 3. Create quantum circuits (18% $`\equiv`$ 12 questions)
 ### 3.1. Construct dynamic circuits
-- [Feedforward and control flow](./classical_feedforward_and_control_flow.md) (same as 2.2's) 🚧 *Doc in progress*
+- [Feedforward and control flow](./classical_feedforward_and_control_flow.md) (same as 2.2's) ✅
 ### 3.2. Construct parameterized circuits
 - [Circuit Parameter](./circuit_parameter.md) ✅
 - [Circuit QuantumCircuit](./circuit_quantumcircuit.md) (same as 3.4's) 🚧 *Doc in progress*
