@@ -38,7 +38,7 @@
 
 The reported usage is the time a QPU is locked for your workload. Failed or canceled jobs count toward your usage in certain circumstances - see the Failed and canceled jobs section for details.
 
-For paid plan users, usage determines how much the workload costs. See Manage cost for details.
+For paid plan users, usage determines how much the workload costs. 
 ## Usage for failed and canceled jobs
 - When a job is failed or canceled, the reported usage is as follows:
   - Job or batch mode: The reported usage is the time the QPU was locked for executing your workload until the time it failed or was canceled. Therefore, if the failure or cancellation occurred before the lock, the reported usage is zero.
