@@ -11,20 +11,20 @@
   
 ## 1. Perform Quantum Operations (16% $`\equiv`$ 11 questions)
 ### 1.1. Define Pauli Operators
-- [Pauli](./pauli.md) 🚧 *Doc in progress*
+- [Pauli](./pauli.md) :soon: *Not yet*
 ### 1.2. Apply quantum operations :
 - [Circuit library](./circuit_library.md) 🚧 *Doc in progress*
-- [QuantumCircuit](./quantumcircuit.md) 🚧 *Doc in progress*
+- [QuantumCircuit](./quantumcircuit.md) :soon: *Not yet*
 ## 2. Visualize Quantum circuits, measurements and states (11% $`\equiv`$ 8 questions)
 ### 2.1. Visualize quantum circuits
 - [Visualize circuits](./visualize_circuits.md) ✅⭐⭐🟠
 ### 2.2. Visualize quantum measurements
 - [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md) (same as 3.1's)✅⭐⭐🟢
-- [Visualization](./visualization.md) 🚧 *Doc in progress*
-- [Plot gate map](./plot_gate_map.md) 🚧 *Doc in progress*
+- [Visualization](./visualization.md) :soon: *Not yet*
+- [Plot gate map](./plot_gate_map.md) :soon: *Not yet*
 ### 2.3. Visualize quantum states
-- [Plot bloch multivector](./plot_bloch_multivector.md) 🚧 *Doc in progress*
-- [Plot state qsphere](./plot_state_qsphere.md) 🚧 *Doc in progress*
+- [Plot bloch multivector](./plot_bloch_multivector.md) :soon: *Not yet*
+- [Plot state qsphere](./plot_state_qsphere.md) :soon: *Not yet*
 
 ## 3. Create quantum circuits (18% $`\equiv`$ 12 questions)
 ### 3.1. Construct dynamic circuits
@@ -32,56 +32,56 @@
 ### 3.2. Construct parameterized circuits
 - [Circuit Parameter](./circuit_parameter.md) ✅⭐⭐🟢
 - [Circuit QuantumCircuit](./circuit_quantumcircuit.md) (same as 3.4's) 🚧 *Doc in progress*
-- [Circuit Parameter Expression](./circuit_expression.md) 🚧 *Doc in progress*
+- [Circuit Parameter Expression](./circuit_expression.md) :soon: *Not yet*
 ### 3.3. Transpile and optimize circuits
 - [Transpiler Stages](./transpiler_stages.md) 📝*Needs more detail*⭐⭐⭐🔴
-- [Transpiler with Passs Managers](./transpiler_with_pass_managers.md) 🚧 *Doc in progress*
-- [Transpiler passes](./transpiler_passes.md) 🚧 *Doc in progress*
+- [Transpiler with Passs Managers](./transpiler_with_pass_managers.md) :soon: *Not yet*
+- [Transpiler passes](./transpiler_passes.md) :soon: *Not yet*
 ### 3.4. Construct basic quantum circuits
 - [Circuit](./circuit.md) 📝*Needs more detail*
 - [Circuit QuantumCircuit](./circuit_quantumcircuit.md) (same as 3.2's) 🚧 *Doc in progress*
 
 ## 4. Run quantum circuits (15% $`\equiv`$ 10 questions)
 ### 4.1. Demonstrate an understanding of execution modes such as: session with dedicated, priority, and batch mode
-- [Execute on hardware](./execute_on_hardweare.md) (same as 4.2's) 🚧 *Doc in progress*
+- [Execute on hardware](./execute_on_hardware.md) (same as 4.2's) :soon: *Not yet*
 - [Execution modes](./execution_modes.md) ✅⭐🟢
 - [Choose execution mode](./choose_execution_mode.md) ✅⭐🟢
 - [Run jobs in batch](./run_jobs_batch.md) ✅⭐⭐🟢
 ### 4.2. Demonstrate understanding of how to run quantum circuits with real hardware using Qiskit Runtime primitives and applying broadcasting rules
-- [Execute on hardware](./execute_on_hardweare.md) (same as 4.1's) 🚧 *Doc in progress*
-- [Primitives](./primitives.md) 🚧 *Doc in progress*
-- [Primitive inputs and outputs](./primitive_input_output.md) 🚧 *Doc in progress*
+- [Execute on hardware](./execute_on_hardware.md) (same as 4.1's) :soon: *Not yet*
+- [Primitives](./primitives.md) :soon: *Not yet*
+- [Primitive inputs and outputs](./primitive_input_output.md) :soon: *Not yet*
 - [Run jobs in session](./run_jobs_session.md) ✅⭐⭐🟢
 
 ## 5. Use the sampler primitive (12% $`\equiv`$ 8 questions)
 ### 5.1. Set sampler primitive options such as dynamical decoupling
 - [Get started with primitives](./get_started_with_primitives.md) (same as 5.2's) ✅⭐⭐⭐🔴
-- [Sampler options](./sampler_options.md) 🚧 *Doc in progress*
-- [Twirling options](./twirling_options.md) (same as 6.1's)🚧 *Doc in progress*
+- [Sampler options](./sampler_options.md) :soon: *Not yet*
+- [Twirling options](./twirling_options.md) (same as 6.1's) :soon: *Not yet*
 - [Error mitigation and supression techniques](./error_mitigation.md) (same as 6.2's) ✅⭐⭐🟠
 ### 5.2. Understand the theoretical background behind the sampler primitive
 - [Get started with primitives](./get_started_with_primitives.md) (same as 5.1's) ✅⭐⭐⭐🔴
 - [Sampler v2](./sampler_v2.md) 🚧 *Doc in progress*
-- [Primitives v2](./primitives_v2.md) (related to 6.2's)🚧 *Doc in progress*
+- [Primitives v2](./primitives_v2.md) (related to 6.2's) :soon: *Not yet*
 
 ## 6. Use the estimator primitive (12% $`\equiv`$ 8 questions)
 ### 6.1 Set estimator primitive options (such as resilience levels)
 - [Estimator options](./estimator_options.md) 🚧 *Doc in progress*
-- [Twirling options](./twirling_options.md) (same as 5.1's)🚧 *Doc in progress*
-- [Resilience options v2](./resilience_options_v2.md)🚧 *Doc in progress*
-- [ZNE options](./zne_options.md) 🚧 *Doc in progress*
+- [Twirling options](./twirling_options.md) (same as 5.1's) :soon: *Not yet*
+- [Resilience options v2](./resilience_options_v2.md) :soon: *Not yet*
+- [ZNE options](./zne_options.md) :soon: *Not yet*
 ### 6.2. Understand the theoretical background behind the estimator primitive                   
-- [Primitives](./primitives.md) (related to 5.2's) 🚧 *Doc in progress*⭐⭐⭐
+- [Primitives](./primitives.md) (related to 5.2's) :soon: *Not yet* ⭐⭐⭐
 - [Error mitigation and supression techniques](./error_mitigation.md) (same as 5.1's) ✅⭐⭐🟠
 ## 7. Retrieve and analyze the results of quantum circuits (10% $`\equiv`$ 7 questions)
 ### 7.1. Retrieve previous experiment results (session/Qiskit Runtime)
-- [SamplerPubResult](./sampler_pub_result.md)🚧 *Doc in progress*
+- [SamplerPubResult](./sampler_pub_result.md) :soon: *Not yet*
 - [Retrieve and save jobs](./save_jobs.md) ✅⭐
-- [Runtime job](./runtime_job.md)🚧 *Doc in progress*
-- [Base Primitive](./base_primitive.md)🚧 *Doc in progress*
+- [Runtime job](./runtime_job.md) :soon: *Not yet*
+- [Base Primitive](./base_primitive.md) :soon: *Not yet*
  
 ### 7.2. Monitor jobs
-- [Providers](./providers.md)🚧 *Doc in progress*
+- [Providers](./providers.md) :soon: *Not yet*
 - [Job Status](./job_status.md) ✅⭐
 - [Session](./session.md) ✅⭐
 
@@ -91,6 +91,6 @@
 ### 8.2. Interpret OpenQASM semantics
 - [QASM3 semantics](./qasm3_semantics.md) ✅⭐🟢
 ### 8.3. Interoperate different versions of OpenQASM with Qiskit
-- [QASM3 versions](./qasm3_versions.md)🚧 *Doc in progress*
+- [QASM3 versions](./qasm3_versions.md) :soon: *Not yet*
 ### 8.4. Interact with the Qiskit IBM Runtime REST API
-- [QASM3 runtime](./qasm3_runtime.md)🚧 *Doc in progress*⭐🟢
+- [QASM3 runtime](./qasm3_runtime.md) :soon: *Not yet* ⭐🟢
