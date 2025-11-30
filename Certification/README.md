@@ -11,7 +11,7 @@
   
 ## 1. Perform Quantum Operations (16% $`\equiv`$ 11 questions)
 ### 1.1. Define Pauli Operators
-- [Pauli](./pauli.md) 🚧 *Doc in progress*
+- [Pauli](./pauli.md) ✅⭐⭐🟠
 ### 1.2. Apply quantum operations :
 - [Circuit library](./circuit_library.md) 🚧 *Doc in progress*
 - [QuantumCircuit](./quantumcircuit.md) :soon: *Not yet*
