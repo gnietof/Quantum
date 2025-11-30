@@ -36,7 +36,7 @@
 ### 3.3. Transpile and optimize circuits
 - [Transpiler Stages](./transpiler_stages.md) 📝*Needs more detail*⭐⭐⭐🔴
 - [Transpiler with Passs Managers](./transpiler_with_pass_managers.md) :soon: *Not yet*
-- [Transpiler passes](./transpiler_passes.md) :soon: *Not yet*
+- [Transpiler passes](./transpiler_passes.md) ✅⭐🟢
 ### 3.4. Construct basic quantum circuits
 - [Circuit](./circuit.md) 📝*Needs more detail*
 - [Circuit QuantumCircuit](./circuit_quantumcircuit.md) (same as 3.2's) 🚧 *Doc in progress*
