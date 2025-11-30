@@ -49,7 +49,7 @@
 - [Run jobs in batch](./run_jobs_batch.md) ✅⭐⭐🟢
 ### 4.2. Demonstrate understanding of how to run quantum circuits with real hardware using Qiskit Runtime primitives and applying broadcasting rules
 - [Execute on hardware](./execute_on_hardware.md) (same as 4.1's) :soon: *Not yet*
-- [Primitives](./primitives.md) :soon: *Not yet*
+- [Primitives](./primitives.md) 🚧 *Doc in progress*
 - [Primitive inputs and outputs](./primitive_input_output.md) :soon: *Not yet*
 - [Run jobs in session](./run_jobs_session.md) ✅⭐⭐🟢
 
@@ -61,7 +61,7 @@
 - [Error mitigation and supression techniques](./error_mitigation.md) (same as 6.2's) ✅⭐⭐🟠
 ### 5.2. Understand the theoretical background behind the sampler primitive
 - [Get started with primitives](./get_started_with_primitives.md) (same as 5.1's) ✅⭐⭐⭐🔴
-- [Sampler v2](./sampler_v2.md) 🚧 *Doc in progress*
+- [Sampler v2](./sampler_v2.md) :soon: *Not yet*
 - [Primitives v2](./primitives_v2.md) (related to 6.2's) :soon: *Not yet*
 
 ## 6. Use the estimator primitive (12% $`\equiv`$ 8 questions)
@@ -76,7 +76,7 @@
 ## 7. Retrieve and analyze the results of quantum circuits (10% $`\equiv`$ 7 questions)
 ### 7.1. Retrieve previous experiment results (session/Qiskit Runtime)
 - [SamplerPubResult](./sampler_pub_result.md) :soon: *Not yet*
-- [Retrieve and save jobs](./save_jobs.md) ✅⭐
+- [Retrieve and save jobs](./save_jobs.md) ✅⭐🟢
 - [Runtime job](./runtime_job.md) :soon: *Not yet*
 - [Base Primitive](./base_primitive.md) :soon: *Not yet*
  
