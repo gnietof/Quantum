@@ -16,7 +16,7 @@ The Z axis.
 
 - What does "quantum volume" measure?
 
-The overall performance and error rates of quantum hardware. Not only the number of qubits but also:  
+  The overall performance and error rates of quantum hardware. Not only the number of qubits but also:  
     - Number of qubits: usable qubits, not just the total.  
     - Gate fidelity: how accurate the operations are.  
     - Connectivity: how easily qubits can interact.  
@@ -24,8 +24,8 @@ The overall performance and error rates of quantum hardware. Not only the number
     - Compilation efficiency: how well the hardware executes random circuits.  
 
 - Which statement generates a random state vector?  
-The statement which generates a random state vector is qiskit.quantum_info.random_statevector.  
-There are also several statements for declaring other objects:  
+  The statement which generates a random state vector is qiskit.quantum_info.random_statevector.  
+  There are also several statements for declaring other objects:  
 
 | Statement | Description | Returns |
 |-----------|-------------|---------|
@@ -41,7 +41,7 @@ There are also several statements for declaring other objects:
 
 - Which one of the provided identities are correct?  
 
-The combination of Clifford gates is better described in ![Clifford Combinations](../cheat/tips_clifford.md#clifford-combinations). Just for answering those questions related with Clifford gates identities:
+  The combination of Clifford gates is better described in ![Clifford Combinations](../cheat/tips_clifford.md#clifford-combinations). Just for answering those questions related with Clifford gates identities:
 
 | X Gate | Y Gate | Z Gate | H Gate | S Gate |
 |--------|--------|--------|--------|--------|
@@ -52,8 +52,9 @@ The combination of Clifford gates is better described in ![Clifford Combinations
 ## Rx / Ry / Rz rotations
 
 When finding the probabilities to find $\ket{0}$ or $\ket{1}$ after applying one of those gates:  
+
 1. Check if the rotation is being applied to $\ket{0}$ or $\ket{1}$  
-1. Then check which operation is being applied!
+2. Then check which operation is being applied!
    
 Keep in mind that ...
 - **Rz** *does not* change the probabilities of finding any of those when applied to $\ket{0}$ or $\ket{1}$.  
@@ -74,19 +75,19 @@ $$\left[\begin{array}{cc}\cos\left(\frac{\theta}{2}\right) & -\sin\left(\frac{\t
 \sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)\end{array}\right]$$
 
 
-So, when applied to $\ket{0}$:
+  So, when applied to $\ket{0}$:
 
 $$R_y(\theta)\ket{0} = \cos\left( \frac{\theta}{2} \right)\ket{0}+\sin\left( \frac{\theta}{2} \right)\ket{1}$$  
 $$P(0)=\cos^2\left( \frac{\theta}{2} \right)$$  
 $$P(1)=\sin^2\left( \frac{\theta}{2} \right)$$    
 
-And, when applied to $\ket{1}$  
+  And, when applied to $\ket{1}$  
 
 $$R_y(\theta)\ket{1} = -\sin\left( \frac{\theta}{2} \right)\ket{0}+\cos\left( \frac{\theta}{2} \right)\ket{1}$$  
 $$P(0)=\sin^2\left( \frac{\theta}{2} \right)$$   
 $$P(1)=\cos^2\left( \frac{\theta}{2} \right)$$  
 
-For example, if the gate is $R_{y}(\frac{3*\pi}{4})$ the probabilities are:
+  For example, if the gate is $R_{y}(\frac{3*\pi}{4})$ the probabilities are:
 
 $$\theta=\frac{3*\pi}{4} \rightarrow \cos\left( \frac{\theta}{2} \right) = \cos(\frac{3*\pi}{8}) \approx 0.382; \sin\left( \frac{\theta}{2} \right) = \sin(\frac{3*\pi}{8}) \approx 0.923; $$
 
@@ -98,19 +99,19 @@ $$\ket{1} \Rightarrow P(0)=\sin^2\left( \frac{\theta}{2} \right) \approx 0.854; 
 $$\left[\begin{array}{cc}\cos\left(\frac{\theta}{2}\right) & -i\sin\left(\frac{\theta}{2}\right) \\
 -i\sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)\end{array}\right]$$
 
-So, when applied to $\ket{0}$:
+  So, when applied to $\ket{0}$:
 
 $$R_y(\theta)\ket{0} = \cos\left( \frac{\theta}{2} \right)\ket{0}-i\sin\left( \frac{\theta}{2} \right)\ket{1}$$  
 $$P(0)=\cos^2\left( \frac{\theta}{2} \right)$$  
 $$P(1)=\sin^2\left( \frac{\theta}{2} \right)$$    
 
-And, when applied to $\ket{1}$  
+  And, when applied to $\ket{1}$  
 
 $$R_y(\theta)\ket{1} = -i\sin\left( \frac{\theta}{2} \right)\ket{0}+\cos\left( \frac{\theta}{2} \right)\ket{1}$$  
 $$P(0)=\sin^2\left( \frac{\theta}{2} \right)$$   
 $$P(1)=\cos^2\left( \frac{\theta}{2} \right)$$  
 
-For example, if the gate is $R_{x}(\frac{3*\pi}{4})$ then the probabilities are:
+  For example, if the gate is $R_{x}(\frac{3*\pi}{4})$ then the probabilities are:
 
 $$\theta=\frac{3*\pi}{4} \rightarrow \cos\left( \frac{\theta}{2} \right) = \cos(\frac{3*\pi}{8}) \approx 0.382; \sin\left( \frac{\theta}{2} \right) = \sin(\frac{3*\pi}{8}) \approx 0.923; $$
 
@@ -158,21 +159,20 @@ The QuantumCirtcuit constructor accepts multiple parameters:
 
 ### Registers
 - What will occur when the following code is executed?
-```python
-c = ClassicalRegister(2)
-c.draw()
-```
-Neither ClassicalRegister nor QuantumRegister have a draw method. So, an error is returned.
+  ```python
+  c = ClassicalRegister(2)
+  c.draw()
+  ```
+  Neither ClassicalRegister nor QuantumRegister have a draw method. So, an error is returned.
 
 ## Statevectors
 
-- Which of the following statevectors represent sv in the given below code
-fragment?
-```python
-sv = Statevector.from_int(3,2**3)
-```
-That notation was a bit tricky for me until I found the logic. The second parameter provides the dimensions. In this case 2**3 = 8 means we have 3 qubits. The first one is the state. In this case 3 = $\ket{011}$ so just the fourth element (0 based) is a one.
-And the answer is [0,0,0,1,0,0,0,0].
+- Which of the following statevectors represent sv in the given below code fragment?
+  ```python
+  sv = Statevector.from_int(3,2**3)
+  ```
+  That notation was a bit tricky for me until I found the logic. The second parameter provides the dimensions. In this case 2**3 = 8 means we have 3 qubits. The first one is the state. In this case 3 = $\ket{011}$ so just the fourth element (0 based) is a one.
+  And the answer is [0,0,0,1,0,0,0,0].
 
 ## Visualizations
 
