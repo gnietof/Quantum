@@ -49,8 +49,8 @@
 - [Run jobs in batch](./run_jobs_batch.md) ✅⭐⭐🟢
 ### 4.2. Demonstrate understanding of how to run quantum circuits with real hardware using Qiskit Runtime primitives and applying broadcasting rules
 - [Execute on hardware](./execute_on_hardware.md) (same as 4.1's) :soon: *Not yet*
-- [Primitives](./primitives.md) 🚧 *Doc in progress*
-- [Primitive inputs and outputs](./primitive_input_output.md) :soon: *Not yet*
+- [Primitives](./primitives.md) ✅⭐⭐🟢
+- [Primitive inputs and outputs](./primitive_input_output.md) 🚧 *Doc in progress*
 - [Run jobs in session](./run_jobs_session.md) ✅⭐⭐🟢
 
 ## 5. Use the sampler primitive (12% $`\equiv`$ 8 questions)
