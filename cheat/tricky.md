@@ -172,7 +172,7 @@ The QuantumCirtcuit constructor accepts multiple parameters:
   sv = Statevector.from_int(3,2**3)
   ```
   That notation was a bit tricky for me until I found the logic. The second parameter provides the dimensions. In this case 2**3 = 8 means we have 3 qubits. The first one is the state. In this case 3 = $\ket{011}$ so just the fourth element (0 based) is a one.
-  And the answer is [0,0,0,1,0,0,0,0].
+  And the answer is [0,0,0,1,0,0,0,0] because the order is [000,001,010,**011**,100,101,110,111].
 
 ## Visualizations
 
