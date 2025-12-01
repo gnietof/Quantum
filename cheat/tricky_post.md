@@ -16,7 +16,12 @@
 
 - What is the session_id used for?
 
+- How recover from the Job the duration of the execution in the QPU?
+
+- 
+
 
 ## Review
 
 - Configuration of different error techniques by setting parameters.
+- Different pass managers. Including the **unroll3qOrMore**.
