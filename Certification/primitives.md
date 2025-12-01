@@ -1,3 +1,12 @@
+# Certification basics
+- Estimators and Samplers provide an abstraction of the backend implementation.
+- Samplers return the outputs of executing a circuit multiple times.
+- Estimators provide the result of $\\braket{O}=\\braket{\\psi|O|\\psi}$ where $\\ket{O}$ is the observable and $\\ket{\\psi}$ is the result of applying our circuit to the initial state vector $\\ket{0}$.
+- There are different implementations of the primitives: ```EstimatorV2```/```SamplerV2``` (for execution on a QPU), ```StatevectorEstimator```/```StatevectorSampler```(execution on the simulator) and ```BaseEstimatorV2```/```BaseSamplerV2``` for execution on other backends (fake ones, for example).
+- Both Sampler and Estimator accept PUBs as inputs and provide ```PubResult```as outputs. But the PUB's are slightly different:
+  - Estimator: (circuit, observable(s), [parameter(s)], [precision]).
+  - Sampler: (circuit, [parameter(s)], [shots]).
+
 # Introdution to primitives
 - As access to QPUs became more widespread, and with more quantum algorithms being developed, again the need for a higher-level abstraction emerged. Qiskit introduced the primitives interface, in response to the need for a higher-level abstraction when accessing to QPUs.
 - Primitives are optimized for two core tasks in quantum algorithm development: expectation value estimation (Estimator) and circuit sampling (Sampler).
@@ -21,7 +30,7 @@
 ### Implementations
 - The Qiskit Runtime primitives ```EstimatorV2``` and ```SamplerV2``` provide a more sophisticated implementation (for example, by including error mitigation) as a cloud-based service. This implementation of the base primitives is used to access IBM Quantum hardware. They are accessed through IBM Qiskit Runtime.
 - ```StatevectorEstimator``` and ```StatevectorSampler``` are the reference implementations of the primitives that **use the simulator built into Qiskit**. They are built with the Qiskit quantum_info module, producing results based on ideal statevector simulations. They are accessed through Qiskit.
-```BackendEstimatorV2``` and ```BackendSamplerV2``` are use to “wrap” any quantum computing resource into a primitive. This lets you write primitive-style code for providers that don’t yet have a primitives-based interface. These classes can be used just like the regular Sampler and Estimator, except they should be initialized with an additional backend argument for selecting which quantum computer to run on. They are accessed by using Qiskit.
+- ```BackendEstimatorV2``` and ```BackendSamplerV2``` are use to “wrap” any quantum computing resource into a primitive. This lets you write primitive-style code for providers that don’t yet have a primitives-based interface. These classes can be used just like the regular Sampler and Estimator, except they should be initialized with an additional backend argument for selecting which quantum computer to run on. They are accessed by using Qiskit.
 
 ## Benefits of Qiskit primitives
 - Qiskit users can write quantum code for a specific QPU without having to explicitly manage every detail.
