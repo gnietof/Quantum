@@ -2,7 +2,7 @@
 A compilation of questions which I have found to be tricky.
 
 # Random
-- What does QASM stand for?
+- What does QASM stand for?  
 Quantum Assembly Language
 
 - Which are the eigenstates of the X axis?  
@@ -23,9 +23,9 @@ The overall performance and error rates of quantum hardware. Not only the number
     - Circuit depth: how many sequential operations can be done before noise overwhelms the result.  
     - Compilation efficiency: how well the hardware executes random circuits.  
 
-- Which statement generates a random state vector?
-The statement which generates a random state vector is qiskit.quantum_info.random_statevector.
-There are also several statements for declaring other objects:
+- Which statement generates a random state vector?  
+The statement which generates a random state vector is qiskit.quantum_info.random_statevector.  
+There are also several statements for declaring other objects:  
 
 | Statement | Description | Returns |
 |-----------|-------------|---------|
@@ -39,7 +39,7 @@ There are also several statements for declaring other objects:
 
 ## Clifford
 
-- Which one of the provided identities are correct?
+- Which one of the provided identities are correct?  
 
 The combination of Clifford gates is better described in ![Clifford Combinations](../cheat/tips_clifford.md#clifford-combinations). Just for answering those questions related with Clifford gates identities:
 
@@ -56,7 +56,7 @@ When finding the probabilities to find $\ket{0}$ or $\ket{1}$ after applying one
 1. Then check which operation is being applied!
    
 Keep in mind that ...
-- **Rz** *does not* change the probabilities of finding any of those when applied to $\ket{0}$ or $\ket{1}$.
+- **Rz** *does not* change the probabilities of finding any of those when applied to $\ket{0}$ or $\ket{1}$.  
   
 So, when applied to $\ket{0}$:
 
