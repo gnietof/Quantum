@@ -10,7 +10,6 @@
   - Sampler samples the output register from quantum circuit execution.
 
 ## Primitive definition and implementations
-
 - There are two types of Qiskit primitives: the base classes, and their implementations.
 - The Qiskit primitives are defined by open-source primitive base classes that live in the Qiskit SDK (in the qiskit.primitives module).
 - Providers (such as Qiskit Runtime) can use these base classes to derive their own Sampler and Estimator implementations. Most users will interact with provider implementations, not the base primitives.
@@ -33,5 +32,14 @@
 ### Estimator
 - The Estimator primitive computes the expectation values for one or more observables with respect to states prepared by quantum circuits.
 - The circuits can be parametrized, as long as the parameter values are also provided as input to the primitive.
-- The input is an array of [PUBs](./primitive_input_output.md#Overview-of-PUBs).
+- The input is an array of [PUBs](./primitive_input_output.md#Overview-of-PUBs). Each PUB is in the format (circuit, observable(s), [parameter(s)], [precision]).
+- The output is a ```PUBResult``` that contains the computed expectation values per pair, and their standard errors, in PubResult form.
+
+### Sampler
+- The Sampler samples the output register from the execution of one or more quantum circuits.
+- The circuits can be parametrized, as long as the parameter values are also provided as input to the primitive.
+- The input is an array of [PUBs](./primitive_input_output.md#Overview-of-PUBs). Each PUB is in the format (circuit, [parameter(s)], [shots]).
+- The output is counts or per-shot measurements, as PubResult objects, without weights. 
+
+
 
