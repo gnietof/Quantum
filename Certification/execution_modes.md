@@ -5,7 +5,8 @@
 ## Job mode
 - A single primitive request of the estimator or the sampler made without a context manager.
 - Circuits and inputs are packaged as primitive unified blocs (PUBs) and submitted as an execution task on the quantum computer. -
-- To run in job mode, specify mode=backend when instantiating a primitive. 
+- To run in job mode, specify mode=backend when instantiating a primitive.
+- Single job usage is the quantum time the job uses in processing.
 ```python
 from qiskit_ibm_runtime import QiskitRuntimeService,SamplerV2
 
@@ -22,6 +23,7 @@ sampler = SamplerV2(mode=backend)
 - Jobs are not guaranteed to be executed in the order they were submitted.
 - They will run as closely as possible but they do not get exclusive access to the backend.
 - Sending a one job batch makes no difference in queue execution time compared to job mode.
+- Batch usage is the sum of quantum time of all jobs in the batch.
 
 ```python
 from qiskit_ibm_runtime import QiskitRuntimeService,SamplerV2,Batch
@@ -43,6 +45,7 @@ with Batch(backend=backend) as batch2:
 - During this window, the user has exclusive access of the system and no other jobs can run - including calibration jobs.
 - This allows users to experiment with variational algorithms in a more predictable way and even run multiple experiments simultaneously, taking advantage of parallelism in the stack.
 - Using sessions helps avoid delays caused by queuing each job separately, which can be particularly useful for iterative tasks that require frequent communication between classical and quantum resources.
+- Session usage is the time from when the first job starts until the session goes inactive, is closed, or when its last job completes, whichever happens last. It includes both classical and quantum time (time spent by the QPU complex to process your job).
 
 ```python
 from qiskit_ibm_runtime import QiskitRuntimeService,SamplerV2,Session
