@@ -21,12 +21,24 @@ This is a long document. I will cover here only the points which I think are imp
 ## Classical scalar types
 
 ### Classical bits and registers
+- A classical bit type that takes values 0 or 1.
+- Bit registers (arrays) may be declared using a string of bits.
 ### Integers
-###
+- There are n-bit signed and unsigned integers.
+- The statements ```int[size] name``` and ```uint[size] name``` declare signed 1:n-1:0 and unsigned 0:n:0 integers of the given size.
+- The sizes and the surrounding brackets can be omitted to use a precision that is specified by the particular target architecture
 ### Floating point numbers
+- IEEE 754 floating point registers may be declared with ```float[size] name```, where ```float[64]``` would indicate a standard double-precision float. 
 ### Void type
+- Subroutines and externs that do not return a value implicitly return void.
+- The void type is unrealizable and uninstantiable, and thus cannot be attached to an identifier or used as a cast operator.
 ### Angles
+- The type ```angle[size]``` is manipulated very similarly to a single unsigned integer
+- The value 1 represents an angle of $\frac{2\pi}{2^{size}}$,
+- The largest representable value by this integer is equivalent to $2\pi$.
+- The value n would represent an angle of $n\times{\frac{2\pi}{2^{size}}}$,
 ### Complex numbers
+- Complex numbers may be declared as ```complex[float[size]] name```, where size is the size of the IEEE-754 floating-point number used to store the real and imaginary components. Each component behaves as a ```float[size]``` type.
 ### Boolean types
 - Bolean type takes values **true** or **false**.
 - Measurements can be converted from **bit** to boolean using **bool()**.
