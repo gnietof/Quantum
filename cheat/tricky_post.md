@@ -25,3 +25,5 @@
 
 - Configuration of different error techniques by setting parameters.
 - Different pass managers. Including the **unroll3qOrMore**.
+- Check ParameterVectors
+- Visualizations
