@@ -1,6 +1,14 @@
 # Session
 This document does not provide much interesting information. Most interesting part for certification is the information provided by the session object.
 
+I will include information from other documents here. 
+
+## Session mode
+- A session gives exclusive access to a QPU.
+- Once created, if no jobs are submitted for 30 minutes, the session automatically closes.
+- The maximum session time to live (TTL) determines how long a session can run. You can set this value with the max_time parameter. This should exceed the longest job's execution time.
+- For Premium plans, the Interactive TTL is set to 60 seconds and the Maximum TTL to 8h.
+
 ## Attributes
 
 ## Methods
