@@ -8,6 +8,7 @@ I will include information from other documents here.
 - Once created, if no jobs are submitted for 30 minutes, the session automatically closes.
 - The maximum session time to live (TTL) determines how long a session can run. You can set this value with the max_time parameter. This should exceed the longest job's execution time.
 - For Premium plans, the Interactive TTL is set to 60 seconds and the Maximum TTL to 8h.
+- The Interactive TTL is the time beetween submitted jobs.
 
 ## Attributes
 
