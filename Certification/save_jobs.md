@@ -2,6 +2,7 @@
 Quantum jobs take a while to complete. To avoid loss of data, past jobs results from IBM Quantum can be saved to a file so that a session can continue where it was left off.
 
 ## Retrieve job results from IBM Quantum
+- IBM Quantum automatically stores results from every job for you to retrieve at a later date. 
 - Jobs executed in IBM Quantum can be retrieved at a later date providing their job Id.
 - All executed jobs can be found at [Workloads page](https://quantum.cloud.ibm.com/workloads).
 - A job can be found using the ```QiskitRuntimeService.jobs``` method. This returns the most recently submitted jobs but it is also possible to filter by backend, creation date ...
