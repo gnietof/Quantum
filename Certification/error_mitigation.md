@@ -4,7 +4,9 @@ This is an high-level overview of the error supression and mitigation techniques
   - Dynamic Decoupling focuses on unwanted interactions or crosstalk (coherent noise).
   - Pauli twirling focuses on channel noise or gate noise (coherent gate errors).
   - ZNE focuses on different types of errors: coherent errors, incoherent errors and general markovian noise.
-
+  - ⚠️```dynamical_decoupling``` (Dynamic Decoupling) and ```twirling``` (Pauli Twirling) properties are included both in SamplerV2 and EstimatorV2.
+  - ⚠️```resilience property``` (ZNE, TREX, PEA and PEC) is not included in SamplerV2 so those error reduction techniques are not available.
+ 
 ## Dynamic Decoupling
 - Unwanted interactions between qubits can lead to coherent errors on idling qubits. Dynamical decoupling works by inserting pulse sequences on idling qubits to approximately cancel out the effect of these errors.
 - Dynamical decoupling is mainly useful for circuits containing gaps in which some qubits sit idle without any operations acting on them.
