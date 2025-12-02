@@ -4,6 +4,7 @@
 - Sessions give dedicated and exclusive use to a QPU.
 ## Open a session
 - There are two ways to execute a session. Using the context manager ```with Session(...)``` or by initializing the ```Session``` class.
+- The session starts **when its first job begins execution**.
 
 ### Session class
 - The session instance must be provided to the Sampler/Estimator and it has to be closed.
