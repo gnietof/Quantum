@@ -27,6 +27,7 @@
 - Different pass managers. Including the **unroll3qOrMore**.
 - Check ParameterVectors
 - Visualizations
+- Finish the page with all bell states and their representations using different visualizations.
 
 #Check
 
