@@ -1,11 +1,16 @@
 # Error Mitigation
 This is an high-level overview of the error supression and mitigation techniques.
+- My TLDR for these is that:
+  - Dynamic Decoupling focuses on unwanted interactions or crosstalk (coherent noise).
+  - Pauli twirling focuses on channel noise or gate noise (coherent gate errors).
+  - ZNE focuses on different types of errors: coherent errors, incoherent errors and general markovian noise.
 
 ## Dynamic Decoupling
+- Unwanted interactions between qubits can lead to coherent errors on idling qubits. Dynamical decoupling works by inserting pulse sequences on idling qubits to approximately cancel out the effect of these errors.
 - Dynamical decoupling is mainly useful for circuits containing gaps in which some qubits sit idle without any operations acting on them.
 - Dynamical decoupling can be enabled by setting enable to True in the dynamical decoupling options.
 - The ```sequence_type``` option can be used to pick from different pulse sequences. The default one is 'XX'.
-```qasm
+```python
 estimator = Estimator(mode=backend)
 estimator.options.dynamical_decoupling.enable = True
 estimator.options.dynamical_decoupling.sequence_type = "XpXm"
@@ -13,6 +18,7 @@ estimator.options.dynamical_decoupling.sequence_type = "XpXm"
 
 ## Pauli Twirling
 - Pauli twirling is a special kind of twirling that uses Pauli operations. It has the effect of transforming any quantum channel into a Pauli channel. Pauli twirling is often combined with other error mitigation techniques that work better with Pauli noise than with arbitrary noise.
+- Pauli twirling is used to convert coherent gate errors into stochastic Pauli errors.
 - Pauli twirling is implemented by sandwiching a chosen set of gates with randomly chosen single-qubit Pauli gates in such a way that the ideal effect of the gate remains the same.
 - When sampling the circuit, samples are drawn from multiple random instances, rather than just a single one.
 - This technique is often applied exclusively to (native) two-qubit gates.
@@ -20,7 +26,7 @@ estimator.options.dynamical_decoupling.sequence_type = "XpXm"
   - num_randomizations: The number of circuit instances to draw from the ensemble of twirled circuits.
   - shots_per_randomization: The number of shots to sample from each circuit instance.
 
-```qasm 
+```python 
 estimator = Estimator(mode=backend)
 estimator.options.twirling.enable_gates = True
 estimator.options.twirling.num_randomizations = 32
@@ -30,7 +36,7 @@ estimator.options.twirling.shots_per_randomization = 100
 ## Twirled readout error extinction (TREX)
 - Twirled readout error extinction (TREX) mitigates the effect of measurement errors for the estimation of Pauli observable expectation values.
 - TREX can be enabled by setting measure_mitigation to True in the Qiskit Runtime resilience options for Estimator.
-```qasm 
+```python 
 estimator = Estimator(mode=backend)
 estimator.options.resilience.measure_mitigation = True
 estimator.options.resilience.measure_noise_learning.num_randomizations = 32
@@ -45,7 +51,7 @@ estimator.options.resilience.measure_noise_learning.shots_per_randomization = 10
 - ZNE can be enabled by setting zne_mitigation to True in the Qiskit Runtime resilience options for Estimator. Other options include (although they are not required to be set explicitly):
   - noise_factors: The noise factors to use for noise amplification.
   - extrapolator: The functional form to use for the extrapolation.
-```qasm 
+```python 
 estimator = Estimator(mode=backend)
 estimator.options.resilience.zne_mitigation = True
 estimator.options.resilience.zne.noise_factors = (1, 3, 5)
@@ -60,7 +66,7 @@ estimator.options.resilience.zne.extrapolator = "exponential"
   - Noise amplification: The original quantum circuit is executed multiple times at different noise factors.
   - Extrapolation: The ideal result is estimated by extrapolating the noisy expectation value results to the zero-noise limit.
 - Because PEA is a ZNE noise amplification technique, you also need to enable ZNE by setting ```resilience.zne_mitigation = True```.
-```qasm 
+```python 
 estimator = Estimator(mode=backend)
 estimator.options.resilience.zne_mitigation = True
 estimator.options.resilience.zne.amplifier = "pea"
@@ -69,7 +75,7 @@ estimator.options.resilience.zne.amplifier = "pea"
 ## Probabilistic error cancellation (PEC)
 - Probabilistic error cancellation (PEC) is a technique for mitigating errors in estimating expectation values of observables. Unlike ZNE, it returns an unbiased estimate of the expectation value. However, it generally incurs a greater overhead.
 - PEC can be enabled by setting pec_mitigation to True in the Qiskit Runtime resilience options for Estimator. 
-```qasm 
+```python 
 estimator = Estimator(mode=backend)
 estimator.options.resilience.pec_mitigation = True
 estimator.options.resilience.pec.max_overhead = 100
