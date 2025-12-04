@@ -30,9 +30,16 @@ This section contains functions that visualize quantum states.
 
 ## State Visualizations
 
+I have included examples of state visualizations for all bell states in [Bell states visualizations](../cheat/bell_visualizations.md)
+
 ### State City
 - The ```plot_state_city``` displays the density matrix of a state $\ket{psi}$.
-#### Example
+
+### State Hinton
+- The ```plot_state_hinton``` displays the density matrix of a state $\ket{psi}$.
+- The hinton diagram represents the values of a matrix using squares, whose size indicate the magnitude of their corresponding value and their color, its sign. A white square means the value is positive and a black one means negative
+
+#### Examples
 - The density matrix can be calculated as $\rho = \ket{\psi}\bra{\psi}$. That is calculating the outer product of the state by its complex conjugate transpose.
 
 $`\ket{\psi} = \begin{pmatrix} a_0 \\ a_1 \\ a_2 \\ a_3 \end{pmatrix} ; 
@@ -52,10 +59,21 @@ $`\ket{\psi} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 0 \\ 0 \\ i \end{pmatrix}
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 i & 0 & 0 & 1 \end{pmatrix}`$  
+- City
+<img width="623" height="339" alt="image" src="https://github.com/user-attachments/assets/2e129943-aacd-45b7-9b7f-39cc7a49c590" />
 
-<img width="1539" height="770" alt="image" src="https://github.com/user-attachments/assets/869247ba-96b3-403a-ab0c-3a5e9f55b455" />
+- Hinton
+<img width="589" height="322" alt="image" src="https://github.com/user-attachments/assets/f163a966-ca8b-4dad-a52a-3f49d1048816" />
 
-### State Hinton
+Another example:  
+$` \ket{\psi} = \begin{pmatrix} \frac{3\sqrt{2}}{10} \\ \frac{4\sqrt{2}}{10} \\ \frac{4\sqrt{2}}{10} \\ \frac{3\sqrt{2}}{10} \end{pmatrix};
+\rho = \ket{\psi}\bra{\psi} = \begin{pmatrix}\frac{9}{50} & -\frac{6}{25} & \frac{6i}{25} & -\frac{9i}{50} \\ -\frac{6}{25} & \frac{8}{25} & -\frac{8i}{25} & \frac{6i}{25} \\ -\frac{6i}{25} & \frac{8i}{25} & \frac{8}{25} & -\frac{6}{25}  \\ \frac{9i}{50} & -\frac{6i}{25} & -\frac{6}{25} & \frac{9}{50}  \\ \end{pmatrix}`$
+
+- City
+<img width="624" height="337" alt="image" src="https://github.com/user-attachments/assets/e562c5d1-5098-4e9b-8900-fa9118aada94" />
+
+- Hinton
+<img width="589" height="322" alt="image" src="https://github.com/user-attachments/assets/64efa8de-5bfe-45f7-a32c-9a0f952a5b29" />
 
 ### Bloch Sphere
 
