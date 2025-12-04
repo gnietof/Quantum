@@ -32,6 +32,7 @@ This section contains functions that visualize quantum states.
 
 ### State City
 - The ```plot_state_city``` displays the density matrix of a state $\ket{psi}$.
+#### Example
 - The density matrix can be calculated as $\rho = \ket{\psi}\bra{\psi}$. That is calculating the outer product of the state by its complex conjugate transpose.
 
 $`\ket{\psi} = \begin{pmatrix} a_0 \\ a_1 \\ a_2 \\ a_3 \end{pmatrix} ; 
@@ -53,8 +54,6 @@ $`\ket{\psi} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 0 \\ 0 \\ i \end{pmatrix}
 i & 0 & 0 & 1 \end{pmatrix}`$  
 
 <img width="1539" height="770" alt="image" src="https://github.com/user-attachments/assets/869247ba-96b3-403a-ab0c-3a5e9f55b455" />
-
-
 
 ### State Hinton
 
