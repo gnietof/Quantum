@@ -1,0 +1,17 @@
+# Circuit Visualization
+
+## Circuit Layout
+- Circuit layout displays how the transpiled circuit will be mapped either to physical or virtual qubits.
+  
+### Example
+- We generate a big random cirtuit.
+
+```python
+from qiskit.circuit.random import random_circuit
+
+qc = random_circuit(32,8, max_operands=2)
+qc.draw('mpl',fold = False)
+```
+
+
+
