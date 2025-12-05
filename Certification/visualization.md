@@ -230,8 +230,19 @@ dag_drawer(dag)
 ## Pass Manager Visualizations
 - Draws the pass manager.
 
+```python
+from qiskit.visualization import pass_manager_drawer
+from qiskit.transpiler import generate_preset_pass_manager
+
+pm = generate_preset_pass_manager()
+pass_manager_drawer(pm,filename='pm_drawer.png')
+```
+<img width="12067" height="3668" alt="image" src="https://github.com/user-attachments/assets/0c842083-7330-4047-ace1-4fbef3e9bf96" />
 
 ## Timeline Visualizations
 - Deprecated since 1.3
+
+## Single Qubit State Transition Visualizations
+- Deprecated since 1.2
 
 
