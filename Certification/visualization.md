@@ -71,7 +71,7 @@ plot_distribution(data,sort='value_desc',title='Dates',legend=['Dates1','Dates2'
 - This section contains functions that visualize quantum states.
 - I have included examples of state visualizations for all bell states in [Bell states visualizations](../cheat/bell_visualizations.md)
 
-### Bloch Sphere
+### Bloch Vector
 - The Bloch Sphere is shown below.
 - A state is displayed based on its coordinates which can be provided in cartesian or spherical systems.
 
@@ -130,6 +130,30 @@ plot_bloch_vector([-1,0,0],coord_type='cartesian') # cartesian is the default so
 ```
 
 <img width="419" height="419" alt="image" src="https://github.com/user-attachments/assets/b13f37cf-9d75-41f8-b430-668e9b187d38" />
+
+### Block Multivector
+- Similar to Bloch vector but in this case a sphere for each qubit is displayed.
+
+#### Example
+For this circuit:
+<img width="563" height="367" alt="image" src="https://github.com/user-attachments/assets/e99e2466-ea5d-4c6c-a74f-c66c8168a2ce" />
+The displayed diagram is:
+```python
+from qiskit.visualization import plot_bloch_multivector
+from qiskit.quantum_info import Statevector
+
+sv = Statevector(qc)
+plot_bloch_multivector(sv)
+```
+<img width="2324" height="374" alt="image" src="https://github.com/user-attachments/assets/8004416f-1c80-487e-a88e-8e386fc7b469" />
+
+**Note**. Keep in mind that, by default - unless the reverse_bits is set to True - qubit 0 is on the left side of the diagram.
+
+```python
+plot_bloch_multivector(sv,reverse_bits=True)
+```
+<img width="2324" height="374" alt="image" src="https://github.com/user-attachments/assets/0b49a0b6-263f-4cb5-b292-3372c74250db" />
+
 
 ### State City
 - The ```plot_state_city``` displays the density matrix of a state $\ket{\psi}$.
@@ -227,8 +251,6 @@ dag_drawer(dag)
 ```
 
 <img width="471" height="1227" alt="image" src="https://github.com/user-attachments/assets/d5d5c1cb-ebbc-461f-89c0-49c9df55810e" />
-
-
 
 ## Pass Manager Visualizations
 - Draws the pass manager.
