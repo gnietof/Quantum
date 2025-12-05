@@ -230,7 +230,8 @@ dag_drawer(dag)
 ## Pass Manager Visualizations
 - Draws the pass manager.
 
-## Timeline Visualizations
 
+## Timeline Visualizations
+- Deprecated since 1.3
 
 
