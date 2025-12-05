@@ -65,7 +65,8 @@ Tr \left(\frac{1}{2}\begin{pmatrix} 1 & 0 & 0 & i \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 
 $`\rho = \frac{1}{4}(c_{II} II + c_{XY} XY + c_{YX} YX + c_{ZZ} ZZ) = \frac{1}{4}(II - XY - YX + ZZ) = `$
 
 $`= \frac{1}{4} \left(\begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 1\end{pmatrix} - \begin{pmatrix}0 & 0 & 0 & -i \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0\\ i & 0 & 0 & 0\end{pmatrix} - \begin{pmatrix}0 & 0 & 0 & -i \\ 0 & 0 & -i & 0 \\ 0 & i & 0 & 0\\ i & 0 & 0 & 0\end{pmatrix} + \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0\\ 0 & 0 & 0 & 1\end{pmatrix}\right) = `$
-$`= \frac{1}{4} \begin{pmatrix}2 & 0 & 0 & -2i \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\\ 2i & 0 & 0 & 2\end{pmatrix} = \frac{1}{2} \begin{pmatrix}1 & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\\ i & 0 & 0 & \end{pmatrix} `$
+
+$`= \frac{1}{4} \begin{pmatrix}2 & 0 & 0 & 2i \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\\ -2i & 0 & 0 & 2\end{pmatrix} = \frac{1}{2} \begin{pmatrix}1 & 0 & 0 & i \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\\ -i & 0 & 0 & 1\end{pmatrix} `$
 
 
 
