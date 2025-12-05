@@ -39,7 +39,12 @@ I have included examples of state visualizations for all bell states in [Bell st
 - The ```plot_state_hinton``` displays the density matrix of a state $\ket{psi}$.
 - The hinton diagram represents the values of a matrix using squares, whose size indicate the magnitude of their corresponding value and their color, its sign. A white square means the value is positive and a black one means negative
 
-#### Examples
+### State Pauli
+- Tensor products of Pauli matrices are all observables that return +1 or -1. This plot displays the expectation values of the state on different Pauli operators as a bar chart.
+- All density matrices can be written as a sum of these Pauli matrices, weighted by their expectation values.
+- A document explaining where the coeficients for each of the Pauli operators come from is available in [PauliVec coefficients](../cheat/paulivec.md). 
+
+### Examples
 - The density matrix can be calculated as $\rho = \ket{\psi}\bra{\psi}$. That is calculating the outer product of the state by its complex conjugate transpose.
 
 $`\ket{\psi} = \begin{pmatrix} a_0 \\ a_1 \\ a_2 \\ a_3 \end{pmatrix} ; 
@@ -65,8 +70,14 @@ i & 0 & 0 & 1 \end{pmatrix}`$
 - Hinton
 <img width="589" height="322" alt="image" src="https://github.com/user-attachments/assets/f163a966-ca8b-4dad-a52a-3f49d1048816" />
 
+- Pauli
+
+<img width="590" height="490" alt="image" src="https://github.com/user-attachments/assets/617626e1-1c90-49d5-bca9-238a9404bdce" />
+
+
 Another example:  
-$` \ket{\psi} = \begin{pmatrix} \frac{3\sqrt{2}}{10} \\ \frac{4\sqrt{2}}{10} \\ \frac{4\sqrt{2}}{10} \\ \frac{3\sqrt{2}}{10} \end{pmatrix};
+
+$` \ket{\psi} = \begin{pmatrix} \frac{3\sqrt{2}}{10} \\ -\frac{4\sqrt{2}}{10} \\ -\frac{4\sqrt{2}i}{10} \\ \frac{3\sqrt{2}i}{10} \end{pmatrix};
 \rho = \ket{\psi}\bra{\psi} = \begin{pmatrix}\frac{9}{50} & -\frac{6}{25} & \frac{6i}{25} & -\frac{9i}{50} \\ -\frac{6}{25} & \frac{8}{25} & -\frac{8i}{25} & \frac{6i}{25} \\ -\frac{6i}{25} & \frac{8i}{25} & \frac{8}{25} & -\frac{6}{25}  \\ \frac{9i}{50} & -\frac{6i}{25} & -\frac{6}{25} & \frac{9}{50}  \\ \end{pmatrix}`$
 
 - City
@@ -74,6 +85,10 @@ $` \ket{\psi} = \begin{pmatrix} \frac{3\sqrt{2}}{10} \\ \frac{4\sqrt{2}}{10} \\ 
 
 - Hinton
 <img width="589" height="322" alt="image" src="https://github.com/user-attachments/assets/64efa8de-5bfe-45f7-a32c-9a0f952a5b29" />
+
+- Pauli
+
+<img width="690" height="490" alt="image" src="https://github.com/user-attachments/assets/48b99586-a1e5-49e1-aa17-79d68f38051b" />
 
 ### Bloch Sphere
 
