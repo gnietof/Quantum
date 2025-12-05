@@ -32,6 +32,13 @@ plot_state_paulivec(sv1)
 ```
 <img width="590" height="490" alt="image" src="https://github.com/user-attachments/assets/6a003a4e-292b-4de7-a0d1-c31ee4f1981f" />
 
+```python
+from qiskit.visualization import plot_state_qsphere
+
+plot_state_qsphere(sv1)
+```
+<img width="560" height="559" alt="image" src="https://github.com/user-attachments/assets/caea4158-ec01-40ab-b0dc-ae40a61b6e0f" />
+
 ## $\ket{\phi^-}$ 
 
 $\ket{\phi^-}=\frac{1}{\sqrt{2}}(\ket{00}-\ket{11})$
@@ -64,6 +71,14 @@ from qiskit.visualization import plot_state_paulivec
 plot_state_paulivec(sv2)
 ```
 <img width="590" height="490" alt="image" src="https://github.com/user-attachments/assets/43458454-7fa8-4702-8b23-abcb78ed2775" />
+
+```python
+from qiskit.visualization import plot_state_qsphere
+
+plot_state_qsphere(sv2)
+```
+<img width="560" height="559" alt="image" src="https://github.com/user-attachments/assets/9d709985-e195-467e-bc4c-6c75c1cba799" />
+
 
 ## $\ket{\psi^+}$
 
@@ -98,6 +113,12 @@ plot_state_paulivec(sv3)
 ```
 <img width="590" height="490" alt="image" src="https://github.com/user-attachments/assets/cc448404-0e58-4199-b365-482f576c20b7" />
 
+```python
+from qiskit.visualization import plot_state_qsphere
+
+plot_state_qsphere(sv3)
+```
+<img width="560" height="559" alt="image" src="https://github.com/user-attachments/assets/2f363337-b7c9-498b-adea-e9e0fc951c7a" />
 
 ## $\ket{\psi^-}$ 
 
@@ -134,4 +155,11 @@ from qiskit.visualization import plot_state_paulivec
 plot_state_paulivec(sv4)
 ```
 <img width="590" height="490" alt="image" src="https://github.com/user-attachments/assets/51c79a97-758d-4e3c-be52-017fb8d0dc75" />
+
+```python
+from qiskit.visualization import plot_state_qsphere
+
+plot_state_qsphere(sv4)
+```
+<img width="560" height="559" alt="image" src="https://github.com/user-attachments/assets/3414380c-31f3-4e72-bff1-e9a04337335e" />
 
