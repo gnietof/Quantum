@@ -197,7 +197,9 @@ $` \ket{\psi} = \begin{pmatrix} \frac{3\sqrt{2}}{10} \\ -\frac{4\sqrt{2}}{10} \\
 ## Device Visualizations
 
 ## Circuit Visualizations
-
+- Draw the quantum circuit. I think it has exactly the same functionality as ```QuantumCircuit.draw```.
+- Use the output parameter to choose the drawing format.
+  
 ### Example
 
 ```python
@@ -209,7 +211,8 @@ circuit_drawer(qc,output='mpl')
 <img width="3194" height="1062" alt="image" src="https://github.com/user-attachments/assets/9e3b0e5a-f3ba-40a2-a0d3-1fe63bffc334" />
 
 ## DAG Visualizations
-
+- Plot the directed acyclic graph (dag) to represent operation dependencies in a quantum circuit.
+  
 ### Example
 
 ```python
@@ -225,6 +228,7 @@ dag_drawer(dag)
 
 
 ## Pass Manager Visualizations
+- Draws the pass manager.
 
 ## Timeline Visualizations
 
