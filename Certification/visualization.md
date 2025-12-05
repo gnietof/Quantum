@@ -85,6 +85,9 @@ $z = cos(\theta)$
 
 #### Example
 
+\left(\frac{\theta}{2}\right)
+(\frac{\theta}{2})
+
 If we have the state $\psi = \frac{1}{\sqrt{2}}(\ket{0}-\ket{1})$ then:
 
 $\ket{\psi}=cos(\frac{\theta}{2})\ket{0}+e^{i\phi}sin(\frac{\theta}{2})\ket{1} = \frac{1}{\sqrt{2}}(\ket{0}-\ket{1})$
