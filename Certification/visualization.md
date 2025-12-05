@@ -198,7 +198,31 @@ $` \ket{\psi} = \begin{pmatrix} \frac{3\sqrt{2}}{10} \\ -\frac{4\sqrt{2}}{10} \\
 
 ## Circuit Visualizations
 
+### Example
+
+```python
+from qiskit.visualization import circuit_drawer
+
+circuit_drawer(qc,output='mpl')
+```
+
+<img width="3194" height="1062" alt="image" src="https://github.com/user-attachments/assets/9e3b0e5a-f3ba-40a2-a0d3-1fe63bffc334" />
+
 ## DAG Visualizations
+
+### Example
+
+```python
+from qiskit.visualization.dag_visualization import dag_drawer
+from qiskit.converters import circuit_to_dag
+
+dag = circuit_to_dag(qc)
+dag_drawer(dag)
+```
+
+<img width="471" height="1227" alt="image" src="https://github.com/user-attachments/assets/d5d5c1cb-ebbc-461f-89c0-49c9df55810e" />
+
+
 
 ## Pass Manager Visualizations
 
