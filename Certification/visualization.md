@@ -131,7 +131,7 @@ plot_bloch_vector([-1,0,0],coord_type='cartesian') # cartesian is the default so
 
 <img width="419" height="419" alt="image" src="https://github.com/user-attachments/assets/b13f37cf-9d75-41f8-b430-668e9b187d38" />
 
-### Block Multivector
+### Bloch Multivector
 - Similar to Bloch vector but in this case a sphere for each qubit is displayed.
 
 #### Example
