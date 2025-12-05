@@ -75,7 +75,7 @@ plot_distribution(data,sort='value_desc',title='Dates',legend=['Dates1','Dates2'
 - The Bloch Sphere is shown below.
 - A state is displayed based on its coordinates which can be provided in cartesian or spherical systems.
 
-$\ket{\psi}=cos(\frac{\theta}{2})\ket{0}+e^{i\phi}sin(\frac{\theta}{2})\ket{1}$
+$\ket{\psi}=cos\left( \frac{\theta}{2} \right)\ket{0}+e^{i\phi}sin\left( \frac{\theta}{2} \right)\ket{1}$
 
 $x = sin(\theta)cos(\phi)$  
 $y = sin(\theta)sin(\phi)$  
@@ -85,26 +85,26 @@ $z = cos(\theta)$
 
 #### Example
 
-\left(\frac{\theta}{2}\right)
-(\frac{\theta}{2})
+\left( \frac{\theta}{2} \right)
+\left( \frac{\theta}{2} \right)
 
 If we have the state $\psi = \frac{1}{\sqrt{2}}(\ket{0}-\ket{1})$ then:
 
-$\ket{\psi}=cos(\frac{\theta}{2})\ket{0}+e^{i\phi}sin(\frac{\theta}{2})\ket{1} = \frac{1}{\sqrt{2}}(\ket{0}-\ket{1})$
+$\ket{\psi}=cos\left( \frac{\theta}{2} \right)\ket{0}+e^{i\phi}sin\left( \frac{\theta}{2} \right)\ket{1} = \frac{1}{\sqrt{2}}(\ket{0}-\ket{1})$
 
 So: 
 
-$cos(\frac{\theta}{2}) = \frac{1}{\sqrt{2}} ; e^{i\phi}sin(\frac{\theta}{2}) = -\frac{1}{\sqrt{2}}$
+$cos\left( \frac{\theta}{2} \right) = \frac{1}{\sqrt{2}} ; e^{i\phi}sin\left( \frac{\theta}{2} \right) = -\frac{1}{\sqrt{2}}$
 
-$cos(\frac{\theta}{2}) = \frac{1}{\sqrt{2}} \rightarrow \frac{\theta}{2} = \frac{\pi}{4} \rightarrow \theta = \pm\frac{\pi}{2}$
+$cos\left( \frac{\theta}{2} \right) = \frac{1}{\sqrt{2}} \rightarrow \frac{\theta}{2} = \frac{\pi}{4} \rightarrow \theta = \pm\frac{\pi}{2}$
 
 If $\theta = \frac{\pi}{2}$ then:
 
-$e^{i\phi}sin(\frac{\theta}{2}) = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}sin(\frac{\pi}{4}) = \frac{e^{i\phi}}{\sqrt{2}} = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}=-1 \rightarrow \phi = \pi$
+$e^{i\phi}sin\left( \frac{\theta}{2} \right) = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}sin\left( \frac{\pi}{4} \right) = \frac{e^{i\phi}}{\sqrt{2}} = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}=-1 \rightarrow \phi = \pi$
 
 If $\theta = -\frac{\pi}{2}$ then:
 
-$e^{i\phi}sin(\frac{\theta}{2}) = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}sin(\frac{\pi}{4}) = -\frac{e^{i\phi}}{\sqrt{2}} = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}=1 \rightarrow \phi = 0$
+$e^{i\phi}sin\left( \frac{\theta}{2} \right) = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}sin\left( \frac{\pi}{4} \right) = -\frac{e^{i\phi}}{\sqrt{2}} = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}=1 \rightarrow \phi = 0$
 
 Now we can plot our bloch sphere using spherical coordinates. Both options will display the same vector pointing to -x-axis (although it is complex to guess from the plot).
 ```python
@@ -118,9 +118,9 @@ plot_bloch_vector([1,pi/2,pi],coord_type='spherical')
 
 Likewise we migth find the cartesian coordinates now that we have $\theta$ and $\phi$.
 
-$x = sin(\theta)cos(\phi) = sin(\frac{\pi}{2})cos(\pi) = -1$  
-$y = sin(\theta)sin(\phi) = sin(\frac{\pi}{2})cos(\pi) = 0$  
-$z = cos(\theta) = cos(\frac{\pi}{2}) = 0$
+$x = sin(\theta)cos(\phi) = sin\left( \frac{\pi}{2} \right)cos(\pi) = -1$  
+$y = sin(\theta)sin(\phi) = sin\left( \frac{\pi}{2} \right)cos(\pi) = 0$  
+$z = cos(\theta) = cos\left( \frac{\pi}{2} \right) = 0$
 
 ```python
 from qiskit.visualization import plot_bloch_vector
@@ -132,10 +132,10 @@ plot_bloch_vector([-1,0,0],coord_type='cartesian') # cartesian is the default so
 <img width="419" height="419" alt="image" src="https://github.com/user-attachments/assets/b13f37cf-9d75-41f8-b430-668e9b187d38" />
 
 ### State City
-- The ```plot_state_city``` displays the density matrix of a state $\ket{psi}$.
+- The ```plot_state_city``` displays the density matrix of a state $\ket{\psi}$.
 
 ### State Hinton
-- The ```plot_state_hinton``` displays the density matrix of a state $\ket{psi}$.
+- The ```plot_state_hinton``` displays the density matrix of a state $\ket{\psi}$.
 - The hinton diagram represents the values of a matrix using squares, whose size indicate the magnitude of their corresponding value and their color, its sign. A white square means the value is positive and a black one means negative
 
 ### State Pauli
