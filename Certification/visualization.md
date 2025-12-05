@@ -11,7 +11,7 @@
   - ax: an optional axes for the visualization output.
   - filename: file path to save image to.
  
-  - Figures can be saved either by passing the filename parameter or using the ```savefig```method on the returned figure object.
+- Figures can be saved either by passing the filename parameter or using the ```savefig```method on the returned figure object.
 
 ## Count Visualizations
 This section contains functions that visualize measurements outcome counts.
