@@ -17,14 +17,14 @@
 - [QuantumCircuit](./quantumcircuit.md) :soon: *Not yet*
 ## 2. Visualize Quantum circuits, measurements and states (11% $`\equiv`$ 8 questions)
 ### 2.1. Visualize quantum circuits
-- [Visualize circuits](./visualize_circuits.md) ✅⭐⭐🟠
+- [Visualize circuits](./visualize_circuits.md) 
 ### 2.2. Visualize quantum measurements
 - [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md) (same as 3.1's)✅⭐⭐🟢
 - [Visualization](./visualization.md) ✅⭐⭐🟠
 - [Plot gate map](./plot_gate_map.md) :soon: *Not yet*
 ### 2.3. Visualize quantum states
-- [Plot bloch multivector](./plot_bloch_multivector.md) :soon: *Not yet*
-- [Plot state qsphere](./plot_state_qsphere.md) :soon: *Not yet*
+- [Plot bloch multivector](./visualization.md#bloch-multivector) ✅⭐⭐🟠
+- [Plot state qsphere](./visualization.md#bloch-vector) ✅⭐⭐🟠
 
 ## 3. Create quantum circuits (18% $`\equiv`$ 12 questions)
 ### 3.1. Construct dynamic circuits
