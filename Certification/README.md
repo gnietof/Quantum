@@ -32,7 +32,7 @@
 ### 3.2. Construct parameterized circuits
 - [Circuit Parameter](./circuit_parameter.md) ✅⭐⭐🟢
 - [Circuit QuantumCircuit](./circuit_quantumcircuit.md) (same as 3.4's) 🚧 *Doc in progress*
-- [Circuit Parameter Expression](./circuit_expression.md) :soon: *Not yet*
+- [Circuit Parameter Expression](./circuit_expression.md) ✅⭐🟢
 ### 3.3. Transpile and optimize circuits
 - [Transpiler Stages](./transpiler_stages.md) 📝*Needs more detail*⭐⭐⭐🔴
 - [Transpiler with Passs Managers](./transpiler_with_pass_managers.md) :soon: *Not yet*
