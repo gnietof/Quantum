@@ -154,6 +154,23 @@ plot_bloch_multivector(sv,reverse_bits=True)
 ```
 <img width="2324" height="374" alt="image" src="https://github.com/user-attachments/assets/0b49a0b6-263f-4cb5-b292-3372c74250db" />
 
+**Note**. Keep in mind also that when there is superposition between different qubits then the diagram will not display any vector.
+
+```python
+
+from qiskit import QuantumCircuit 
+from qiskit.quantum_info import Statevector
+from qiskit.visualization import plot_bloch_multivector
+
+qc = QuantumCircuit(2)
+qc.h(0)
+qc.cx(0,1)
+
+sv = Statevector(qc)
+plot_bloch_multivector(qc)
+```
+<img width="750" height="345" alt="image" src="https://github.com/user-attachments/assets/045d249f-788d-446b-b165-5125d50936c9" />
+
 
 ### State City
 - The ```plot_state_city``` displays the density matrix of a state $\ket{\psi}$.
