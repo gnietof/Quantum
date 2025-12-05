@@ -13,24 +13,120 @@
  
   - Figures can be saved either by passing the filename parameter or using the ```savefig```method on the returned figure object.
 
-## Count visualizations
+## Count Visualizations
 This section contains functions that visualize measurements outcome counts.
+
 ### Plot histogram
 The ```plot_histogram``` function visualizes the result of sampling a quantum circuit on a QPU.
 ```python
-from qiskit.visualizations import plot_histogram
+from qiskit.visualization import plot_histogram
 
-data = {'00':712,'01':10,'10':9'11':269}
+data = {'00':712,'01':10,'10':9,'11':269}
 plot_histogram(data)
 ```
 <img width="480" height="383" alt="image" src="https://github.com/user-attachments/assets/1547c6ad-1302-4ca1-9ba4-3b650c2b1e4a" />
 
+- Samples might be displayed following different criteria. The most interesting are:
+  - number_to_keep: number of terms to plot and the rest are group under 'rest'.
+  - sort: sorting order ('asc','desc',hamming','value' or 'value_desc'
+  - target_string: target string if 'sort' is a distance measure. (??)
+
 ## Distribution Visualizations
-This section contains functions that visualize quantum states.
+- This section contains functions that visualize sampled distributions.
+
+### Plot distribution
+- Plot a distribution from input sampled data.
+- Compared to ```plot_histogram```, the quasi-probability is displayed instead of the number of outcomes.
+```python
+from qiskit.visualization import plot_distribution
+
+data = {'00':712,'01':10,'10':9,'11':269}
+plot_distribution(data)
+```
+<img width="490" height="390" alt="image" src="https://github.com/user-attachments/assets/7eb14c65-cc3c-4f8c-8e26-360bb8c3d785" />
+
+- Samples might be displayed following different criteria. The most interesting are:
+  - number_to_keep: number of terms to plot and the rest are group under 'rest'.
+  - sort: sorting order ('asc','desc',hamming','value' or 'value_desc'
+  - target_string: target string if 'sort' is a distance measure. (??)
+ 
+```python
+from qiskit.visualization import plot_distribution
+
+data = {'00':712,'01':10,'10':9,'11':269}
+plot_distribution(data,sort='value_desc')
+```
+<img width="490" height="390" alt="image" src="https://github.com/user-attachments/assets/b0924d2e-c7e6-4dc4-b50d-6af43fe59549" />
+
+- Same as ```plot_histogram```, multiple datasets, titles, legends or colors and allowed.
+```python
+from qiskit.visualization import plot_distribution
+
+data = [{'00':712,'01':10,'10':9,'11':269},{'00':308,'01':307,'10':185,'11':200}]
+plot_distribution(data,sort='value_desc',title='Dates',legend=['Dates1','Dates2'])
+```
+<img width="489" height="390" alt="image" src="https://github.com/user-attachments/assets/7d4acc22-c19e-490b-a25b-25cbb90cde99" />
 
 ## State Visualizations
+- This section contains functions that visualize quantum states.
+- I have included examples of state visualizations for all bell states in [Bell states visualizations](../cheat/bell_visualizations.md)
 
-I have included examples of state visualizations for all bell states in [Bell states visualizations](../cheat/bell_visualizations.md)
+### Bloch Sphere
+- The Bloch Sphere is shown below.
+- A state is displayed based on its coordinates which can be provided in cartesian or spherical systems.
+
+$\ket{\psi}=cos(\frac{\theta}{2})\ket{0}+e^{i\phi}sin(\frac{\theta}{2})\ket{1}$
+
+$x = sin(\theta)cos(\phi)$  
+$y = sin(\theta)sin(\phi)$  
+$z = cos(\theta)$  
+
+<img width="250" height="265" alt="Bloch_sphere svg" src="https://github.com/user-attachments/assets/71869977-9941-4eeb-983d-8ea61e02611b" />
+
+#### Example
+
+If we have the state $\psi = \frac{1}{\sqrt{2}}(\ket{0}-\ket{1})$ then:
+
+$\ket{\psi}=cos(\frac{\theta}{2})\ket{0}+e^{i\phi}sin(\frac{\theta}{2})\ket{1} = \frac{1}{\sqrt{2}}(\ket{0}-\ket{1})$
+
+So: 
+
+$cos(\frac{\theta}{2}) = \frac{1}{\sqrt{2}} ; e^{i\phi}sin(\frac{\theta}{2}) = -\frac{1}{\sqrt{2}}$
+
+$cos(\frac{\theta}{2}) = \frac{1}{\sqrt{2}} \rightarrow \frac{\theta}{2} = \frac{\pi}{4} \rightarrow \theta = \pm\frac{\pi}{2}$
+
+If $\theta = \frac{\pi}{2}$ then:
+
+$e^{i\phi}sin(\frac{\theta}{2}) = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}sin(\frac{\pi}{4}) = \frac{e^{i\phi}}{\sqrt{2}} = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}=-1 \rightarrow \phi = \pi$
+
+If $\theta = -\frac{\pi}{2}$ then:
+
+$e^{i\phi}sin(\frac{\theta}{2}) = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}sin(\frac{\pi}{4}) = -\frac{e^{i\phi}}{\sqrt{2}} = -\frac{1}{\sqrt{2}} \rightarrow e^{i\phi}=1 \rightarrow \phi = 0$
+
+Now we can plot our bloch sphere using spherical coordinates. Both options will display the same vector pointing to -x-axis (although it is complex to guess from the plot).
+```python
+from qiskit.visualization import plot_bloch_vector
+from numpy import sqrt,pi
+
+plot_bloch_vector([1,pi/2,pi],coord_type='spherical')
+```
+
+<img width="419" height="419" alt="image" src="https://github.com/user-attachments/assets/b13f37cf-9d75-41f8-b430-668e9b187d38" />
+
+Likewise we migth find the cartesian coordinates now that we have $\theta$ and $\phi$.
+
+$x = sin(\theta)cos(\phi) = sin(\frac{\pi}{2})cos(\pi) = -1$  
+$y = sin(\theta)sin(\phi) = sin(\frac{\pi}{2})cos(\pi) = 0$  
+$z = cos(\theta) = cos(\frac{\pi}{2}) = 0$
+
+```python
+from qiskit.visualization import plot_bloch_vector
+from numpy import sqrt,pi
+
+plot_bloch_vector([-1,0,0],coord_type='cartesian') # cartesian is the default so not required
+```
+
+<img width="419" height="419" alt="image" src="https://github.com/user-attachments/assets/b13f37cf-9d75-41f8-b430-668e9b187d38" />
 
 ### State City
 - The ```plot_state_city``` displays the density matrix of a state $\ket{psi}$.
@@ -44,7 +140,11 @@ I have included examples of state visualizations for all bell states in [Bell st
 - All density matrices can be written as a sum of these Pauli matrices, weighted by their expectation values.
 - A document explaining where the coeficients for each of the Pauli operators come from is available in [PauliVec coefficients](../cheat/paulivec.md). 
 
-### Examples
+### State QSphere
+- Plot the qsphere representation of a quantum state.
+- The size of the points is proportional to the probability of the corresponding term in the state and the color represents the phase.
+
+#### Examples
 - The density matrix can be calculated as $\rho = \ket{\psi}\bra{\psi}$. That is calculating the outer product of the state by its complex conjugate transpose.
 
 $`\ket{\psi} = \begin{pmatrix} a_0 \\ a_1 \\ a_2 \\ a_3 \end{pmatrix} ; 
@@ -71,8 +171,10 @@ i & 0 & 0 & 1 \end{pmatrix}`$
 <img width="589" height="322" alt="image" src="https://github.com/user-attachments/assets/f163a966-ca8b-4dad-a52a-3f49d1048816" />
 
 - Pauli
-
 <img width="590" height="490" alt="image" src="https://github.com/user-attachments/assets/617626e1-1c90-49d5-bca9-238a9404bdce" />
+
+- QSphere
+<img width="560" height="559" alt="image" src="https://github.com/user-attachments/assets/ee96e273-d244-4f96-a99e-f6bff64d41b7" />
 
 
 Another example:  
@@ -87,16 +189,20 @@ $` \ket{\psi} = \begin{pmatrix} \frac{3\sqrt{2}}{10} \\ -\frac{4\sqrt{2}}{10} \\
 <img width="589" height="322" alt="image" src="https://github.com/user-attachments/assets/64efa8de-5bfe-45f7-a32c-9a0f952a5b29" />
 
 - Pauli
-
 <img width="690" height="490" alt="image" src="https://github.com/user-attachments/assets/48b99586-a1e5-49e1-aa17-79d68f38051b" />
 
-### Bloch Sphere
+- QSphere
+<img width="560" height="559" alt="image" src="https://github.com/user-attachments/assets/360a0d64-4fa9-435e-a35f-154cdb6acfa3" />
 
-$\ket{\psi}=cos(\frac{\theta}{2})\ket{0}+e^{i\phi}sin(\frac{\theta}{2})\ket{1}$
+## Device Visualizations
 
-$x = sin(\theta)cos(\phi)$  
-$y = sin(\theta)sin(\phi)$  
-$z = cos(\theta)$  
+## Circuit Visualizations
 
-<img width="250" height="265" alt="Bloch_sphere svg" src="https://github.com/user-attachments/assets/71869977-9941-4eeb-983d-8ea61e02611b" />
+## DAG Visualizations
+
+## Pass Manager Visualizations
+
+## Timeline Visualizations
+
+
 
