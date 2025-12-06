@@ -40,4 +40,51 @@ You typically get a physical circuit by using Qiskit’s transpilation routines 
 
   When mapping to hardware, virtual qubits must be assigned to hardware qubits. This mapping need not be one-to-one. Typically, one virtual qubit will need to be swapped from one hardware qubit to another over the course of a circuit execution in order to satisfy coupling constraints of the underlying QPU. It is not strictly necessary for all virtual qubits used in a circuit to be mapped to a physical qubit at any given point in a physical circuit; it could be that a virtual qubit is measured (collapsing its state) and then never used again, so a new virtual qubit could take its place. Evaluating these conditions to map a virtual circuit to a physical circuit is the job of Qiskit’s transpilation package.
 
+## API overview of qiskit.circuit
+- The principal class is QuantumCircuit.
+- Bit, an atom of data.  
+   - Qubit  
+   - ClBit  
+   - AncillaQubit  
+
+- Register, a collection of bits  
+   - QuantumRegister  
+   - ClassicalRegister  
+   - AncitllaRegister  
+
+- Within a circuit, each complete ```CircuitInstruction``` is made up of an ```Operation``` (which might be an ```Instruction```, a ```Gate```, or some other subclass) and the qubit and clbit operands.
+
+- CircuitInstruction, an operation and its operands  
+- InstructionSet, a temporary handle to a slice of circuit data  
+- Operation  
+   - AnnotatedOperation  
+     - InverseModifier  
+     - ControlModifier  
+     - PowerModifier
+
+- The most common concrete subclass of the minimal, abstract Operation interface is the Instruction.
+- While Operation can include abstract mathematical objects, an Instruction is something that could conceivably run directly on hardware.
+- This is in turn subclassed by Gate and ControlledGate that further add unitarity and controlled semantics on top:
+
+  - Instruction, representing a hardware-based instruction
+  - Gate, representing a hardware instruction that is unitary
+  - ControlledGate, representing a gate with control structure.
+
+- Qiskit includes a large library of standard gates and circuits, which is documented in qiskit.circuit.library.
+- Many of these are declared as Python-object singletons.
+- The machinery for this is described in detail in qiskit.circuit.singleton, of which the main classes are each a singleton form of the standard instruction–gate hierarchy:
+
+  - SingletonInstruction
+  - SingletonGate
+  - SingletonControlledGate
+
   
+
+
+
+  
+  
+  
+
+
+
