@@ -135,9 +135,10 @@ plot_bloch_vector([-1,0,0],coord_type='cartesian') # cartesian is the default so
 - Similar to Bloch vector but in this case a sphere for each qubit is displayed.
 
 #### Example
-For this circuit:
+For this circuit:  
 <img width="563" height="367" alt="image" src="https://github.com/user-attachments/assets/e99e2466-ea5d-4c6c-a74f-c66c8168a2ce" />
-The displayed diagram is:
+
+The displayed diagram is:  
 ```python
 from qiskit.visualization import plot_bloch_multivector
 from qiskit.quantum_info import Statevector
