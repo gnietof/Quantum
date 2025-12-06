@@ -1,5 +1,5 @@
 # Visualize circuits
-## Drawing
+## Drawing a quantum circuit
 A circuit can be rendered in different ways. 
 ```python
 from qiskit import QuantumCircuit
