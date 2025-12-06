@@ -85,14 +85,14 @@ And the output circuit in this case is:
 #### Rotations
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
-| RX | `qc.rx(theta,qubit0)` |  ![RX](./circuits/RX_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -i sin(\frac{\theta}{2})  \\ -i sin(\frac{\theta}{2}) & cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
-| RY | `qc.ry(theta,qubit0)` |  ![RY](./circuits/RY_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -sin(\frac{\theta}{2})  \\ sin(\frac{\theta}{2}) & cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
+| RX | `qc.rx(theta,qubit0)` |  ![RX](./circuits/RX_circuit.png) | $`\begin{bmatrix} cos\left(\frac{\theta}{2}\right) & -i sin\left(\frac{\theta}{2}\right)  \\ -i sin\left(\frac{\theta}{2}\right) & cos\left(\frac{\theta}{2}\right)  \end{bmatrix}`$ |  |
+| RY | `qc.ry(theta,qubit0)` |  ![RY](./circuits/RY_circuit.png) | $`\begin{bmatrix} cos\left(\frac{\theta}{2}\right) & -sin\left(\frac{\theta}{2}\right)  \\ sin\left(\frac{\theta}{2}\right) & cos\left(\frac{\theta}{2}\right)  \end{bmatrix}`$ |  |
 | RZ | `qc.rz(theta,qubit0)` |  ![RZ](./circuits/RZ_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
-| R | `qc.rz(theta,qubit0)` |  ![RZ](./circuits/RZ_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
+| R | `qc.r(theta,phi,qubit0)` |  ![R](./circuits/R_circuit.png) | $`\begin{bmatrix} cos\left(\frac{\theta}{2}\right) & -ie^{-i\phi}sin\left(\frac{\theta}{2}\right)  \\ -ie^{i\phi}sin\left(\frac{\theta}{2}\right) & cos\left(\frac{\theta}{2}\right)  \end{bmatrix}`$ | Rotations in the X-Y plane |
 #### Deprecated in Qiskit 2.x (still referenced in some test exams)
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
-| U | `qc.u(theta,phi,lambda,qubit0)` |  ![U](./circuits/U_circuit.png) | $`\begin{bmatrix} cos(\frac{\theta}{2}) & -e^{i\lambda}sin(\frac{\theta}{2})  \\ e^{i\phi}sin(\frac{\theta}{2}) & e^{i(\phi+\lambda)}cos(\frac{\theta}{2})  \end{bmatrix}`$ |  |
+| U | `qc.u(theta,phi,lambda,qubit0)` |  ![U](./circuits/U_circuit.png) | $`\begin{bmatrix} cos\left(\frac{\theta}{2}\right) & -e^{i\lambda}sin\left(\frac{\theta}{2}\right)  \\ e^{i\phi}sin\left(\frac{\theta}{2}\right) & e^{i(\phi+\lambda)}cos\left(\frac{\theta}{2}\right)  \end{bmatrix}`$ |  |
 
 Gates X,Y,Z,S,T and S† are just special cases of RX,RY,RZ (up to a global phase) 
 | Name | Rotation |
