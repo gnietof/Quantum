@@ -35,7 +35,7 @@
 - [Circuit Parameter Expression](./circuit_expression.md) ✅⭐🟢
 ### 3.3. Transpile and optimize circuits
 - [Transpiler Stages](./transpiler_stages.md) 📝*Needs more detail*⭐⭐⭐🔴
-- [Transpiler with Passs Managers](./transpiler_with_pass_managers.md) :soon: *Not yet*
+- [Transpiler with Passs Managers](./transpiler_with_pass_managers.md) 🚧 *Doc in progress*
 - [Transpiler passes](./transpiler_passes.md) ✅⭐🟢
 ### 3.4. Construct basic quantum circuits
 - [Circuit](./circuit.md) 📝*Needs more detail*
