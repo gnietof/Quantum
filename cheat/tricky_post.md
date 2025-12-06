@@ -30,6 +30,8 @@
 - Finish the page with all bell states and their representations using different visualizations.
 - Repasar process fidelity
 
+- Quizá echarle un vistazo más detallado a las clases Pauli y PauliList
+
 #Check
 
 Add this somewhere and have a look
