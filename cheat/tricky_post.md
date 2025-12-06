@@ -28,6 +28,7 @@
 - Check ParameterVectors
 - Visualizations
 - Finish the page with all bell states and their representations using different visualizations.
+- Repasar process fidelity
 
 #Check
 
