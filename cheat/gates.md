@@ -88,7 +88,7 @@ And the output circuit in this case is:
 | RX | `qc.rx(theta,qubit0)` |  ![RX](./circuits/RX_circuit.png) | $`\begin{bmatrix} cos\left(\frac{\theta}{2}\right) & -i sin\left(\frac{\theta}{2}\right)  \\ -i sin\left(\frac{\theta}{2}\right) & cos\left(\frac{\theta}{2}\right)  \end{bmatrix}`$ |  |
 | RY | `qc.ry(theta,qubit0)` |  ![RY](./circuits/RY_circuit.png) | $`\begin{bmatrix} cos\left(\frac{\theta}{2}\right) & -sin\left(\frac{\theta}{2}\right)  \\ sin\left(\frac{\theta}{2}\right) & cos\left(\frac{\theta}{2}\right)  \end{bmatrix}`$ |  |
 | RZ | `qc.rz(theta,qubit0)` |  ![RZ](./circuits/RZ_circuit.png) | $`\begin{bmatrix} e^{\frac{-i\theta}{2}} & 0  \\ 0 & e^{\frac{i\theta}{2}}  \end{bmatrix}`$ |  |
-| R | `qc.r(theta,phi,qubit0)` |  ![R](./circuits/R_circuit.png) | $`\begin{bmatrix} cos\left(\frac{\theta}{2}\right) & -ie^{-i\phi}sin\left(\frac{\theta}{2}\right)  \\ -ie^{i\phi}sin\left(\frac{\theta}{2}\right) & cos\left(\frac{\theta}{2}\right)  \end{bmatrix}`$ | Rotations in the X-Y plane |
+| R | `qc.r(theta,phi,qubit0)` |  ![R](./circuits/R_circuit.png) | $`\begin{bmatrix} cos\left(\frac{\theta}{2}\right) & -ie^{-i\phi}sin\left(\frac{\theta}{2}\right)  \\ -ie^{i\phi}sin\left(\frac{\theta}{2}\right) & cos\left(\frac{\theta}{2}\right)  \end{bmatrix}`$ | Rotations in the XY plane |
 #### Deprecated in Qiskit 2.x (still referenced in some test exams)
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
