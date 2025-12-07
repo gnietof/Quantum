@@ -2,7 +2,7 @@ This document just covers the BasePrimitiveJob class. Probably for the Certifica
 
 # BasePrimitiveJob
 - Base abstract class for the primitivejob.
-- 
+  
 ## Methods
 - **cancel**. Tries to cancel a job.
 - **cancelled**. Returns whether the job has been cancelled.
