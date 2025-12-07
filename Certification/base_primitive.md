@@ -1,7 +1,7 @@
 This document just covers the BasePrimitiveJob class. Probably for the Certification the only interesting part are the methods:
 
 # BasePrimitiveJob
-- Base abstract class for the primitivejob.
+- Base abstract class for the primitive job.
   
 ## Methods
 - **cancel**. Tries to cancel a job.
