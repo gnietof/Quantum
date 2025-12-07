@@ -12,4 +12,3 @@ This document just covers the BasePrimitiveJob class. Probably for the Certifica
 - **result**. Returns the result of the job.
 - **running**. Returns whether the job is actively running.
 - **status**. Returns the status of the job.
-- 
