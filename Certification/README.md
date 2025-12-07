@@ -17,7 +17,7 @@
 - [QuantumCircuit](./quantumcircuit.md) :soon: *Not yet*
 ## 2. Visualize Quantum circuits, measurements and states (11% $`\equiv`$ 8 questions)
 ### 2.1. Visualize quantum circuits
-- [Visualize circuits](./visualize_circuits.md) 
+- [Visualize circuits](./visualize_circuits.md) ✅⭐🟢
 ### 2.2. Visualize quantum measurements
 - [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md) (same as 3.1's)✅⭐⭐🟢
 - [Visualization](./visualization.md) ✅⭐⭐🟠
@@ -35,7 +35,7 @@
 - [Circuit Parameter Expression](./circuit_expression.md) ✅⭐🟢
 ### 3.3. Transpile and optimize circuits
 - [Transpiler Stages](./transpiler_stages.md) 📝*Needs more detail*⭐⭐⭐🔴
-- [Transpiler with Passs Managers](./transpiler_with_pass_managers.md) 🚧 *Doc in progress*
+- [Transpiler with Passs Managers](./transpiler_with_pass_managers.md) ✅⭐⭐🟢
 - [Transpiler passes](./transpiler_passes.md) ✅⭐🟢
 ### 3.4. Construct basic quantum circuits
 - [Circuit](./circuit.md) 📝*Needs more detail*
@@ -73,13 +73,13 @@
 ### 6.2. Understand the theoretical background behind the estimator primitive                   
 - [Primitives](./primitives.md) (related to 5.2's) :soon: *Not yet* ⭐⭐⭐
 - [Error mitigation and supression techniques](./error_mitigation.md) (same as 5.1's) ✅⭐⭐🟠
+
 ## 7. Retrieve and analyze the results of quantum circuits (10% $`\equiv`$ 7 questions)
 ### 7.1. Retrieve previous experiment results (session/Qiskit Runtime)
 - [SamplerPubResult](./sampler_pub_result.md) :soon: *Not yet*
 - [Retrieve and save jobs](./save_jobs.md) ✅⭐🟢
 - [Runtime job](./runtime_job.md) :soon: *Not yet*
 - [Base Primitive](./base_primitive.md) :soon: *Not yet*
- 
 ### 7.2. Monitor jobs
 - [Providers](./providers.md) :soon: *Not yet*
 - [Job Status](./job_status.md) ✅⭐
