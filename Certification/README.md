@@ -21,7 +21,7 @@
 ### 2.2. Visualize quantum measurements
 - [Classical feedforward and control flow](./classical_feedforward_and_control_flow.md) (same as 3.1's)✅⭐⭐🟢
 - [Visualization](./visualization.md) ✅⭐⭐🟠
-- [Plot gate map](./plot_gate_map.md) :soon: *Not yet*
+- [Plot gate map](./plot_gate_map.md) ✅⭐🟢
 ### 2.3. Visualize quantum states
 - [Plot bloch multivector](./visualization.md#bloch-multivector) ✅⭐⭐🟠
 - [Plot state qsphere](./visualization.md#bloch-vector) ✅⭐⭐🟠
