@@ -203,6 +203,5 @@ And the error map for the custom backend we created:
 
 **Note**. Keep in mind that the error rates are displayed in percentage so 0.001 = 0.1%
 
-We have not readout errors.
 
 
