@@ -36,7 +36,7 @@
 ### 3.3. Transpile and optimize circuits
 - [Transpiler Stages](./transpiler_stages.md) 📝*Needs more detail*⭐⭐⭐🔴
 - [Transpiler with Passs Managers](./transpiler_with_pass_managers.md) ✅⭐⭐🟢
-- [Transpiler passes](./transpiler_passes.md) ✅⭐🟢
+- [Transpiler passes](./transpiler_passes.md) 📝*Needs more detail*⭐🟠
 ### 3.4. Construct basic quantum circuits
 - [Circuit](./circuit.md) 📝*Needs more detail*
 - [Circuit QuantumCircuit](./circuit_quantumcircuit.md) (same as 3.2's) 🚧 *Doc in progress*
@@ -79,11 +79,11 @@
 - [SamplerPubResult](./sampler_pub_result.md) :soon: *Not yet*
 - [Retrieve and save jobs](./save_jobs.md) ✅⭐🟢
 - [Runtime job](./runtime_job.md) :soon: *Not yet*
-- [Base Primitive](./base_primitive.md) :soon: *Not yet*
+- [Base Primitive](./base_primitive.md) ✅⭐🟢
 ### 7.2. Monitor jobs
-- [Providers](./providers.md) :soon: *Not yet*
-- [Job Status](./job_status.md) ✅⭐
-- [Session](./session.md) ✅⭐
+- [Providers](./providers.md) ✅⭐🟠
+- [Job Status](./job_status.md) ✅⭐🟢
+- [Session](./session.md) ✅⭐🟢
 
 ## 8. Operate witn OpenQASM (6%  $`\equiv`$ 4 questions)
 ### 8.1. Structure types in OpenQASM 3 programs
@@ -93,4 +93,4 @@
 ### 8.3. Interoperate different versions of OpenQASM with Qiskit
 - [QASM3 versions](./qasm3_versions.md) :soon: *Not yet*
 ### 8.4. Interact with the Qiskit IBM Runtime REST API
-- [QASM3 runtime](./qasm3_runtime.md) :soon: *Not yet* ⭐🟢
+- [QASM3 runtime](./qasm3_runtime.md) :soon: *Not yet* ⭐🟢h
