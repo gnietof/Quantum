@@ -56,7 +56,7 @@
 ## 5. Use the sampler primitive (12% $`\equiv`$ 8 questions)
 ### 5.1. Set sampler primitive options such as dynamical decoupling
 - [Get started with primitives](./get_started_with_primitives.md) (same as 5.2's) ✅⭐⭐⭐🔴
-- [Sampler options](./sampler_options.md) :soon: *Not yet*
+- [Sampler options](./sampler_options.md) ✅⭐🟢
 - [Twirling options](./twirling_options.md) (same as 6.1's) :soon: *Not yet*
 - [Error mitigation and supression techniques](./error_mitigation.md) (same as 6.2's) ✅⭐⭐🟠
 ### 5.2. Understand the theoretical background behind the sampler primitive
@@ -91,6 +91,6 @@
 ### 8.2. Interpret OpenQASM semantics
 - [QASM3 semantics](./qasm3_semantics.md) ✅⭐🟢
 ### 8.3. Interoperate different versions of OpenQASM with Qiskit
-- [QASM3 versions](./qasm3_versions.md) :soon: *Not yet*
+- [QASM3 versions](./qasm3_versions.md) ✅⭐🟢
 ### 8.4. Interact with the Qiskit IBM Runtime REST API
-- [QASM3 runtime](./qasm3_runtime.md) :soon: *Not yet* ⭐🟢h
+- [QASM3 runtime](./qasm3_runtime.md) 🚧 *Incomplete*⭐🟢
