@@ -74,15 +74,18 @@ $$P_k = (-i)^{q+x_k*z_k} Z^{z_k} X^{x_k}$$
 
 |$z_k$|$x_k$|Pauli|$P_k$|
 |:---:|:---:|:---:|-|
-|0|0|$I$|$(-i)^q|
+|0|0|$I$|$(-i)^q$|
 |0|1|$X$|$(-i)^q X$|
 |1|0|$Z$|$(-i)^q Z$|
 |1|1|$Y$|$(-i)^{q+1} iY = -i(-i)^q iY = (-i)^q Y$|
 
   Each bit is provided in a bit array. So, the previous Pauli('XYZ') would be:
-      ```python
-      Pauli(([1,1,0],[0,1,1],0))
-      ```  
+  ```python
+  Pauli(([1,1,0],[0,1,1],0))
+  ```  
+  The order in each declaration is different.
+  
+  <img width="626" height="171" alt="image" src="https://github.com/user-attachments/assets/5b845064-e922-46b2-9032-844159505365" />
 
   That is (qubits are in reversed order):
   
@@ -104,7 +107,7 @@ $$P_k = (-i)^{q+x_k*z_k} Z^{z_k} X^{x_k}$$
       Pauli(([1,1,0],[0,1,1],1))
       ```
      
-  That is (qubits are in reversed order):  
+  That is (qubits are in reversed order):
   
   $$P_2 = (-i)^{1+0} X = -iX$$  
   $$P_1 = (-i)^{1+1} ZX = ZX = iY$$  
