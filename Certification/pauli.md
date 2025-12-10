@@ -95,7 +95,7 @@ $$P_k = (-i)^{q+x_k*z_k} Z^{z_k} X^{x_k}$$
   ### Certification Bonus
   Keep in mind that it is possible to:
   - Operate Pauli's. So this expression is correct ```Pauli('Z') @ Pauli('X')``` and the result is $ZX = iY$. That is Pauli('iY') **and not Pauli('ZX')**.
-  - Declare the Pauli string using booleans and not only 0,1. So the expression Pauli(([True],[True])) is equivalent to Pauli(([1],[1])) = $(-i)^{{0+1)}Z^1 \otimes X^1 = (-i)(iY) = Y$.
+  - Declare the Pauli string using booleans and not only 0,1. So the expression Pauli(([True],[True])) is equivalent to Pauli(([1],[1])) = $(-i)^{(0+1)}Z^1 \otimes X^1 = (-i)(iY) = Y$.
   - Important conclusion ```Pauli('Z') @ Pauli('X')``` is not the same as Pauli(([1],[1])). Or, yes, they are the same ... up to a phase. 
 
   ### Bonus thinking
