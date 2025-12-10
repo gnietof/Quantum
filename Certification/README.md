@@ -13,7 +13,7 @@
 ### 1.1. Define Pauli Operators
 - [Pauli](./pauli.md) ✅⭐⭐🟠
 ### 1.2. Apply quantum operations :
-- [Circuit library](./circuit_library.md) 🚧 *Doc in progress*
+- [Circuit library](./circuit_library.md) ✅⭐🟠
 - [QuantumCircuit](./quantumcircuit.md) :soon: *Not yet*
 ## 2. Visualize Quantum circuits, measurements and states (11% $`\equiv`$ 8 questions)
 ### 2.1. Visualize quantum circuits
