@@ -92,6 +92,12 @@ $$P_k = (-i)^{q+x_k*z_k} Z^{z_k} X^{x_k}$$
 
   And the resulting Pauli would be $(X)(Y)(Z) = XYZ$
 
+  ### Certification Bonus
+  Keep in mind that it is possible to:
+  - Operate Pauli's. So this expression is correct ```Pauli('Z') @ Pauli('X')``` and the result is $ZX = iY$. That is Pauli('iY') **and not Pauli('ZX')**.
+  - Declare the Pauli string using booleans and not only 0,1. So the expression Pauli(([True],[True])) is equivalent to Pauli(([1],[1])) = $(-i)^{{0+1)}Z^1 \otimes X^1 = (-i)(iY) = Y$.
+  - Important conclusion ```Pauli('Z') @ Pauli('X')``` is not the same as Pauli(([1],[1])). Or, yes, they are the same ... up to a phase. 
+
   ### Bonus thinking
   If we add a global phase then:  
       ```python
@@ -140,8 +146,27 @@ $$P_k = (-i)^{q+x_k*z_k} Z^{z_k} X^{x_k}$$
   
 ## Matrix operator representation
 
-Pauli’s can be converted to $(2^n,2^n)$ Operator using the ```to_operator()``` method, or to a dense or sparse complex matrix using the ```to_matrix()``` method.
+- Pauli’s can be converted to $(2^n,2^n)$ Operator using the ```to_operator()``` method, or to a dense or sparse complex matrix using the ```to_matrix()``` method.
 
 ## Data access
 
-The individual qubit Paulis can be accessed and updated using the [] operator which accepts integer, lists, or slices for selecting subsets of Paulis. Note that selecting subsets of Pauli’s will discard the phase of the current 
+- The individual qubit Paulis can be accessed and updated using the [] operator which accepts integer, lists, or slices for selecting subsets of Paulis. Note that selecting subsets of Pauli’s will discard the phase of the current
+
+# PauliList
+- A Pauli list is nothing more than a list of N-qubit Pauli operators: ```PauliList(['XX', 'XY', 'YX'])```.
+- **Important**. Each Pauli string must have the same number of qubits.
+
+# SparsePauliOp
+- Sparse N-qubit operator in a Pauli basis representation.
+- This is a sparse representation of an N-qubit matrix Operator in terms of N-qubit PauliList **and complex coefficients**. Coefficients are not allowed on Pauli or PauliList.
+- The SparsePauliOp class represents a linear combination of Pauli strings.
+- There are several ways to initialize a SparsePauliOp, but the most flexible way is to use the from_sparse_list method.
+```python
+SparsePauliOp.from_sparse_list([('XZ',[1,3],2),('ZY',[0,2],1j),],num_qubits=4)
+```
+  - For the first tuple, an X in qubit one and a Z in qubit three with a global coefficient of 2: 2ZIXI
+  - For the second tuple, a Z in qubit zero and a Y in qubit two with a global coefficient of i: iIYIZ
+  - The output would be 2ZIXI+jIYIZ
+- Qubits can be indicated in any order. Non used bits are replaced with I operator.
+<img width="770" height="195" alt="SparsePauli01" src="https://github.com/user-attachments/assets/49d7087e-d3ae-4b58-af43-03cff86090ef" />
+
