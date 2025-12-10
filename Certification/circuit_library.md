@@ -67,13 +67,19 @@
 - Other: ExactReciprocalGate, IntegerComparatorGate, QuadraticFormGate, WeightedSumGate
 
 ## Data encoding
+These functions return a parameterized QuantumCircuit to use as data encoding circuits in a series of variational quantum algorithms.
 
 ## Data preparation
+These operations are used for state preparation.
 
 ## Particular operations
+These gates and quantum circuits define specific operations of interest such as Grover o Fourier.
 
 ## N-local circuits
+- The following functions return a parameterized QuantumCircuit to use as ansatz in a broad set of variational quantum algorithms.
 
 ## Oracles
-## Template circuits
+- An “oracle” can refer to a variety of black-box operations on quantum states.
 
+## Template circuits
+- Templates are functions that return circuits that compute the identity. They are used at circuit optimization where matching part of the template allows the compiler to replace the match with the inverse of the remainder from the template.
