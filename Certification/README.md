@@ -62,7 +62,7 @@
 ### 5.2. Understand the theoretical background behind the sampler primitive
 - [Get started with primitives](./get_started_with_primitives.md) (same as 5.1's) ✅⭐⭐⭐🔴
 - [Sampler v2](./sampler_v2.md) ✅⭐🟢
-- [Primitives v2](./primitives_v2.md) (related to 6.2's) :soon: *Not yet*
+- [Primitives v2](./primitives_v2.md) (related to 6.2's) ✅⭐🟠
 
 ## 6. Use the estimator primitive (12% $`\equiv`$ 8 questions)
 ### 6.1 Set estimator primitive options (such as resilience levels)
@@ -71,7 +71,7 @@
 - [Resilience options v2](./resilience_options_v2.md) :soon: *Not yet*
 - [ZNE options](./zne_options.md) :soon: *Not yet*
 ### 6.2. Understand the theoretical background behind the estimator primitive                   
-- [Primitives](./primitives.md) (related to 5.2's) :soon: *Not yet* ⭐⭐⭐
+- [Primitives](./primitives.md) (related to 5.2's) ✅⭐⭐⭐🟠
 - [Error mitigation and supression techniques](./error_mitigation.md) (same as 5.1's) ✅⭐⭐🟠
 
 ## 7. Retrieve and analyze the results of quantum circuits (10% $`\equiv`$ 7 questions)
