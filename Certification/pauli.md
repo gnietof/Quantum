@@ -27,7 +27,7 @@ Keeping $q \in \mathbb{Z^4}$ means that q $\in$ {0,1,2,3} and so the phase term 
 
 ## Initialization
 
-- **Pauli(obj)**. Where obj is a Pauli string, Pauli or ```ScalarOp```operator, or a Pauli gate or ```QuantumCircuit ````containing only Pauli gates.
+- **Pauli(obj)**. Where obj is a Pauli string, Pauli or ```ScalarOp```operator, or a Pauli gate or ```QuantumCircuit``` containing only Pauli gates.
     - Using a Pauli string which represents $P = (-i)^1 X \otimes Y \otimes Z$.
       ```python
       P = Pauli('-iXYZ') 
