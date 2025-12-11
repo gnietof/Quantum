@@ -70,7 +70,7 @@
 - [Estimator options](./estimator_options.md) ✅⭐🟢
 - [Twirling options](./twirling_options.md) (same as 5.1's) ✅⭐⭐🟢
 - [Resilience options v2](./resilience_options_v2.md) ✅⭐⭐🟢
-- [ZNE options](./zne_options.md) :soon: *Not yet*
+- [ZNE options](./zne_options.md) ✅⭐⭐🟢
 ### 6.2. Understand the theoretical background behind the estimator primitive                   
 - [Primitives](./primitives.md) (related to 5.2's) ✅⭐⭐⭐🟠
 - [Error mitigation and supression techniques](./error_mitigation.md) (same as 5.1's) ✅⭐⭐🟠
