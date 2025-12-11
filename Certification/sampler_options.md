@@ -6,6 +6,6 @@ These are the options for the Sampler.
 - **environment**.
 - **execution**. Execution time options. See SamplerExecutionOptionsV2 for all available options.
 - **max_execution_time**.
-- **simulator**.
+- **simulator**. Simulator options (noise_model, seed_simulator, coupling_map, basis_gates)
 - **twirling**. Pauli twirling options. See TwirlingOptions for all available options.
 
