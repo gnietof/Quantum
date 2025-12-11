@@ -21,9 +21,9 @@ with open('basic.qasm','w') as f:
 
 ## Importing from QASM3
 The are only two options for importing QASM 3.0 into a Qiskit circuit:
-
-- qiskit.qasm3.load*s*(qc): This one deserializes from a string.
-- qiskit.qasm3.load(qc,f): This one deserializes the circuit from a file.
+- qc = qiskit.qasm3.load*s*(program): This one deserializes from a string.
+- qc = qiskit.qasm3.load(f): This one deserializes the circuit from a file.
+The number of qubits in the backend can be provided as num_qubits parameter.
 
 An example for loading from a file. In this case we must provide a path and not a file handle.
 
