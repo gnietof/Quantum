@@ -94,11 +94,13 @@ qc.x(0)
 qc.z(1)
 Operator.from_circuit(qc)
 ```
+```
 Operator([[ 0.+0.j,  1.+0.j,  0.+0.j,  0.+0.j],
           [ 1.+0.j,  0.+0.j,  0.+0.j,  0.+0.j],
           [ 0.+0.j,  0.+0.j,  0.+0.j, -1.+0.j],
           [ 0.+0.j,  0.+0.j, -1.+0.j,  0.+0.j]],
          input_dims=(2, 2), output_dims=(2, 2)
+```
 
 - All these are valid ways to declare 'Y'.
 
@@ -109,7 +111,15 @@ Operator.from_label('Z').dot(Operator.from_label('X'))
 Operator.from_label('Z') @ Operator.from_label('X')
 
 Operator(np.array([[0,-1j],[1j,0]]))
+
+from qiskit import QuantumCircuit
+qc = QuantumCircuit(1)
+qc.y(0)
+Operator.from_circuit(qc)
+
+```
 ```
 Operator([[0.-0.j, 0.-1.j],
           [0.+1.j, 0.-0.j]],
          input_dims=(2,), output_dims=(2,))
+```
