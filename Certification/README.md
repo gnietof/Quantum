@@ -67,7 +67,7 @@
 
 ## 6. Use the estimator primitive (12% $`\equiv`$ 8 questions)
 ### 6.1 Set estimator primitive options (such as resilience levels)
-- [Estimator options](./estimator_options.md) 🚧 *Doc in progress*
+- [Estimator options](./estimator_options.md) ✅⭐🟢
 - [Twirling options](./twirling_options.md) (same as 5.1's) :soon: *Not yet*
 - [Resilience options v2](./resilience_options_v2.md) :soon: *Not yet*
 - [ZNE options](./zne_options.md) :soon: *Not yet*
