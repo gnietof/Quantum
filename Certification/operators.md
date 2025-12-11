@@ -106,6 +106,8 @@ Operator([[ 0.+0.j,  1.+0.j,  0.+0.j,  0.+0.j],
 
 ```python
 
+Operator.from_label('Y')
+
 Operator.from_label('Z').dot(Operator.from_label('X'))
 
 Operator.from_label('Z') @ Operator.from_label('X')
