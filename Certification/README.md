@@ -58,7 +58,7 @@
 ### 5.1. Set sampler primitive options such as dynamical decoupling
 - [Get started with primitives](./get_started_with_primitives.md) (same as 5.2's) ✅⭐⭐⭐🔴
 - [Sampler options](./sampler_options.md) ✅⭐🟢
-- [Twirling options](./twirling_options.md) (same as 6.1's) :soon: *Not yet*
+- [Twirling options](./twirling_options.md) (same as 6.1's) ✅⭐⭐🟢
 - [Error mitigation and supression techniques](./error_mitigation.md) (same as 6.2's) ✅⭐⭐🟠
 ### 5.2. Understand the theoretical background behind the sampler primitive
 - [Get started with primitives](./get_started_with_primitives.md) (same as 5.1's) ✅⭐⭐⭐🔴
@@ -68,8 +68,8 @@
 ## 6. Use the estimator primitive (12% $`\equiv`$ 8 questions)
 ### 6.1 Set estimator primitive options (such as resilience levels)
 - [Estimator options](./estimator_options.md) ✅⭐🟢
-- [Twirling options](./twirling_options.md) (same as 5.1's) :soon: *Not yet*
-- [Resilience options v2](./resilience_options_v2.md) :soon: *Not yet*
+- [Twirling options](./twirling_options.md) (same as 5.1's) ✅⭐⭐🟢
+- [Resilience options v2](./resilience_options_v2.md) ✅⭐⭐🟢
 - [ZNE options](./zne_options.md) :soon: *Not yet*
 ### 6.2. Understand the theoretical background behind the estimator primitive                   
 - [Primitives](./primitives.md) (related to 5.2's) ✅⭐⭐⭐🟠
