@@ -14,7 +14,8 @@
 - [Pauli](./pauli.md) ✅⭐⭐🟠
 ### 1.2. Apply quantum operations :
 - [Circuit library](./circuit_library.md) ✅⭐🟠
-- [QuantumCircuit](./quantumcircuit.md) :soon: *Not yet*
+- [QuantumCircuit](./quantumcircuit.md) 🚧 *Doc in progress*
+- **Bonus**. [Operators](./operators.md) 🚧 *Doc in progress*
 ## 2. Visualize Quantum circuits, measurements and states (11% $`\equiv`$ 8 questions)
 ### 2.1. Visualize quantum circuits
 - [Visualize circuits](./visualize_circuits.md) ✅⭐🟢
