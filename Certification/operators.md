@@ -59,7 +59,7 @@ Pauli(([1,1,0],[0,1,1]))
 Pauli(([1,1,0],[0,1,1],0))
 
 ```
-- All these are valid for Y.
+- All these are valid for 'Y'.
 ```python
 from qiskit.quantum_info import Pauli
 
