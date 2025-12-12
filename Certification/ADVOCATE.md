@@ -91,7 +91,7 @@
       </td>
       <td>
         <ul>
-          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</href>a></li>
+          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a></li>
           <li><href='./sampler_options.md'>Sampler options</a>✅</li>
         </ul>
       </td>
@@ -106,7 +106,7 @@
       </td>
       <td>
         <ul>
-          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</href>a></li>
+          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a></li>
           <li><href='./estimator_options.md'>Estimator options</a>✅</li>
         </ul>
       </td>
@@ -121,7 +121,7 @@
       </td>
       <td>
         <ul>
-          <li>Documentation: Save and retrieve jobs</li>
+          <li><a href='./save_jobs.md>Save and retrieve jobs</a>✅</li>
           <li>Documentation: Monitor or cancel a job</li>
         </ul>
       </td>
