@@ -57,7 +57,7 @@
           <li>Documentation: Circuit library</li>
           <li>Documentation: Classical feedforward and control flow</li>
           <li>Documentation: Parameterized circuits</li>
-          <li><a href='https://www.youtube.com/watch?v=TmXlUUFMUgI'>Video: Introduction to transpilation</a></li>
+          <li><a href='https://www.youtube.com/watch?v=TmXlUUFMUgI'>Video: Introduction to transpilation</a>🎬</li>
           <li>Documentation: Introduction to Transpilation</li>
           <li>Documentation: Optimize for hardware</li>
           <li>Documentation: Set transpiler optimization level</li>
@@ -91,7 +91,7 @@
       </td>
       <td>
         <ul>
-          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a></li>
+          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
           <li><href='./sampler_options.md'>Sampler options</a>✅</li>
         </ul>
       </td>
@@ -106,7 +106,7 @@
       </td>
       <td>
         <ul>
-          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a></li>
+          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
           <li><href='./estimator_options.md'>Estimator options</a>✅</li>
         </ul>
       </td>
@@ -122,7 +122,7 @@
       <td>
         <ul>
           <li><a href='./save_jobs.md>Save and retrieve jobs</a>✅</li>
-          <li>Documentation: Monitor or cancel a job</li>
+          <li><a href='.monitor_cancel_job'>Monitor or cancel a job</a>🚧</li>
         </ul>
       </td>
     </tr>
