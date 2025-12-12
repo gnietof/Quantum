@@ -35,9 +35,9 @@
       </td>
       <td>
         <ul>
-          <li><a href='./visualize_circuits.md'>Documentation: Visualize circuits </a></li>
+          <li><a href='./visualize_circuits.md'>Visualize circuits</a>✅</li>
           <li>Documentation: Visualize results :soon:</li>
-          <li><a href='./plot-quantum-states.md'>Documentation: Plot quantum states</a>🚧</li>
+          <li><a href='.visualization.md'>Plot quantum states</a>✅</li>
         </ul>
       </td>
     </tr>
@@ -91,8 +91,8 @@
       </td>
       <td>
         <ul>
-          <li>Video: An Introduction to Qiskit Runtime Primitives V2</li>
-          <li>Documentation: Sampler options</li>
+          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</href>a></li>
+          <li><href='./sampler_options.md'>Sampler options</a>✅</li>
         </ul>
       </td>
     </tr>
@@ -106,8 +106,8 @@
       </td>
       <td>
         <ul>
-          <li>Video: An Introduction to Qiskit Runtime Primitives V2</li>
-          <li>Documentation: Estimator options</li>
+          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</href>a></li>
+          <li><href='./estimator_options.md'>Estimator options</a>✅</li>
         </ul>
       </td>
     </tr>
