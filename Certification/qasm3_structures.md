@@ -99,7 +99,11 @@ let myreg = q[1:4] # Now myreg[0] points to q[1]
 ### Array concatenation and slicing
 
 ## Casting
-I will not cover this section now. I think is too specific for the certification exam.
+- The classical types are divided into the ‘standard’ classical types (bool, int, uint, float, and complex) that exist in languages like C, and the ‘special’ classical types (bit, angle, duration, and stretch) that do not.
+- The standard types follow rules that mimic those of C99 for promotion and conversion in mixed expressions and assignments.
+- The quick rule would be that 'standard' class types accept casting among them while 'special' types do not.
+<img width="667" height="370" alt="image" src="https://github.com/user-attachments/assets/7e2ca87c-ee6d-4dbb-b2d1-e2c217f1a1ed" />
+
 
 
 
