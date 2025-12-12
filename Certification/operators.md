@@ -33,13 +33,17 @@ from qiskit.quantum_info import SparsePauliOp
 
 SparsePauliOp.from_sparse_list([('XZ',[1,3],2),('ZY',[0,2],1j)],num_qubits=4)
 ```
+```
 SparsePauliOp(['ZIXI', 'IYIZ'],
               coeffs=[2.+0.j, 0.+1.j])
+```
 ```python
 SparsePauliOp.from_sparse_list([('XZY',[1,3,2],2),('ZY',[0,2],1j)],num_qubits=4)
 ```
+```
 SparsePauliOp(['ZYXI', 'IYIZ'],
               coeffs=[2.+0.j, 0.+1.j])
+```
 - Using the ```from_list```method.
   - All these combinations are valid.
   - The number of qubits is not required
