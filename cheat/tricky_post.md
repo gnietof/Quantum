@@ -2,7 +2,7 @@
 
 ## Questions
 
-- How long can be a session be open?  
+- How long can a session be open?  
   The maximum session time to live (TTL) determines how long a session can run. If not specified, the maximum tieme is 8h.  
   There is also an interactive time to live (interactive TTL) value that cannot be configured. If no session jobs are queued within that window, the session is temporarily deactivated.  
 
@@ -34,12 +34,12 @@
 
 - Configuration of different error techniques by setting parameters.
 - Different pass managers. Including the **unroll3qOrMore**.
-- Check ParameterVectors
+x Check ParameterVectors
 - Visualizations
 - Finish the page with all bell states and their representations using different visualizations.
 - Repasar process fidelity
 
-- Quizá echarle un vistazo más detallado a las clases Pauli y PauliList y **SparsepauliOp**
+x Quizá echarle un vistazo más detallado a las clases Pauli y PauliList y **SparsepauliOp**
 - revisar las EstimatorOptions y las SamplerOptions
 - Revisar el concepto the process fidelity
 - Circuit, Operator ...classes
