@@ -55,7 +55,7 @@
         <ul>
           <li>Documentation: Construct circuits</li>
           <li>Documentation: Circuit library</li>
-          <li>Documentation: Classical feedforward and control flow</li>
+          <li><a href='./classical_feedforward_and_control_flow.md'>Classical feedforward and control flow</a>✅</li>
           <li>Documentation: Parameterized circuits</li>
           <li><a href='https://www.youtube.com/watch?v=TmXlUUFMUgI'>Video: Introduction to transpilation</a>🎬</li>
           <li>Documentation: Introduction to Transpilation</li>
@@ -122,7 +122,7 @@
       <td>
         <ul>
           <li><a href='./save_jobs.md>Save and retrieve jobs</a>✅</li>
-          <li><a href='.monitor_cancel_job'>Monitor or cancel a job</a>🚧</li>
+          <li><a href='.monitor_cancel_job'>Monitor or cancel a job</a>✅</li>
         </ul>
       </td>
     </tr>
@@ -130,7 +130,7 @@
       <td>Operate with OpenQASM</td>
       <td>
         <ul>
-          <li>Structure types in OpenQASM 3 programs</li>
+          <li>Structure types in OpenQASM3 programs</li>
           <li>Interpret OpenQASM semantics for versions 2 and 3</li>
           <li>Interoperate different versions of OpenQASM with Qiskit</li>
           <li>Interact with the Qiskit IBM Runtime REST API</li>
@@ -139,11 +139,11 @@
       <td>
         <ul>
           <li>Documentation: Introduction to QASM</li>
-          <li>OpenQASM types and casting</li>
+          <li><a href='qasm3_structures.md'>OpenQASM types and casting</a>✅</li>
           <li>OpenQASM syntax</li>
-          <li>Documentation: OpenQASM 3 and the Qiskit SDK</li>
-          <li>Documentation: OpenQASM 2 and the Qiskit SDK</li>
-          <li>Documentation: Qiskit Runtime REST API</li>
+          <li>Documentation: OpenQASM3 and the Qiskit SDK</li>
+          <li>Documentation: OpenQASM2 and the Qiskit SDK</li>
+          <li><a href='./qasm3_runtime.md>Qiskit Runtime REST API</a>✅</li>
         </ul>
       </td>
     </tr>
