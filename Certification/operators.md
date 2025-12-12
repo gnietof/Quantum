@@ -4,7 +4,7 @@
 
 ## SparsePauliOp
 - The SparsePauliOp class represents a linear combination of Pauli strings.
-- There are several ways to initialize a SparsePauliOp, but the most flexible way is to use the from_sparse_list method. The from_sparse_list accepts a list of (pauli_string, qubit_indices, coefficient) triplets.
+- There are several ways to initialize a SparsePauliOp, but the most flexible way is to use the from_sparse_list method. The from_sparse_list accepts a list of (pauli_string, qubit_indices, coefficient) triplets. The from_list accepts a list of (pauli_string,coefficient) duplets.
 - Is it is possible to operate with SparsePauliOp instances (sum, product, matrix product (@) or tensor product).
 
 ### Examples
@@ -31,17 +31,30 @@ SparsePauliOp(['XYZ','IZX'],(1,2))
 ```python
 from qiskit.quantum_info import SparsePauliOp
 
-SparsePauliOp.from_sparse_list([('XZ',[1,3],2),('ZY',[0,2],1j),],num_qubits=4)
+SparsePauliOp.from_sparse_list([('XZ',[1,3],2),('ZY',[0,2],1j)],num_qubits=4)
 ```
 SparsePauliOp(['ZIXI', 'IYIZ'],
               coeffs=[2.+0.j, 0.+1.j])
 ```python
-SparsePauliOp.from_sparse_list([('XZY',[1,3,2],2),('ZY',[0,2],1j),],num_qubits=4)
+SparsePauliOp.from_sparse_list([('XZY',[1,3,2],2),('ZY',[0,2],1j)],num_qubits=4)
 ```
 SparsePauliOp(['ZYXI', 'IYIZ'],
               coeffs=[2.+0.j, 0.+1.j])
+- Using the ```from_list```method.
+  - All these combinations are valid.
+  - The number of qubits is not required
+```python
+from qiskit.quantum_info import SparsePauliOp
 
+SparsePauliOp.from_list([('XZ',2),('ZY',1j),])
+SparsePauliOp.from_list([('XZ',2),('ZYI',1j),]) # The I is removed to keep a the number of qubits
+```
+  - These combinations are **not** valid.
+```python
+from qiskit.quantum_info import SparsePauliOp
 
+SparsePauliOp.from_list([('XZI',2),('ZY',1j)]) # This returns an exception as the number of qubits is lower in the second term.
+```
 
 # Pauli
 - The Pauli class represents a single Pauli string with an optional phase coefficient from the set ```{ +1,i,−1,−i }```.
