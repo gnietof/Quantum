@@ -19,7 +19,7 @@
       </td>
       <td>
         <ul>
-          <li><a href='./operators.md'>Documentation: Operators overview</a></li>
+          <li><a href='./operators.md'>Documentation: Operators overview</a>✅</li>
           <li>Documentation: Operator class</li>
         </ul>
       </td>
@@ -35,9 +35,9 @@
       </td>
       <td>
         <ul>
-          <li>Documentation: Visualize circuits</li>
-          <li>Documentation: Visualize results</li>
-          <li>Documentation: Plot quantum states</li>
+          <li><a href='./visualize_circuits.md'>Documentation: Visualize circuits </a></li>
+          <li>Documentation: Visualize results :soon:</li>
+          <li><a href='./plot-quantum-states.md'>Documentation: Plot quantum states</a>🚧</li>
         </ul>
       </td>
     </tr>
