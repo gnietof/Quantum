@@ -77,9 +77,9 @@
 
 ## 7. Retrieve and analyze the results of quantum circuits (10% $`\equiv`$ 7 questions)
 ### 7.1. Retrieve previous experiment results (session/Qiskit Runtime)
-- [SamplerPubResult](./sampler_pub_result.md) :soon: *Not yet*
+- [SamplerPubResult](./sampler_pub_result.md) ✅⭐🟢
 - [Retrieve and save jobs](./save_jobs.md) ✅⭐🟢
-- [Runtime job](./runtime_job.md) :soon: *Not yet*
+- [Runtime job](./runtime_job.md) :no_entry_sign: Broken link
 - [Base Primitive](./base_primitive.md) ✅⭐🟢
 ### 7.2. Monitor jobs
 - [Providers](./providers.md) ✅⭐🟠
