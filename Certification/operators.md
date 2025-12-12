@@ -71,6 +71,8 @@ Pauli(([1,1,0],[0,1,1]))
 
 Pauli(([1,1,0],[0,1,1],0))
 
+Pauli(([True,True,False],[False,True,True],0))
+
 ```
 - All these are valid for 'Y'.
 ```python
@@ -84,6 +86,7 @@ Pauli(([True],[True]))
 
 -1j * Pauli('Z') @ Pauli('X') # ZX = iY -> -iZX = Y
 ```
+
 # Operator
 - The Operator class represents a general linear operator.
 - Unlike SparsePauliOp, Operator stores the linear operator as a dense matrix. Because the memory required to store a dense matrix scales exponentially with the number of qubits, the Operator class is only suitable for use with a small number of qubits.
