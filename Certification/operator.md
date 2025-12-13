@@ -21,7 +21,7 @@
 - Note that if both $A$ and $B$ are single-qubit operators, then A.tensor(B) = $A \otimes B$ will have the subsystems indexed as matrix $B$ on subsystem 0, and matrix $A$ on subsystem 1.
 ### Tensor expansion
 - A closely related operation is Operator.expand, which acts like a tensor product but in the reverse order.
-- Hence, for two operators $A$ and $B$ you have A.expand(B) = $A \otimes B$ where the subsystems are indexed as matrix $A$ on subsystem 0, and matrix $B$ on subsystem 1.
+- Hence, for two operators $A$ and $B$ you have A.expand(B) = $B \otimes A$ where the subsystems are indexed as matrix $A$ on subsystem 0, and matrix $B$ on subsystem 1.
 ### Composition
 - You can also compose two operators $A$ and $B$ to implement matrix multiplication using the Operator.compose method. A.compose(B) returns the operator with matrix B.A.
 - You can also compose in the reverse order by applying $B$ in front of $A$ using the front kwarg of compose: A.compose(B, front=True) = A.B:
