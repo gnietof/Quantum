@@ -36,8 +36,8 @@
       <td>
         <ul>
           <li><a href='./visualize_circuits.md'>Visualize circuits</a>✅</li>
-          <li>Documentation: Visualize results :soon:</li>
-          <li><a href='.visualization.md'>Plot quantum states</a>✅</li>
+          <li><a href='./visualization.md'>Visualize results</a>♻️✅</li>
+          <li><a href='./visualization.md'>Plot quantum states</a>♻️✅</li>
         </ul>
       </td>
     </tr>
@@ -55,7 +55,7 @@
         <ul>
           <li>🆕<a href='./construct_circuits.md'>Construct circuits</a>✅</li>
           <li>🆕Circuit library🔜</li>
-          <li><a href='./classical_feedforward_and_control_flow.md'>Classical feedforward and control flow</a>✅</li>
+          <li><a href='./classical_feedforward_and_control_flow.md'>Classical feedforward and control flow</a>♻️✅</li>
           <li>🖕<a href='./construct_circuits.md#parameterized-circuits'>Parameterized circuits</a>✅</li>
           <li><a href='https://www.youtube.com/watch?v=TmXlUUFMUgI'>Introduction to transpilation</a>🎬</li>
           <li>🆕<a href='./introduction_transpilation.md'>Introduction to Transpilation</a>✅</li>
@@ -74,9 +74,9 @@
       </td>
       <td>
         <ul>
-          <li><a href='./execution_modes.md>Execution modes</a>✅</li>
-          <li><a href='./execute_on_hardware.md'>Execute on hardware</a>✅</li>
-          <li><a href='./get_started_with_primitives.md'>Get started with primitives</a>✅</li>
+          <li><a href='./execution_modes.md>Execution modes</a>♻️✅</li>
+          <li><a href='./execute_on_hardware.md'>Execute on hardware</a>♻️✅</li>
+          <li><a href='./get_started_with_primitives.md'>Get started with primitives</a>♻️✅</li>
         </ul>
       </td>
     </tr>
@@ -92,7 +92,7 @@
       <td>
         <ul>
           <li><a href='https://www.youtube.com/watch?v=OuYz02clnx4'>An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
-          <li><a href='./sampler_options.md'>Sampler options</a>✅</li>
+          <li><a href='./sampler_options.md'>Sampler options</a>♻️✅</li>
         </ul>
       </td>
     </tr>
@@ -107,7 +107,7 @@
       <td>
         <ul>
           <li><a href='https://www.youtube.com/watch?v=OuYz02clnx4'>An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
-          <li><a href='./estimator_options.md'>Estimator options</a>✅</li>
+          <li><a href='./estimator_options.md'>Estimator options</a>♻️✅</li>
         </ul>
       </td>
     </tr>
@@ -121,8 +121,8 @@
       </td>
       <td>
         <ul>
-          <li><a href='./save_jobs.md'>Save and retrieve jobs</a>✅</li>
-          <li>:new:<a href='.monitor_cancel_job'>Monitor or cancel a job</a>✅</li>
+          <li><a href='./save_jobs.md'>Save and retrieve jobs</a>♻️✅</li>
+          <li>🆕<a href='.monitor_cancel_job'>Monitor or cancel a job</a>✅</li>
         </ul>
       </td>
     </tr>
@@ -139,7 +139,7 @@
       <td>
         <ul>
           <li>Documentation: Introduction to QASM</li>
-          <li><a href='qasm3_structures.md'>OpenQASM types and casting</a>✅</li>
+          <li><a href='./qasm3_structures.md'>OpenQASM types and casting</a>✅</li>
           <li>OpenQASM syntax</li>
           <li>Documentation: OpenQASM3 and the Qiskit SDK</li>
           <li>Documentation: OpenQASM2 and the Qiskit SDK</li>
