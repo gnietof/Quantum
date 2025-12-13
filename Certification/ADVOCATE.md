@@ -53,14 +53,14 @@
       </td>
       <td>
         <ul>
-          <li>Documentation: Construct circuits</li>
-          <li>Documentation: Circuit library</li>
+          <li>🆕Construct circuits🔜</li>
+          <li>🆕Circuit library🔜</li>
           <li><a href='./classical_feedforward_and_control_flow.md'>Classical feedforward and control flow</a>✅</li>
-          <li>Documentation: Parameterized circuits</li>
+          <li>🖕Parameterized circuits🖕</li>
           <li><a href='https://www.youtube.com/watch?v=TmXlUUFMUgI'>Introduction to transpilation</a>🎬</li>
-          <li>Documentation: Introduction to Transpilation</li>
-          <li>:new:<a href='./optimize_hardware'>Optimize for hardware</a>📝</li>
-          <li>:new:<a href='./optimization_level'>Set transpiler optimization level</a>✅</li>
+          <li>🆕Introduction to Transpilation🔜</li>
+          <li>🆕<a href='./optimize_hardware'>Optimize for hardware</a>📝</li>
+          <li>🆕<a href='./optimization_level'>Set transpiler optimization level</a>✅</li>
         </ul>
       </td>
     </tr>
