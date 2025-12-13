@@ -53,7 +53,7 @@
       </td>
       <td>
         <ul>
-          <li>🆕Construct circuits🔜</li>
+          <li>🆕<a href='./construct_circuits'>Construct circuits</a>✅</li>
           <li>🆕Circuit library🔜</li>
           <li><a href='./classical_feedforward_and_control_flow.md'>Classical feedforward and control flow</a>✅</li>
           <li>🖕Parameterized circuits🖕</li>
