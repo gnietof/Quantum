@@ -58,7 +58,7 @@
           <li><a href='./classical_feedforward_and_control_flow.md'>Classical feedforward and control flow</a>✅</li>
           <li>🖕Parameterized circuits🖕</li>
           <li><a href='https://www.youtube.com/watch?v=TmXlUUFMUgI'>Introduction to transpilation</a>🎬</li>
-          <li>🆕Introduction to Transpilation🔜</li>
+          <li>🆕<a href='./introduction_transpilation.md'>Introduction to Transpilation</a>✅</li>
           <li>🆕<a href='./optimize_hardware'>Optimize for hardware</a>📝</li>
           <li>🆕<a href='./optimization_level'>Set transpiler optimization level</a>✅</li>
         </ul>
