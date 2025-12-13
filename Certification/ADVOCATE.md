@@ -54,7 +54,7 @@
       <td>
         <ul>
           <li>🆕<a href='./construct_circuits.md'>Construct circuits</a>✅</li>
-          <li>🆕Circuit library🔜</li>
+          <li>🆕<a href='./circuit_library2.md'>Circuit library✅</li>
           <li><a href='./classical_feedforward_and_control_flow.md'>Classical feedforward and control flow</a>♻️✅</li>
           <li>🖕<a href='./construct_circuits.md#parameterized-circuits'>Parameterized circuits</a>✅</li>
           <li><a href='https://www.youtube.com/watch?v=TmXlUUFMUgI'>Introduction to transpilation</a>🎬</li>
