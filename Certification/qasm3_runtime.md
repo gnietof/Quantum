@@ -25,4 +25,4 @@ IBM-API-Version: <YYYY-MM-DD>
 
 ## Use sessions
 - The create session operation is required to start a session.
-- The response provides an "id" which has to be included with jobs to run them as part of the session.
+- The response provides an "id" which has to be included as the ```session_id``` parameter in the payload with jobs to run them as part of the session.
