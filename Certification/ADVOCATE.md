@@ -19,7 +19,7 @@
       </td>
       <td>
         <ul>
-          <li><a href='./operators.md'>Documentation: Operators overview</a>✅</li>
+          <li><a href='./operators.md'>Operators overview</a>✅</li>
           <li>Documentation: Operator class</li>
         </ul>
       </td>
@@ -57,7 +57,7 @@
           <li>Documentation: Circuit library</li>
           <li><a href='./classical_feedforward_and_control_flow.md'>Classical feedforward and control flow</a>✅</li>
           <li>Documentation: Parameterized circuits</li>
-          <li><a href='https://www.youtube.com/watch?v=TmXlUUFMUgI'>Video: Introduction to transpilation</a>🎬</li>
+          <li><a href='https://www.youtube.com/watch?v=TmXlUUFMUgI'>Introduction to transpilation</a>🎬</li>
           <li>Documentation: Introduction to Transpilation</li>
           <li>:new:<a href='./optimize_hardware'>Optimize for hardware</a>📝</li>
           <li>:new:<a href='./optimization_level'>Set transpiler optimization level</a>✅</li>
@@ -91,7 +91,7 @@
       </td>
       <td>
         <ul>
-          <li><a href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
+          <li><a href='https://www.youtube.com/watch?v=OuYz02clnx4'>An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
           <li><a href='./sampler_options.md'>Sampler options</a>✅</li>
         </ul>
       </td>
