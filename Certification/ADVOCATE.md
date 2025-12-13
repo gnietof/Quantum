@@ -59,8 +59,8 @@
           <li>Documentation: Parameterized circuits</li>
           <li><a href='https://www.youtube.com/watch?v=TmXlUUFMUgI'>Video: Introduction to transpilation</a>🎬</li>
           <li>Documentation: Introduction to Transpilation</li>
-          <li>Documentation: Optimize for hardware</li>
-          <li>Documentation: Set transpiler optimization level</li>
+          <li>:new:<a href='./optimize_hardware'>Optimize for hardware</a>📝</li>
+          <li>:new:<a href='./optimization_level'>Set transpiler optimization level</a>✅</li>
         </ul>
       </td>
     </tr>
@@ -74,9 +74,9 @@
       </td>
       <td>
         <ul>
-          <li>Documentation: Execution modes</li>
-          <li>Documentation: Execute on hardware</li>
-          <li>Documentation: Get started with primitives</li>
+          <li><a href='./execution_modes.md>Execution modes</a>✅</li>
+          <li><a href='./execute_on_hardware.md'>Execute on hardware</a>✅</li>
+          <li><a href='./get_started_with_primitives.md'>Get started with primitives</a>✅</li>
         </ul>
       </td>
     </tr>
@@ -91,8 +91,8 @@
       </td>
       <td>
         <ul>
-          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
-          <li><href='./sampler_options.md'>Sampler options</a>✅</li>
+          <li><a href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
+          <li><a href='./sampler_options.md'>Sampler options</a>✅</li>
         </ul>
       </td>
     </tr>
@@ -106,8 +106,8 @@
       </td>
       <td>
         <ul>
-          <li><href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
-          <li><href='./estimator_options.md'>Estimator options</a>✅</li>
+          <li><a href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
+          <li><a href='./estimator_options.md'>Estimator options</a>✅</li>
         </ul>
       </td>
     </tr>
@@ -121,8 +121,8 @@
       </td>
       <td>
         <ul>
-          <li><a href='./save_jobs.md>Save and retrieve jobs</a>✅</li>
-          <li><a href='.monitor_cancel_job'>Monitor or cancel a job</a>✅</li>
+          <li><a href='./save_jobs.md'>Save and retrieve jobs</a>✅</li>
+          <li>:new:<a href='.monitor_cancel_job'>Monitor or cancel a job</a>✅</li>
         </ul>
       </td>
     </tr>
