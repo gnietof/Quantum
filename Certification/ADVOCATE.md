@@ -20,7 +20,7 @@
       <td>
         <ul>
           <li><a href='./operators.md'>Operators overview</a>✅</li>
-          <li>Documentation: Operator class</li>
+          <li>🆕<a href='./operator.md'>Operator class</a>✅</li>
         </ul>
       </td>
     </tr>
@@ -106,7 +106,7 @@
       </td>
       <td>
         <ul>
-          <li><a href='https://www.youtube.com/watch?v=OuYz02clnx4'>Video: An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
+          <li><a href='https://www.youtube.com/watch?v=OuYz02clnx4'>An Introduction to Qiskit Runtime Primitives V2</a>🎬</li>
           <li><a href='./estimator_options.md'>Estimator options</a>✅</li>
         </ul>
       </td>
@@ -143,7 +143,7 @@
           <li>OpenQASM syntax</li>
           <li>Documentation: OpenQASM3 and the Qiskit SDK</li>
           <li>Documentation: OpenQASM2 and the Qiskit SDK</li>
-          <li><a href='./qasm3_runtime.md>Qiskit Runtime REST API</a>✅</li>
+          <li><a href='./qasm3_runtime.md'>Qiskit Runtime REST API</a>✅</li>
         </ul>
       </td>
     </tr>
