@@ -11,7 +11,7 @@
   - ax: an optional axes for the visualization output.
   - filename: file path to save image to.
  
-- Figures can be saved either by passing the filename parameter or using the ```savefig```method on the returned figure object.
+- Figures can be saved either by passing the filename parameter or using the ```savefig``` method on the returned figure object.
 
 ## Count Visualizations
 This section contains functions that visualize measurements outcome counts.
@@ -28,7 +28,7 @@ plot_histogram(data)
 
 - Samples might be displayed following different criteria. The most interesting are:
   - number_to_keep: number of terms to plot and the rest are group under 'rest'.
-  - sort: sorting order ('asc','desc',hamming','value' or 'value_desc'
+  - sort: sorting order ('asc','desc',hamming','value' or 'value_desc')
   - target_string: target string if 'sort' is a distance measure. (??)
 
 ## Distribution Visualizations
@@ -58,7 +58,7 @@ plot_distribution(data,sort='value_desc')
 ```
 <img width="490" height="390" alt="image" src="https://github.com/user-attachments/assets/b0924d2e-c7e6-4dc4-b50d-6af43fe59549" />
 
-- Same as ```plot_histogram```, multiple datasets, titles, legends or colors and allowed.
+- Same as ```plot_histogram```, multiple datasets, titles, legends or colors are allowed.
 ```python
 from qiskit.visualization import plot_distribution
 
@@ -171,7 +171,6 @@ sv = Statevector(qc)
 plot_bloch_multivector(qc)
 ```
 <img width="750" height="345" alt="image" src="https://github.com/user-attachments/assets/045d249f-788d-446b-b165-5125d50936c9" />
-
 
 ### State City
 - The ```plot_state_city``` displays the density matrix of a state $\ket{\psi}$.
