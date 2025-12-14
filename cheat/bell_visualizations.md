@@ -50,8 +50,14 @@ from qiskit.visualization import plot_state_city
 
 qc2 = QuantumCircuit(2)
 qc2.h(0)
+qc2.z(0)
 qc2.cx(0,1)
-qc2.z(1)
+
+# Also valid
+# qc2b = QuantumCircuit(2)
+# qc2b.h(0)
+# qc2b.cx(0,1)
+# qc2b.z(0) or qc2b.z(1) # <- Difference (entangled?)
 
 sv2 = Statevector.from_instruction(qc2)
 plot_state_city(sv2)
@@ -91,8 +97,14 @@ from qiskit.visualization import plot_state_city
 
 qc3 = QuantumCircuit(2)
 qc3.h(0)
+qc3.x(1)
 qc3.cx(0,1)
-qc3.x(0)
+
+# Also valid
+# qc3b = QuantumCircuit(2)
+# qc3b.h(0)
+# qc3b.cx(0,1)
+# qc3b.x(0) or qc2b.x(1) # <- Difference (entangled?)
 
 sv3 = Statevector.from_instruction(qc3)
 plot_state_city(sv3)
@@ -131,9 +143,16 @@ from qiskit.visualization import plot_state_city
 
 qc4 = QuantumCircuit(2)
 qc4.h(0)
-qc4.cx(0,1)
 qc4.x(0)
 qc4.z(1)
+qc4.cx(0,1)
+
+# Also valid
+# qc4b = QuantumCircuit(2)
+# qc4b.h(0)
+# qc4b.cx(0,1)
+# qc4b.x(0) or qc4b.x(1) # <- Difference (entangled?)
+# qc4b.z(0) or qc4b.z(1) # <- Difference (entangled?)
 
 sv4 = Statevector.from_instruction(qc4)
 plot_state_city(sv4)
