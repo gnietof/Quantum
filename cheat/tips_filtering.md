@@ -64,7 +64,7 @@ job2.update_tags(['batch-example','133-qubits','bacth-job2'])
 ```
 <img width="911" height="436" alt="image" src="https://github.com/user-attachments/assets/1bdc1418-6fcb-40df-95e7-4f8bd60b2595" />
 
--We may then filter by the tags.
+- We may then filter by the tags.
   - Wild cards or partial matches are not allowed.
   - Multiple tags are considered as an AND between them.
 ```
