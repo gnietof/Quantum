@@ -75,11 +75,12 @@ And the output circuit in this case is:
 | Name | Qiskit | Picture | Unitary | Comments |
 | :--: | ------ | ------- | :-----: | -------- |
 | H/Hadamard | `qc.h(qubit0)` | ![Hadamard]( ./circuits/H_circuit.png ) | $`\frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1  \\ 1 & -1  \end{bmatrix}`$  | Changes computation basis from $\ket{0},\ket{1}$ to $\ket{+},\ket{-}$ |
-| X | `qc.x(qubit0)` |  ![X]( ./circuits/X_circuit.png ) | $`\begin{bmatrix} 0 & 1  \\ 1 & 0  \end{bmatrix}`$  | X-axis $`\pi `$ rotation |
+| X | `qc.sx(qubit0)` |  ![X]( ./circuits/X_circuit.png ) | $`\begin{bmatrix} 0 & 1  \\ 1 & 0  \end{bmatrix}`$ | X-axis $`\pi`$ rotation |
+| $\sqrt{X}$/SX | `qc.x(qubit0)` |  ![SX]( ./circuits/SX_circuit.png ) | $`\frac{1}{2}\begin{bmatrix} 1+i & 1-i  \\ 1-i & 1+i  \end{bmatrix}`$  | X-axis $`\frac{\pi}{2}`$ rotation (up to a phase)<br>$RX(\pi/2) = e^{-i\pi/4}\sqrt{X}$ |
 | Y | `qc.y(qubit0)` |  ![Y](./circuits/Y_circuit.png) | $`\begin{bmatrix} 0 & -i  \\ i & 0  \end{bmatrix}`$ | Y-axis $`\pi `$ rotation |
 | Z | `qc.z(qubit0)` |  ![Z](./circuits/Z_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & -1  \end{bmatrix}`$ | Z-axis $`\pi `$ rotation |
 | T | `qc.t(qubit0)` |  ![T](./circuits/T_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & e^{\frac{i\pi}{4}}  \end{bmatrix} = \begin{bmatrix} 1 & 0  \\ 0 & \frac{\sqrt{2}}{2}+\frac{\sqrt{2}i}{2}  \end{bmatrix}`$ | $`S = T^2`$ <br> Z-axis $`\frac{\pi}{4}`$ rotation |
-| S | `qc.s(qubit0)` |  ![S](./circuits/S_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & i \end{bmatrix}`$ | $`Z = S^2`$ <br> Z-axis $`\frac{\pi}{2} `$ rotation |
+| S | `qc.s(qubit0)` |  ![S](./circuits/S_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & i \end{bmatrix}`$ | $`Z = S^2`$ <br> Z-axis $`\frac{\pi}{2} `$ rotation<br> $`S = e^{i\pi/4}RZ\left( \frac{\pi}{2} \right)`$ |
 | S† | `qc.sdg(qubit0)` |  ![SDG](./circuits/SDG_circuit.png) | $`\begin{bmatrix}1 & 0\\0 & -i\end{bmatrix}`$ | Z-axis $`\frac{-\pi}{2} `$ rotation |
 | P | `qc.p(phi,qubit0)` |  ![P](./circuits/P_circuit.png) | $`\begin{bmatrix} 1 & 0  \\ 0 & e^{i\phi}  \end{bmatrix} `$ | Z-axis $`\phi`$ rotation |
 #### Rotations
@@ -97,12 +98,12 @@ And the output circuit in this case is:
 Gates X,Y,Z,S,T and S† are just special cases of RX,RY,RZ (up to a global phase) 
 | Name | Rotation |
 | ---- | -------- | 
-| X | RX($\pi$) |
-| Y | RY($\pi$) |
-| Z | RZ($\pi$) |
-| S | RZ $\left( \frac{\pi}{2} \right)$ |
-| S† | RZ $\left( \frac{-\pi}{2} \right)$ |
-| T | RZ $\left( \frac{\pi}{4} \right)$ |
+| X | $RX(\pi)$ |
+| Y | $RY(\pi)$ |
+| Z | $RZ(\pi)$ |
+| S | $RZ \left( \frac{\pi}{2} \right)$ |
+| S† | $RZ \left( \frac{-\pi}{2} \right)$ |
+| T | $RZ \left( \frac{\pi}{4} \right)$ |
 
 
 ### 2 qubit
