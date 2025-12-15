@@ -3,7 +3,7 @@
 ## Attributes
 - **measure_mitigation**. Whether to enable measurement error mitigation method. If you enable measurement mitigation, you can fine-tune its noise learning by using measure_noise_learning.  
 - **measure_noise_learning**. Additional measurement noise learning options.  
-  - **num_ranodmizations**.
+  - **num_randomizations**.
   - **shots_per_randomization**.
 - **zne_mitigation**. Whether to turn on Zero-Noise Extrapolation error mitigation method. If you enable ZNE, you can fine-tune - its options by using zne (zero noise extrapolation mitigation options; only used by the V2 Estimator).
 - **zne**. Additional zero-noise extrapolation mitigation options.  
