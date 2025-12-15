@@ -14,7 +14,7 @@ qc.draw('mpl')
 ```
 <img width="197" height="121" alt="image" src="https://github.com/user-attachments/assets/03838a9b-6f84-46ad-8dfe-f6bac8a32404" />
 
-2. Create and observable.
+2. Create an observable.
 ```python
 from qiskit.quantum_info import SparsePauliOp
 import numpy as np
