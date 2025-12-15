@@ -51,7 +51,7 @@ SparsePauliOp(['ZYXI', 'IYIZ'],
 from qiskit.quantum_info import SparsePauliOp
 
 SparsePauliOp.from_list([('XZ',2),('ZY',1j),])
-SparsePauliOp.from_list([('XZ',2),('ZYI',1j),]) # The I is removed to keep a the number of qubits
+SparsePauliOp.from_list([('XZ',2),('ZYI',1j),]) # The I is removed to keep the number of qubits
 ```
   - These combinations are **not** valid.
 ```python
