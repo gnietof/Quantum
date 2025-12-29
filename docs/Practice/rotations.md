@@ -152,8 +152,8 @@ qc.y(0)
     <li>0</li> 
     <li>$\pi/2$</li> 
     <li>$-\pi/2$</li> 
-    <li>$pi$</li> <-
-    <li>$2pi$</li> 
+    <li>$\pi$</li> <-
+    <li>$2\pi$</li> 
   </ol>
 </div>
 
