@@ -24,7 +24,7 @@ qc.rx(np.pi/2,0)
   </ol>
 </div>
 
-1. Given the following code fragment what is the probability that a measurement would result in a value of 1?
+2. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Statevector
@@ -43,7 +43,7 @@ qc.ry(np.pi/4,0)
   </ol>
 </div>
 
-1. Given the following code fragment what is the probability that a measurement would result in a value of 1?
+3. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Statevector
@@ -63,7 +63,7 @@ qc.rz(np.pi/4,0)
   </ol>
 </div>
 
-1. Given the following code fragment what is the probability that a measurement would result in a value of 1?
+4. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Statevector
@@ -82,7 +82,7 @@ qc.z(0)
   </ol>
 </div>
 
-1. Given the following code fragment what is the probability that a measurement would result in a value of 0?
+5. Given the following code fragment what is the probability that a measurement would result in a value of 0?
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Statevector
