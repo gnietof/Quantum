@@ -4,5 +4,6 @@ I will be creating some practice exams here. Instead of the usual approach to cr
 The idea is having the opportunity to practice a concept multiple times and getting confident on that section. For example, questions only focused on rotations, visualizations, the REST API ...
 
 - [Qubit Rotations](./Practice/rotations.md) 👷‍♂️
+- [Pauli](./Practice/pauli.md) 👷‍♂️
 - Visualizations 👷‍♂️
 - [REST API](./Practice/rest.md) 👷‍♂️
