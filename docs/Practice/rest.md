@@ -1,3 +1,7 @@
+---
+layout: default
+title: My Practice Exam
+---
 # Qiskit 2.x Practice Exam (REST API)
 
 1.	Which of these parameters should not be included in the header for a REST API request:
