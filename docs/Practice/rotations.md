@@ -123,57 +123,62 @@ qc.y(0)
 </div>
 
 6. Applying the Qiskit T gate to the qubit state $\ket{1}$ introduces a global phase of?
+
 <div style="margin-left: 2em;">
   <ol type="A">
-    <li>0</li> 
-    <li>$\pi/4$</li> <-
-    <li>$\pi/2$</li> 
-    <li>$-\pi/4$</li> 
-    <li>$-\pi/2$</li> 
+    <li>0</li>
+    <li>π/4</li> <-
+    <li>π/2</li>
+    <li>-π/4</li> 
+    <li>-π/2</li>
   </ol>
 </div>
 
 7. Applying the Qiskit Tdg ($T^{\dagger}$) gate to the qubit state $\ket{0}$ introduces a global phase of?
+
 <div style="margin-left: 2em;">
   <ol type="A">
     <li>0</li> <-
-    <li>$$\pi/4$$</li> 
-    <li>$$\pi/2$$</li> 
-    <li>$$-\pi/4$$</li> 
-    <li>$$-\pi/2$$</li> 
+    <li>π/4</li> 
+    <li>π/2</li> 
+    <li>-π/4</li> 
+    <li>-π/2</li> 
   </ol>
 </div>
 
 8. Applying the Qiskit S gate to the qubit state $\ket{1}$ introduces a global phase of?
+
 <div style="margin-left: 2em;">
   <ol type="A">
     <li>0</li> 
-    <li>$\pi/4$</li> 
-    <li>$\pi/2$</li> <-
-    <li>$-\pi/4$</li> 
-    <li>$-\pi/2$</li> 
+    <li>π/4</li> 
+    <li>π/2</li> <-
+    <li>-π/4</li> 
+    <li>-π/2</li> 
   </ol>
 </div>
 
 9. Applying the Qiskit Sdg ($S^{\dagger}$) gate to the qubit state $\ket{0}$ introduces a global phase of?
+
 <div style="margin-left: 2em;">
   <ol type="A">
     <li>0</li> <-
-    <li>$\pi/4$</li> 
-    <li>$\pi/2$</li> 
-    <li>$-\pi/4$</li> 
-    <li>$-\pi/2$</li> 
+    <li>π/4</li> 
+    <li>π/2</li> 
+    <li>-π/4</li> 
+    <li>-π/2</li> 
   </ol>
 </div>
 
 8. Applying the Qiskit Z gate to the qubit state $\ket{1}$ introduces a global phase of?
+
 <div style="margin-left: 2em;">
   <ol type="A">
     <li>0</li> 
-    <li>$\pi/2$</li> 
-    <li>$-\pi/2$</li> 
-    <li>$\pi$</li> <-
-    <li>$2\pi$</li> 
+    <li>π/2</li> 
+    <li>-π/2</li> 
+    <li>π</li> <-
+    <li>2π</li> 
   </ol>
 </div>
 
