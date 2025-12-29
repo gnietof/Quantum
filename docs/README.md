@@ -5,4 +5,4 @@ The idea is having the opportunity to practice a concept multiple times and gett
 
 - Rotations 👷‍♂️
 - Visualizations 👷‍♂️
-- REST API 👷‍♂️
+- [REST API](./Practice/rest.md) 👷‍♂️
