@@ -3,6 +3,8 @@ layout: default
 title: Qiskit 2.x Practice Exam (Rotations)
 ---
 
+<link rel="stylesheet" href="css/styles.css">
+
 <h1>Qiskit 2.x Practice Exam (Pauli)</h1>
 
 1. Which Pauli operator can a user expect when running the following circuit?
