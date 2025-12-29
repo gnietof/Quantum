@@ -28,7 +28,8 @@ qc.z(0)
   </ol>
 </div>
 
-2. Which Pauli operator can a user expect when running the following circuit?<br>
+2. Which Pauli operator can a user expect when running the following circuit?
+
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Pauli
@@ -51,7 +52,8 @@ qc.z(0)
 </div>
 
 
-3. Which Pauli operator can a user expect when running the following circuit?<br>
+3. Which Pauli operator can a user expect when running the following circuit?
+
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Pauli
@@ -74,7 +76,8 @@ qc.y(0)
   </ol>
 </div>
 
-4. Which Pauli operator can a user expect when running the following circuit?<br>
+4. Which Pauli operator can a user expect when running the following circuit?
+
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Pauli
@@ -93,7 +96,8 @@ qc.z(0)
   </ol>
 </div>
 
-5. Which is the the correct output for the given code?<br>
+5. Which is the the correct output for the given code?
+
 ```python
 from qiskit.quantum_info import Pauli
 
