@@ -2,16 +2,6 @@
 layout: default
 title: Qiskit 2.x Practice Exam (Rotations)
 ---
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    }
-  };
-</script>
-
 <h1>Qiskit 2.x Practice Exam (Rotations)</h1>
 
 <ol>
@@ -122,7 +112,7 @@ qc.y(0)
   </ol>
 </div>
 
-6. Applying the Qiskit T gate to the qubit state $\ket{1}$ introduces a global phase of?
+6. Applying the Qiskit T gate to the qubit state |1> introduces a global phase of?
 
 <div style="margin-left: 2em;">
   <ol type="A">
@@ -134,7 +124,7 @@ qc.y(0)
   </ol>
 </div>
 
-7. Applying the Qiskit Tdg ($T^{\dagger}$) gate to the qubit state $\ket{0}$ introduces a global phase of?
+7. Applying the Qiskit Tdg ($T^{\dagger}$) gate to the qubit state |0> introduces a global phase of?
 
 <div style="margin-left: 2em;">
   <ol type="A">
@@ -146,7 +136,7 @@ qc.y(0)
   </ol>
 </div>
 
-8. Applying the Qiskit S gate to the qubit state $\ket{1}$ introduces a global phase of?
+8. Applying the Qiskit S gate to the qubit state |1> introduces a global phase of?
 
 <div style="margin-left: 2em;">
   <ol type="A">
@@ -158,7 +148,7 @@ qc.y(0)
   </ol>
 </div>
 
-9. Applying the Qiskit Sdg ($S^{\dagger}$) gate to the qubit state $\ket{0}$ introduces a global phase of?
+9. Applying the Qiskit Sdg gate to the qubit state |0> introduces a global phase of?
 
 <div style="margin-left: 2em;">
   <ol type="A">
@@ -170,7 +160,7 @@ qc.y(0)
   </ol>
 </div>
 
-8. Applying the Qiskit Z gate to the qubit state $\ket{1}$ introduces a global phase of?
+8. Applying the Qiskit Z gate to the qubit state |1> introduces a global phase of?
 
 <div style="margin-left: 2em;">
   <ol type="A">
