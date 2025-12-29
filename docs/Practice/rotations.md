@@ -89,6 +89,7 @@ import numpy as np
 qc = QuantumCircuit(1)
 qc.z(0)
 ```
+
 <div style="margin-left: 2em;">
   <ol type="A">
     <li>0</li> <-
@@ -110,6 +111,7 @@ qc = QuantumCircuit(1)
 qc.x(0)
 qc.y(0)
 ```
+
 <div style="margin-left: 2em;">
   <ol type="A">
     <li>0</li> 
