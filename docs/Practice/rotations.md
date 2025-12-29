@@ -3,6 +3,7 @@ layout: default
 title: Qiskit 2.x Practice Exam (Rotations)
 ---
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 <script>
   window.MathJax = {
     tex: {
