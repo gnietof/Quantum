@@ -2,110 +2,169 @@
 layout: default
 title: Qiskit 2.x Practice Exam (Rotations)
 ---
+<h1>Qiskit 2.x Practice Exam (Rotations)</h1>
 
-<h1>Qiskit 2.x Practice Exam (Pauli)</h1>
-
-1. Which Pauli operator can a user expect when running the following circuit?
-
-```python
-from qiskit import QuantumCircuit
-from qiskit.quantum_info import Pauli
-
-qc = QuantumCircuit(1)
-qc.z(0)
-qc.x(0)
-qc.y(0)
-qc.y(0)
-qc.x(0)
-qc.z(0)
-```
-<div style="margin-left: 2em;">
-  <ol type="A">
-    <li>Pauli("I")</li> <-
-    <li>Pauli("X")</li> 
-    <li>Pauli("Y")</li> 
-    <li>Pauli("Z")</li> 
-  </ol>
-</div>
-
-2. Which Pauli operator can a user expect when running the following circuit?
+1. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
 ```python
 from qiskit import QuantumCircuit
-from qiskit.quantum_info import Pauli
+from qiskit.quantum_info import Statevector
+import numpy as np
 
 qc = QuantumCircuit(1)
-qc.z(0)
-qc.x(0)
-qc.y(0)
-qc.y(0)
-qc.x(0)
-qc.z(0)
+qc.rx(np.pi/2,0)
 ```
 <div style="margin-left: 2em;">
   <ol type="A">
-    <li>Pauli("I")</li> 
-    <li>Pauli("X")</li> 
-    <li>Pauli("Y")</li> 
-    <li>Pauli("Z")</li> 
+    <li>0</li>
+    <li>0.146</li>
+    <li>0.5</li> <-
+    <li>0.853</li>
+    <li>1</li>
   </ol>
 </div>
-
-
-3. Which Pauli operator can a user expect when running the following circuit?
+      
+2. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
 ```python
 from qiskit import QuantumCircuit
-from qiskit.quantum_info import Pauli
+from qiskit.quantum_info import Statevector
+import numpy as np
 
 qc = QuantumCircuit(1)
-qc.y(0)
-qc.x(0)
-qc.y(0)
-qc.x(0)
-qc.y(0)
-qc.x(0)
-qc.y(0)
+qc.ry(np.pi/4,0)
 ```
 <div style="margin-left: 2em;">
   <ol type="A">
-    <li>Pauli("I")</li> 
-    <li>Pauli("X")</li> <-
-    <li>Pauli("Y")</li> 
-    <li>Pauli("Z")</li> 
+    <li>0</li> 
+    <li>0.146</li> <-
+    <li>0.5</li>
+    <li>0.853</li>
+    <li>1</li> 
   </ol>
 </div>
-
-4. Which Pauli operator can a user expect when running the following circuit?
+      
+3. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
 ```python
 from qiskit import QuantumCircuit
-from qiskit.quantum_info import Pauli
+from qiskit.quantum_info import Statevector
+import numpy as np
+
+qc = QuantumCircuit(1)
+qc.h(0)
+qc.rz(np.pi/4,0)
+```
+
+<div style="margin-left: 2em;">
+  <ol type="A">
+    <li>0</li>
+    <li>0.146</li>
+    <li>0.5</li> <-
+    <li>0.853</li>
+    <li>1</li>
+  </ol>
+</div>
+      
+4. Given the following code fragment what is the probability that a measurement would result in a value of 1?
+
+```python
+from qiskit import QuantumCircuit
+from qiskit.quantum_info import Statevector
+import numpy as np
+
+qc = QuantumCircuit(1)
+qc.z(0)
+```
+
+<div style="margin-left: 2em;">
+  <ol type="A">
+    <li>0</li> <-
+    <li>0.146</li> 
+    <li>0.5</li>
+    <li>0.853</li>
+    <li>1</li> 
+  </ol>
+</div>
+
+5. Given the following code fragment what is the probability that a measurement would result in a value of 0?
+
+```python
+from qiskit import QuantumCircuit
+from qiskit.quantum_info import Statevector
+import numpy as np
 
 qc = QuantumCircuit(1)
 qc.x(0)
 qc.y(0)
-qc.z(0)
 ```
+
 <div style="margin-left: 2em;">
   <ol type="A">
-    <li>Pauli("I")</li> 
-    <li>Pauli("-iI")</li> <-
-    <li>Pauli("Y")</li> 
-    <li>Pauli("H")</li> 
+    <li>0</li> 
+    <li>0.146</li> 
+    <li>0.5</li>
+    <li>0.853</li>
+    <li>1</li> <-
   </ol>
 </div>
 
-5. Which is the the correct output for the given code?
+6. Applying the Qiskit T gate to the qubit state |1> introduces a global phase of?
 
-```python
-from qiskit.quantum_info import Pauli
-
-p = Pauli('Y')
-```
 <div style="margin-left: 2em;">
   <ol type="A">
-    <li><table style="border:none;"><tr><td>[[ 1.+0.j  1.+0.j]</td></tr><tr><td>[[ 1.+0.j  1.+0.j]</td></tr></table></li>
+    <li>0</li>
+    <li>π/4</li> <-
+    <li>π/2</li>
+    <li>-π/4</li> 
+    <li>-π/2</li>
   </ol>
 </div>
 
+7. Applying the Qiskit Tdg gate to the qubit state |0> introduces a global phase of?
+
+<div style="margin-left: 2em;">
+  <ol type="A">
+    <li>0</li> <-
+    <li>π/4</li> 
+    <li>π/2</li> 
+    <li>-π/4</li> 
+    <li>-π/2</li> 
+  </ol>
+</div>
+
+8. Applying the Qiskit S gate to the qubit state |1> introduces a global phase of?
+
+<div style="margin-left: 2em;">
+  <ol type="A">
+    <li>0</li> 
+    <li>π/4</li> 
+    <li>π/2</li> <-
+    <li>-π/4</li> 
+    <li>-π/2</li> 
+  </ol>
+</div>
+
+9. Applying the Qiskit Sdg gate to the qubit state |0> introduces a global phase of?
+
+<div style="margin-left: 2em;">
+  <ol type="A">
+    <li>0</li> <-
+    <li>π/4</li> 
+    <li>π/2</li> 
+    <li>-π/4</li> 
+    <li>-π/2</li> 
+  </ol>
+</div>
+
+10. Applying the Qiskit Z gate to the qubit state |1> introduces a global phase of?
+
+<div style="margin-left: 2em;">
+  <ol type="A">
+    <li>0</li> 
+    <li>π/2</li> 
+    <li>-π/2</li> 
+    <li>π</li> <-
+    <li>2π</li> 
+  </ol>
+</div>
