@@ -55,6 +55,7 @@ qc = QuantumCircuit(1)
 qc.h(0)
 qc.rz(np.pi/4,0)
 ```
+
 <div style="margin-left: 2em;">
   <ol type="A">
     <li>0</li>
@@ -156,7 +157,7 @@ qc.y(0)
   </ol>
 </div>
 
-8. Applying the Qiskit Z gate to the qubit state |1> introduces a global phase of?
+10. Applying the Qiskit Z gate to the qubit state |1> introduces a global phase of?
 
 <div style="margin-left: 2em;">
   <ol type="A">
