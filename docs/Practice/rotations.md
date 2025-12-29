@@ -5,7 +5,8 @@ title: Qiskit 2.x Practice Exam (Rotations)
 
 <h1>Qiskit 2.x Practice Exam (Rotations)</h1>
 
-1. Given the following code fragment what is the probability that a measurement would result in a value of 1?
+<ol>
+<li>Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
 ```python
 from qiskit import QuantumCircuit
@@ -24,8 +25,9 @@ qc.rx(np.pi/2,0)
     <li>1</li>
   </ol>
 </div>
-
-2. Given the following code fragment what is the probability that a measurement would result in a value of 1?
+</li>
+      
+</li>Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
 ```python
 from qiskit import QuantumCircuit
@@ -44,8 +46,9 @@ qc.ry(np.pi/4,0)
     <li>1</li> 
   </ol>
 </div>
-
-3. Given the following code fragment what is the probability that a measurement would result in a value of 1?
+</li>
+      
+</li>Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
 ```python
 from qiskit import QuantumCircuit
@@ -65,7 +68,8 @@ qc.rz(np.pi/4,0)
     <li>1</li>
   </ol>
 </div>
-
+</li>
+      
 4. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
 ```python
