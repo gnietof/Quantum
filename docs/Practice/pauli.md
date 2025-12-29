@@ -5,7 +5,7 @@ title: Qiskit 2.x Practice Exam (Rotations)
 
 <h1>Qiskit 2.x Practice Exam (Pauli)</h1>
 
-1. Which Pauli operator can a user expect when running the following circuit?
+1. Which Pauli operator can a user expect when running the following circuit?  
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Pauli
@@ -27,7 +27,7 @@ qc.z(0)
   </ol>
 </div>
 
-2. Which Pauli operator can a user expect when running the following circuit?
+2. Which Pauli operator can a user expect when running the following circuit?  
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Pauli
@@ -50,7 +50,7 @@ qc.z(0)
 </div>
 
 
-3. Which Pauli operator can a user expect when running the following circuit?
+3. Which Pauli operator can a user expect when running the following circuit?  
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Pauli
@@ -73,7 +73,7 @@ qc.y(0)
   </ol>
 </div>
 
-4. Which Pauli operator can a user expect when running the following circuit?
+4. Which Pauli operator can a user expect when running the following circuit?  
 ```python
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Pauli
