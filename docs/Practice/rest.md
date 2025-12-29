@@ -1,9 +1,7 @@
 ---
 layout: default
-title: My Practice Exam
+title: # Qiskit 2.x Practice Exam (REST API)
 ---
-
-# Qiskit 2.x Practice Exam (REST API)
 
 1.	Which of these parameters should not be included in the header for a REST API request:
 <div style="margin-left: 2em;">
