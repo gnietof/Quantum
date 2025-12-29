@@ -105,10 +105,21 @@ p = Pauli('Y')
 ```
 <div style="margin-left: 2em;">
   <ol type="A">
-    <li>$`\left[\begin{array}{cc}\left[ 1.+0.j & 1.+0.j \right] \left[1.+0.j & & -1.+0.j \right]\end{array}\right]`$
+    <li>$$\left[\begin{array}{cc}\left[ 1.+0.j & 1.+0.j \right] \left[1.+0.j & & -1.+0.j \right]\end{array}\right]$$
     <li>\left[\begin{array}{cc}1 & 0 \\ 
 0 & 1\end{array}\right]</li> <-
     <li>Pauli("Y")</li> 
     <li>Pauli("H")</li> 
   </ol>
 </div>
+
+$`\left[\begin{array}{cc}\left[1.+0.j & 1.+0.j \right] \left[1.+0.j & -1.+0.j \right]\end{array}\right]`$
+
+$$\left[\begin{array}{cc}\left[1.+0.j & 1.+0.j \right] \left[1.+0.j & -1.+0.j \right]\end{array}\right]$$
+
+
+$$\left[\begin{array}{cc}1 & 0 \\ 
+0 & 1\end{array}\right]$$
+
+
+$$\left[\begin{array}{cc} \left[ 1 & 0 \right] \\ \left[ 0 & 1\ right] \end{array}\right]$$
