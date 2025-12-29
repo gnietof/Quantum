@@ -4,8 +4,7 @@ title: Qiskit 2.x Practice Exam (Rotations)
 ---
 <h1>Qiskit 2.x Practice Exam (Rotations)</h1>
 
-<ol>
-<li>Given the following code fragment what is the probability that a measurement would result in a value of 1?
+1. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
 ```python
 from qiskit import QuantumCircuit
@@ -24,9 +23,8 @@ qc.rx(np.pi/2,0)
     <li>1</li>
   </ol>
 </div>
-</li>
       
-</li>Given the following code fragment what is the probability that a measurement would result in a value of 1?
+2. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
 ```python
 from qiskit import QuantumCircuit
@@ -45,9 +43,8 @@ qc.ry(np.pi/4,0)
     <li>1</li> 
   </ol>
 </div>
-</li>
       
-</li>Given the following code fragment what is the probability that a measurement would result in a value of 1?
+3. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
 ```python
 from qiskit import QuantumCircuit
@@ -67,7 +64,6 @@ qc.rz(np.pi/4,0)
     <li>1</li>
   </ol>
 </div>
-</li>
       
 4. Given the following code fragment what is the probability that a measurement would result in a value of 1?
 
@@ -124,7 +120,7 @@ qc.y(0)
   </ol>
 </div>
 
-7. Applying the Qiskit Tdg ($T^{\dagger}$) gate to the qubit state |0> introduces a global phase of?
+7. Applying the Qiskit Tdg gate to the qubit state |0> introduces a global phase of?
 
 <div style="margin-left: 2em;">
   <ol type="A">
