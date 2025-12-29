@@ -134,10 +134,10 @@ qc.y(0)
 <div style="margin-left: 2em;">
   <ol type="A">
     <li>0</li> <-
-    <li>$\pi/4$</li> 
-    <li>$\pi/2$</li> 
-    <li>$-\pi/4$</li> 
-    <li>$-\pi/2$</li> 
+    <li>$$\pi/4$$</li> 
+    <li>$$\pi/2$$</li> 
+    <li>$$-\pi/4$$</li> 
+    <li>$$-\pi/2$$</li> 
   </ol>
 </div>
 
