@@ -17,10 +17,10 @@ title: Qiskit 2.x Practice Exam (REST API)
 2.	Which is the endpoint for cancelling a running job?
 <div style="margin-left: 2em;">
   <ol type="A">
-	  <li>DELETE /v1/jobs/{id}</li>
-	  <li>POST /v1/jobs/{id}/stop</li>
-	  <li>POST /v1/jobs/{id}/cancel</li>
-	  <li>PUT /v1/jobs/{id}/cancel</li>  
+    <li>DELETE /v1/jobs/{id}</li>
+    <li>POST /v1/jobs/{id}/stop</li>
+    <li>POST /v1/jobs/{id}/cancel</li>
+    <li>PUT /v1/jobs/{id}/cancel</li>
   </ol>
 </div>
 
@@ -38,9 +38,9 @@ title: Qiskit 2.x Practice Exam (REST API)
 <div style="margin-left: 2em;">
   <ol type="A">
 	  <li>GET /v1/jobs/backends/{id}</li>  
-	  <li>POST /v1/backends/{id}/jobs</li>  
 		<li>GET /jobs?backend={id}</li>
-	  <li>PUT /cancel</li>  
+	  <li>POST /v1/backends/{id}/jobs</li>  
+		<li>GET /backend?jobs={id}</li>
   </ol>
 </div>
 
@@ -58,5 +58,5 @@ Key:
 1. A.
 2. C.
 3. A.  
-4. x
+4. B.
 5. C.
