@@ -1,3 +1,11 @@
-matrix {
+table.matrix {
   border: none
+  background: transparent;
+  border-collapse: collapse;
+}
+
+table.matrix td {
+  background: transparent;
+  border: none;
+  color: inherit;
 }
