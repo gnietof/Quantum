@@ -8,4 +8,5 @@ table.matrix td {
   background: transparent;
   border: none;
   color: inherit;
+  padding: 0px;
 }
