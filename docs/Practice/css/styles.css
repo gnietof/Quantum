@@ -1,7 +1,13 @@
 table.matrix {
-  border: none
+  border: none;
   background: transparent;
   border-collapse: collapse;
+  width: auto;
+  table-layout: auto;
+}
+
+table.matrix tr {
+    background: transparent;
 }
 
 table.matrix td {
