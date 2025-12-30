@@ -9,105 +9,107 @@ title: Qiskit 2.x Practice Exam (Rotations)
 
 1. Which Pauli operator can a user expect when running the following circuit?
 
-```python
-from qiskit import QuantumCircuit
-from qiskit.quantum_info import Pauli
+  ```python
+  from qiskit import QuantumCircuit
+  from qiskit.quantum_info import Pauli
+  
+  qc = QuantumCircuit(1)
+  qc.z(0)
+  qc.x(0)
+  qc.y(0)
+  qc.y(0)
+  qc.x(0)
+  qc.z(0)
+  ```
+  <div style="margin-left: 2em;">
+    <ol type="A">
+      <li>Pauli("I")</li> <-
+      <li>Pauli("X")</li> 
+      <li>Pauli("Y")</li> 
+      <li>Pauli("Z")</li> 
+    </ol>
+  </div>
+  
+1. Which Pauli operator can a user expect when running the following circuit?
 
-qc = QuantumCircuit(1)
-qc.z(0)
-qc.x(0)
-qc.y(0)
-qc.y(0)
-qc.x(0)
-qc.z(0)
-```
-<div style="margin-left: 2em;">
-  <ol type="A">
-    <li>Pauli("I")</li> <-
-    <li>Pauli("X")</li> 
-    <li>Pauli("Y")</li> 
-    <li>Pauli("Z")</li> 
-  </ol>
-</div>
+  ```python
+  from qiskit import QuantumCircuit
+  from qiskit.quantum_info import Pauli
+  
+  qc = QuantumCircuit(1)
+  qc.z(0)
+  qc.x(0)
+  qc.y(0)
+  qc.y(0)
+  qc.x(0)
+  qc.z(0)
+  ```
+  <div style="margin-left: 2em;">
+    <ol type="A">
+      <li>Pauli("I")</li> 
+      <li>Pauli("X")</li> 
+      <li>Pauli("Y")</li> 
+      <li>Pauli("Z")</li> 
+    </ol>
+  </div>
+  
+1. Which Pauli operator can a user expect when running the following circuit?
 
-2. Which Pauli operator can a user expect when running the following circuit?
+  ```python
+  from qiskit import QuantumCircuit
+  from qiskit.quantum_info import Pauli
+  
+  qc = QuantumCircuit(1)
+  qc.y(0)
+  qc.x(0)
+  qc.y(0)
+  qc.x(0)
+  qc.y(0)
+  qc.x(0)
+  qc.y(0)
+  ```
+  <div style="margin-left: 2em;">
+    <ol type="A">
+      <li>Pauli("I")</li> 
+      <li>Pauli("X")</li> <-
+      <li>Pauli("Y")</li> 
+      <li>Pauli("Z")</li> 
+    </ol>
+  </div>
 
-```python
-from qiskit import QuantumCircuit
-from qiskit.quantum_info import Pauli
+1. Which Pauli operator can a user expect when running the following circuit?
 
-qc = QuantumCircuit(1)
-qc.z(0)
-qc.x(0)
-qc.y(0)
-qc.y(0)
-qc.x(0)
-qc.z(0)
-```
-<div style="margin-left: 2em;">
-  <ol type="A">
-    <li>Pauli("I")</li> 
-    <li>Pauli("X")</li> 
-    <li>Pauli("Y")</li> 
-    <li>Pauli("Z")</li> 
-  </ol>
-</div>
+  ```python
+  from qiskit import QuantumCircuit
+  from qiskit.quantum_info import Pauli
+  
+  qc = QuantumCircuit(1)
+  qc.x(0)
+  qc.y(0)
+  qc.z(0)
+  ```
+  <div style="margin-left: 2em;">
+    <ol type="A">
+      <li>Pauli("I")</li> 
+      <li>Pauli("-iI")</li> <-
+      <li>Pauli("Y")</li> 
+      <li>Pauli("H")</li> 
+    </ol>
+  </div>
+  
+1. Which is the the correct output for the given code?
 
-
-3. Which Pauli operator can a user expect when running the following circuit?
-
-```python
-from qiskit import QuantumCircuit
-from qiskit.quantum_info import Pauli
-
-qc = QuantumCircuit(1)
-qc.y(0)
-qc.x(0)
-qc.y(0)
-qc.x(0)
-qc.y(0)
-qc.x(0)
-qc.y(0)
-```
-<div style="margin-left: 2em;">
-  <ol type="A">
-    <li>Pauli("I")</li> 
-    <li>Pauli("X")</li> <-
-    <li>Pauli("Y")</li> 
-    <li>Pauli("Z")</li> 
-  </ol>
-</div>
-
-4. Which Pauli operator can a user expect when running the following circuit?
-
-```python
-from qiskit import QuantumCircuit
-from qiskit.quantum_info import Pauli
-
-qc = QuantumCircuit(1)
-qc.x(0)
-qc.y(0)
-qc.z(0)
-```
-<div style="margin-left: 2em;">
-  <ol type="A">
-    <li>Pauli("I")</li> 
-    <li>Pauli("-iI")</li> <-
-    <li>Pauli("Y")</li> 
-    <li>Pauli("H")</li> 
-  </ol>
-</div>
-
-5. Which is the the correct output for the given code?
-
-```python
-from qiskit.quantum_info import Pauli
-
-p = Pauli('Y')
-```
-<div style="margin-left: 2em;">
-  <ol type="A">
-    <li><table class="matrix"><tr><td>[[ 1.+0.j  1.+0.j]</td></tr><tr><td>[[ 1.+0.j  1.+0.j]</td></tr></table></li>
-  </ol>
-</div>
-
+  ```python
+  from qiskit.quantum_info import Pauli
+  
+  p = Pauli('Y')
+  ```
+  <div style="margin-left: 2em;">
+    <ol type="A">
+      <li><table class="matrix"><tr><td>[[ 1.+0.j  1.+0.j]</td></tr><tr><td>[ 1.+0.j  1.+0.j]]</td></tr></table></li>
+      <li><table class="matrix"><tr><td>[[ 0.+0.j  0.+1.j]</td></tr><tr><td>[ 0.+1.j  0.+0.j]]</td></tr></table></li>
+      <li><table class="matrix"><tr><td>[[ 0.+0.j  1.+0.j]</td></tr><tr><td>[ 1.+0.j  0.+0.j]]</td></tr></table></li>
+      <li><table class="matrix"><tr><td>[[ 1.+0.j  0.+0.j]</td></tr><tr><td>[ 0.+0.j  0.-1.j]]</td></tr></table></li>
+    </ol>
+  </div>
+  
