@@ -7,8 +7,7 @@ title: Qiskit 2.x Practice Exam (Rotations)
 
 <h1>Qiskit 2.x Practice Exam (Pauli)</h1>
 
-1. Which Pauli operator can a user expect when running the following circuit?
-
+1. Which Pauli operator can a user expect when running the following circuit?  
   ```python
   from qiskit import QuantumCircuit
   from qiskit.quantum_info import Pauli
@@ -30,8 +29,7 @@ title: Qiskit 2.x Practice Exam (Rotations)
     </ol>
   </div>
   
-1. Which Pauli operator can a user expect when running the following circuit?
-
+1. Which Pauli operator can a user expect when running the following circuit?  
   ```python
   from qiskit import QuantumCircuit
   from qiskit.quantum_info import Pauli
@@ -97,8 +95,7 @@ title: Qiskit 2.x Practice Exam (Rotations)
     </ol>
   </div>
   
-1. Which is the the correct output for the given code?
-
+1. Which is the the correct output for the given code?  
   ```python
   from qiskit.quantum_info import Pauli
   
@@ -106,10 +103,24 @@ title: Qiskit 2.x Practice Exam (Rotations)
   ```
   <div style="margin-left: 2em;">
     <ol type="A">
-      <li><table class="matrix"><tr><td>[[ 1.+0.j  1.+0.j]</td></tr><tr><td>[ 1.+0.j  1.+0.j]]</td></tr></table></li>
+      <li><table class="matrix"><tr><td>[[ 1.+0.j  1.+0.j]</td></tr><tr><td>[ 1.+0.j  -1.+0.j]]</td></tr></table></li>
       <li><table class="matrix"><tr><td>[[ 0.+0.j  0.+1.j]</td></tr><tr><td>[ 0.+1.j  0.+0.j]]</td></tr></table></li>
       <li><table class="matrix"><tr><td>[[ 0.+0.j  1.+0.j]</td></tr><tr><td>[ 1.+0.j  0.+0.j]]</td></tr></table></li>
       <li><table class="matrix"><tr><td>[[ 1.+0.j  0.+0.j]</td></tr><tr><td>[ 0.+0.j  0.-1.j]]</td></tr></table></li>
     </ol>
   </div>
   
+1. Which is the the correct output for the given code?  
+  ```python
+  from qiskit.quantum_info import Pauli
+  
+  p = Pauli('iX')
+  ```
+  <div style="margin-left: 2em;">
+    <ol type="A">
+      <li><table class="matrix"><tr><td>[[ 0.+1.j  0.+1.j]</td></tr><tr><td>[ 0.+1.j  0.-1.j]]</td></tr></table></li>
+      <li><table class="matrix"><tr><td>[[ 0.+0.j  0.+1.j]</td></tr><tr><td>[ 0.+1.j  0.+0.j]]</td></tr></table></li>
+      <li><table class="matrix"><tr><td>[[ 0.+0.j  0.+1.j]</td></tr><tr><td>[ 0.+1.j  0.+0.j]]</td></tr></table></li>
+      <li><table class="matrix"><tr><td>[[ 0.+1.j  0.+0.j]</td></tr><tr><td>[ 0.+0.j  0.-1.j]]</td></tr></table></li>
+    </ol>
+  </div>
