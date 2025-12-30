@@ -107,7 +107,7 @@ p = Pauli('Y')
 ```
 <div style="margin-left: 2em;">
   <ol type="A">
-    <li><table style="border:none;"><tr><td>[[ 1.+0.j  1.+0.j]</td></tr><tr><td>[[ 1.+0.j  1.+0.j]</td></tr></table></li>
+    <li><table class="matrix"><tr><td>[[ 1.+0.j  1.+0.j]</td></tr><tr><td>[[ 1.+0.j  1.+0.j]</td></tr></table></li>
   </ol>
 </div>
 
