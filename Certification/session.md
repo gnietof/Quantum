@@ -29,3 +29,8 @@ I will include information from other documents here.
   - **activated_at**: Timestamp of when the session state was changed to active.
   - **mode**: Execution mode of the session.
   - **usage_time**: The usage time, in seconds, of this Session or Batch. Usage is defined as the time a quantum system is committed to complete a job.
+- **from_id**. Returns the session by providing the id and the service instance. service.jobs is not valid for recovering a session object.
+- **status**. The status of the session.
+- **close**. Closes the session to stop accepting jobs.
+- **cancel**. Cancels all pending jobs in this session.
+  
